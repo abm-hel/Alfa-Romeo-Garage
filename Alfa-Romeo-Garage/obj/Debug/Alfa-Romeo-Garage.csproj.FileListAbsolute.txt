@@ -1,0 +1,10 @@
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Alfa-Romeo-Garage.exe.config
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Alfa-Romeo-Garage.exe
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Alfa-Romeo-Garage.pdb
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.csprojAssemblyReference.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.MainForm.resources
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.Properties.Resources.resources
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.csproj.GenerateResource.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.csproj.CoreCompileInputs.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.exe
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.pdb
