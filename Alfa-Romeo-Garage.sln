@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfa-Romeo-Garage", "Alfa-Romeo-Garage\Alfa-Romeo-Garage.csproj", "{23319F4F-B3B1-4725-94F6-37BB5760B527}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchesClasses", "CouchesClasses\CouchesClasses.csproj", "{C121EDF1-EE00-4C9C-A9F4-1CDFD872234E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoucheClasses", "CouchesClasses\CoucheClasses.csproj", "{C121EDF1-EE00-4C9C-A9F4-1CDFD872234E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchesAcces", "CouchesAcces\CouchesAcces.csproj", "{72325BDE-3BB1-4C52-A5A1-4D808C0B0D7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoucheAcces", "CouchesAcces\CoucheAcces.csproj", "{72325BDE-3BB1-4C52-A5A1-4D808C0B0D7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoucheGestion", "CoucheGestion\CoucheGestion.csproj", "{0A69CF45-4D85-4F07-8FC3-33682990D253}"
 EndProject

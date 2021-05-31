@@ -56,9 +56,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CouchesClasses\CouchesClasses.csproj">
+    <ProjectReference Include="..\CouchesClasses\CoucheClasses.csproj">
       <Project>{c121edf1-ee00-4c9c-a9f4-1cdfd872234e}</Project>
-      <Name>CouchesClasses</Name>
+      <Name>CoucheClasses</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
