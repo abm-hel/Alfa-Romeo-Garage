@@ -1,0 +1,9 @@
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\bin\Debug\CouchesAcces.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\bin\Debug\CouchesAcces.pdb
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\bin\Debug\CouchesClasses.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\bin\Debug\CouchesClasses.pdb
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\obj\Debug\CouchesAcces.csprojAssemblyReference.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\obj\Debug\CouchesAcces.csproj.CoreCompileInputs.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\obj\Debug\CouchesAcces.csproj.CopyComplete
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\obj\Debug\CouchesAcces.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesAcces\obj\Debug\CouchesAcces.pdb

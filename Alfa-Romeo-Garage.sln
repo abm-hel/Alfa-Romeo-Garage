@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfa-Romeo-Garage", "Alfa-R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchesClasses", "CouchesClasses\CouchesClasses.csproj", "{C121EDF1-EE00-4C9C-A9F4-1CDFD872234E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchesAcces", "CouchesAcces\CouchesAcces.csproj", "{72325BDE-3BB1-4C52-A5A1-4D808C0B0D7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C121EDF1-EE00-4C9C-A9F4-1CDFD872234E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C121EDF1-EE00-4C9C-A9F4-1CDFD872234E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C121EDF1-EE00-4C9C-A9F4-1CDFD872234E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72325BDE-3BB1-4C52-A5A1-4D808C0B0D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72325BDE-3BB1-4C52-A5A1-4D808C0B0D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72325BDE-3BB1-4C52-A5A1-4D808C0B0D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72325BDE-3BB1-4C52-A5A1-4D808C0B0D7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
