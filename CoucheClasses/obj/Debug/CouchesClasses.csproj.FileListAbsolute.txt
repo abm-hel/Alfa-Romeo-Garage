@@ -1,6 +1,0 @@
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesClasses\bin\Debug\CouchesClasses.dll
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesClasses\bin\Debug\CouchesClasses.pdb
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesClasses\obj\Debug\CouchesClasses.csprojAssemblyReference.cache
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesClasses\obj\Debug\CouchesClasses.csproj.CoreCompileInputs.cache
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesClasses\obj\Debug\CouchesClasses.dll
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CouchesClasses\obj\Debug\CouchesClasses.pdb

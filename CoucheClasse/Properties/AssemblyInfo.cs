@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("CouchesClasses")]
+[assembly: AssemblyTitle("CoucheClasse")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CouchesClasses")]
+[assembly: AssemblyProduct("CoucheClasse")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("c121edf1-ee00-4c9c-a9f4-1cdfd872234e")]
+[assembly: Guid("ce7db78d-5689-4c90-8eb0-62ed6a77e963")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //

@@ -1,0 +1,5 @@
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CoucheClasse\bin\Debug\CoucheClasse.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CoucheClasse\bin\Debug\CoucheClasse.pdb
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CoucheClasse\obj\Debug\CoucheClasse.csproj.CoreCompileInputs.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CoucheClasse\obj\Debug\CoucheClasse.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\CoucheClasse\obj\Debug\CoucheClasse.pdb

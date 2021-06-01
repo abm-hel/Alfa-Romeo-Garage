@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A69CF45-4D85-4F07-8FC3-33682990D253}</ProjectGuid>
+    <ProjectGuid>{87ADFAEC-C05B-419B-9DA6-DB27F0DEBD6E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CoucheGestion</RootNamespace>
@@ -31,11 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CouchesAcces">
-      <HintPath>..\CouchesAcces\bin\Debug\CouchesAcces.dll</HintPath>
+    <Reference Include="CoucheAcces">
+      <HintPath>..\CoucheAcces\bin\Debug\CoucheAcces.dll</HintPath>
     </Reference>
-    <Reference Include="CouchesClasses">
-      <HintPath>..\CouchesAcces\bin\Debug\CouchesClasses.dll</HintPath>
+    <Reference Include="CoucheClasse">
+      <HintPath>..\CoucheClasse\bin\Debug\CoucheClasse.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
