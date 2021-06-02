@@ -175,6 +175,7 @@ namespace Alfa_Romeo_Garage
             this.buttonClients.TabIndex = 4;
             this.buttonClients.Text = "Clients";
             this.buttonClients.UseVisualStyleBackColor = true;
+            this.buttonClients.Click += new System.EventHandler(this.buttonClients_Click);
             // 
             // labelAccueil
             // 
@@ -201,6 +202,7 @@ namespace Alfa_Romeo_Garage
             this.buttonAccueil.TabIndex = 1;
             this.buttonAccueil.Text = "Accueil";
             this.buttonAccueil.UseVisualStyleBackColor = true;
+            this.buttonAccueil.Click += new System.EventHandler(this.buttonAccueil_Click);
             // 
             // panelPosition
             // 

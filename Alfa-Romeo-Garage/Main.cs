@@ -49,5 +49,15 @@ namespace Alfa_Romeo_Garage
                 this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
             }
         }
+
+        private void buttonAccueil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonClients_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
