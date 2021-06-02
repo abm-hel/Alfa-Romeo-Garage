@@ -66,6 +66,36 @@
     <Compile Include="UserControlClients.Designer.cs">
       <DependentUpon>UserControlClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlEntretiens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEntretiens.Designer.cs">
+      <DependentUpon>UserControlEntretiens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlIntervetions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlIntervetions.Designer.cs">
+      <DependentUpon>UserControlIntervetions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlModeles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlModeles.Designer.cs">
+      <DependentUpon>UserControlModeles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPieces.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPieces.Designer.cs">
+      <DependentUpon>UserControlPieces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlVehiculescs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlVehiculescs.Designer.cs">
+      <DependentUpon>UserControlVehiculescs.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +114,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlClients.resx">
       <DependentUpon>UserControlClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlEntretiens.resx">
+      <DependentUpon>UserControlEntretiens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlIntervetions.resx">
+      <DependentUpon>UserControlIntervetions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlModeles.resx">
+      <DependentUpon>UserControlModeles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPieces.resx">
+      <DependentUpon>UserControlPieces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlVehiculescs.resx">
+      <DependentUpon>UserControlVehiculescs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
