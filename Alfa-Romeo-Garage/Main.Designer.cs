@@ -233,7 +233,7 @@ namespace Alfa_Romeo_Garage
             this.panelPosition.BackColor = System.Drawing.Color.Crimson;
             this.panelPosition.Location = new System.Drawing.Point(313, 0);
             this.panelPosition.Name = "panelPosition";
-            this.panelPosition.Size = new System.Drawing.Size(1260, 22);
+            this.panelPosition.Size = new System.Drawing.Size(1260, 17);
             this.panelPosition.TabIndex = 9;
             // 
             // MainForm
