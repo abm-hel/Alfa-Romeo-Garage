@@ -29,6 +29,7 @@ namespace Alfa_Romeo_Garage
 
             //déplacement du pannel à la même hauteur que button Accueil
             panelButtonSelectionne.Height = buttonAccueil.Height;
+            panelButtonSelectionne.Top = buttonAccueil.Top;
 
             //afficher l'écran d'accueil
             userControlAccueil1.BringToFront();
@@ -60,6 +61,7 @@ namespace Alfa_Romeo_Garage
         {
             //déplacement du pannel à la même hauteur que button Accueil
             panelButtonSelectionne.Height = buttonAccueil.Height;
+            panelButtonSelectionne.Top = buttonAccueil.Top;
 
             //afficher l'écran des clients
             userControlAccueil1.BringToFront();
@@ -69,6 +71,7 @@ namespace Alfa_Romeo_Garage
         {
             //déplacement du pannel à la même hauteur que button client
             panelButtonSelectionne.Height = buttonClients.Height;
+            panelButtonSelectionne.Top = buttonClients.Top;
             
             //afficher l'écran d'accueil
             userControlClients1.BringToFront();
