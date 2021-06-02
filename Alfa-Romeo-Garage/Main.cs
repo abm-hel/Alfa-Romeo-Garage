@@ -17,9 +17,9 @@ namespace Alfa_Romeo_Garage
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
