@@ -178,7 +178,6 @@ namespace Alfa_Romeo_Garage
             this.labelAccueil.Size = new System.Drawing.Size(145, 46);
             this.labelAccueil.TabIndex = 3;
             this.labelAccueil.Text = "ALFA ROMEO \r\n    GARAGE";
-            
             // 
             // buttonAccueil
             // 
@@ -235,6 +234,9 @@ namespace Alfa_Romeo_Garage
             this.panelPosition.Name = "panelPosition";
             this.panelPosition.Size = new System.Drawing.Size(1260, 18);
             this.panelPosition.TabIndex = 9;
+            this.panelPosition.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseDown);
+            this.panelPosition.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseMove);
+            this.panelPosition.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseUp);
             // 
             // MainForm
             // 
