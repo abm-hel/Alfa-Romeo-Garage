@@ -39,9 +39,9 @@ namespace Alfa_Romeo_Garage
             this.labelTitre.ForeColor = System.Drawing.Color.Crimson;
             this.labelTitre.Location = new System.Drawing.Point(39, 26);
             this.labelTitre.Name = "labelTitre";
-            this.labelTitre.Size = new System.Drawing.Size(264, 30);
+            this.labelTitre.Size = new System.Drawing.Size(288, 30);
             this.labelTitre.TabIndex = 5;
-            this.labelTitre.Text = "Modèles Alfa Romeo";
+            this.labelTitre.Text = "MODÈLES ALFA ROMEO";
             // 
             // UserControlModeles
             // 
