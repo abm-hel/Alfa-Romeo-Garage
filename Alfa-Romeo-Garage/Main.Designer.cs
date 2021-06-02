@@ -117,7 +117,7 @@ namespace Alfa_Romeo_Garage
             this.buttonInterventions.TabIndex = 10;
             this.buttonInterventions.Text = "Interventions";
             this.buttonInterventions.UseVisualStyleBackColor = true;
-            this.buttonInterventions.Click += new System.EventHandler(this.button5_Click);
+            this.buttonInterventions.Click += new System.EventHandler(this.buttonInterventions_Click);
             // 
             // buttonEntretiens
             // 
@@ -133,7 +133,7 @@ namespace Alfa_Romeo_Garage
             this.buttonEntretiens.TabIndex = 9;
             this.buttonEntretiens.Text = "Entretiens";
             this.buttonEntretiens.UseVisualStyleBackColor = true;
-            this.buttonEntretiens.Click += new System.EventHandler(this.button2_Click);
+            this.buttonEntretiens.Click += new System.EventHandler(this.buttonEntretiens_Click);
             // 
             // buttonPieces
             // 
@@ -149,7 +149,7 @@ namespace Alfa_Romeo_Garage
             this.buttonPieces.TabIndex = 8;
             this.buttonPieces.Text = "Pièces";
             this.buttonPieces.UseVisualStyleBackColor = true;
-            this.buttonPieces.Click += new System.EventHandler(this.button3_Click);
+            this.buttonPieces.Click += new System.EventHandler(this.buttonPieces_Click);
             // 
             // buttonVehicules
             // 
@@ -165,7 +165,7 @@ namespace Alfa_Romeo_Garage
             this.buttonVehicules.TabIndex = 7;
             this.buttonVehicules.Text = "Véhicules";
             this.buttonVehicules.UseVisualStyleBackColor = true;
-            this.buttonVehicules.Click += new System.EventHandler(this.button4_Click);
+            this.buttonVehicules.Click += new System.EventHandler(this.buttonVehicules_Click);
             // 
             // pictureBoxLogoAccueil
             // 
@@ -191,7 +191,7 @@ namespace Alfa_Romeo_Garage
             this.buttonModeles.TabIndex = 5;
             this.buttonModeles.Text = "Modèles\r\nAlfa Romeo";
             this.buttonModeles.UseVisualStyleBackColor = true;
-            this.buttonModeles.Click += new System.EventHandler(this.button1_Click);
+            this.buttonModeles.Click += new System.EventHandler(this.buttonModeles_Click);
             // 
             // buttonClients
             // 

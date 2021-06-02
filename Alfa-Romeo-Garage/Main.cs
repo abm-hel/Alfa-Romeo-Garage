@@ -77,27 +77,27 @@ namespace Alfa_Romeo_Garage
             userControlClients1.BringToFront();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonModeles_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonVehicules_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonPieces_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonInterventions_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonEntretiens_Click(object sender, EventArgs e)
         {
 
         }
