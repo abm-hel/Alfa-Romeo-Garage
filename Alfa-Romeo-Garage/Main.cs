@@ -114,7 +114,10 @@ namespace Alfa_Romeo_Garage
 
         private void buttonEntretiens_Click(object sender, EventArgs e)
         {
+            panelButtonSelectionne.Height = buttonEntretiens.Height;
+            panelButtonSelectionne.Top = buttonEntretiens.Top;
 
+            userControlEntretiens1.BringToFront();
         }
     }
 }
