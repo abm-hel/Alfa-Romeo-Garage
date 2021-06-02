@@ -29,19 +29,35 @@ namespace Alfa_Romeo_Garage
         /// </summary>
         private void InitializeComponent()
         {
+            this.labelTitre = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // labelTitre
+            // 
+            this.labelTitre.AutoSize = true;
+            this.labelTitre.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitre.ForeColor = System.Drawing.Color.Crimson;
+            this.labelTitre.Location = new System.Drawing.Point(39, 26);
+            this.labelTitre.Name = "labelTitre";
+            this.labelTitre.Size = new System.Drawing.Size(104, 30);
+            this.labelTitre.TabIndex = 4;
+            this.labelTitre.Text = "CLIENTS\r\n";
             // 
             // UserControlClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.labelTitre);
             this.Name = "UserControlClients";
             this.Size = new System.Drawing.Size(1260, 805);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label labelTitre;
     }
 }
