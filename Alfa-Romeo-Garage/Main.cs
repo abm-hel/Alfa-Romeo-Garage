@@ -26,8 +26,11 @@ namespace Alfa_Romeo_Garage
         {
             //poitionnement de la fenêtre
             this.Location = Screen.AllScreens[1].WorkingArea.Location;
-            
+
+            //déplacement du pannel à la même hauteur que button Accueil
             panelButtonSelectionne.Height = buttonAccueil.Height;
+
+            //afficher l'écran d'accueil
             userControlAccueil1.BringToFront();
         }
 
@@ -55,13 +58,20 @@ namespace Alfa_Romeo_Garage
 
         private void buttonAccueil_Click(object sender, EventArgs e)
         {
+            //déplacement du pannel à la même hauteur que button Accueil
             panelButtonSelectionne.Height = buttonAccueil.Height;
+
+            //afficher l'écran des clients
             userControlAccueil1.BringToFront();
         }
 
         private void buttonClients_Click(object sender, EventArgs e)
         {
-
+            //déplacement du pannel à la même hauteur que button client
+            panelButtonSelectionne.Height = buttonClients.Height;
+            
+            //afficher l'écran d'accueil
+            userControlClients1.BringToFront();
         }
     }
 }
