@@ -30,6 +30,10 @@ namespace Alfa_Romeo_Garage
         private void InitializeComponent()
         {
             this.labelTitre = new System.Windows.Forms.Label();
+            this.dataGridViewClients = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTitre
@@ -43,14 +47,37 @@ namespace Alfa_Romeo_Garage
             this.labelTitre.TabIndex = 4;
             this.labelTitre.Text = "CLIENTS\r\n";
             // 
+            // dataGridViewClients
+            // 
+            this.dataGridViewClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClients.Location = new System.Drawing.Point(716, 131);
+            this.dataGridViewClients.Name = "dataGridViewClients";
+            this.dataGridViewClients.RowHeadersWidth = 51;
+            this.dataGridViewClients.RowTemplate.Height = 24;
+            this.dataGridViewClients.Size = new System.Drawing.Size(531, 659);
+            this.dataGridViewClients.TabIndex = 5;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(789, 463);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.Size = new System.Drawing.Size(8, 8);
+            this.dataGridView2.TabIndex = 6;
+            // 
             // UserControlClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridViewClients);
             this.Controls.Add(this.labelTitre);
             this.Name = "UserControlClients";
             this.Size = new System.Drawing.Size(1260, 805);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +86,7 @@ namespace Alfa_Romeo_Garage
         #endregion
 
         private System.Windows.Forms.Label labelTitre;
+        private System.Windows.Forms.DataGridView dataGridViewClients;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
