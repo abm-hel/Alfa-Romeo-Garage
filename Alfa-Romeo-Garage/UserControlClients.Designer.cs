@@ -37,6 +37,29 @@ namespace Alfa_Romeo_Garage
             this.buttonSupprimerClient = new System.Windows.Forms.Button();
             this.buttonConfirmerClient = new System.Windows.Forms.Button();
             this.buttonAnnulerClient = new System.Windows.Forms.Button();
+            this.textBoxNom = new System.Windows.Forms.TextBox();
+            this.labelNom = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelPrenom = new System.Windows.Forms.Label();
+            this.textBoxPrenom = new System.Windows.Forms.TextBox();
+            this.labelNumeroNational = new System.Windows.Forms.Label();
+            this.textBoxNumeroNational = new System.Windows.Forms.TextBox();
+            this.labelDateNaissance = new System.Windows.Forms.Label();
+            this.dateTimePickerDateNaissance = new System.Windows.Forms.DateTimePicker();
+            this.labelRue = new System.Windows.Forms.Label();
+            this.textBoxRue = new System.Windows.Forms.TextBox();
+            this.labelCodePostal = new System.Windows.Forms.Label();
+            this.textBoxCodePostal = new System.Windows.Forms.TextBox();
+            this.labelNumero = new System.Windows.Forms.Label();
+            this.textBoxNumero = new System.Windows.Forms.TextBox();
+            this.labelPays = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelVille = new System.Windows.Forms.Label();
+            this.textBoxVille = new System.Windows.Forms.TextBox();
+            this.labelAdresseEmail = new System.Windows.Forms.Label();
+            this.textBoxAdresseEmail = new System.Windows.Forms.TextBox();
+            this.labelNumeroTelephone = new System.Windows.Forms.Label();
+            this.textBoxNumeroTelephone = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -55,11 +78,11 @@ namespace Alfa_Romeo_Garage
             // dataGridViewClients
             // 
             this.dataGridViewClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewClients.Location = new System.Drawing.Point(595, 100);
+            this.dataGridViewClients.Location = new System.Drawing.Point(595, 78);
             this.dataGridViewClients.Name = "dataGridViewClients";
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
-            this.dataGridViewClients.Size = new System.Drawing.Size(613, 512);
+            this.dataGridViewClients.Size = new System.Drawing.Size(613, 534);
             this.dataGridViewClients.TabIndex = 5;
             // 
             // dataGridView2
@@ -125,9 +148,9 @@ namespace Alfa_Romeo_Garage
             this.buttonConfirmerClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirmerClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonConfirmerClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConfirmerClient.Location = new System.Drawing.Point(44, 741);
+            this.buttonConfirmerClient.Location = new System.Drawing.Point(45, 686);
             this.buttonConfirmerClient.Name = "buttonConfirmerClient";
-            this.buttonConfirmerClient.Size = new System.Drawing.Size(241, 40);
+            this.buttonConfirmerClient.Size = new System.Drawing.Size(500, 40);
             this.buttonConfirmerClient.TabIndex = 10;
             this.buttonConfirmerClient.Text = "Confirmer";
             this.buttonConfirmerClient.UseVisualStyleBackColor = false;
@@ -140,18 +163,279 @@ namespace Alfa_Romeo_Garage
             this.buttonAnnulerClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAnnulerClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAnnulerClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAnnulerClient.Location = new System.Drawing.Point(302, 741);
+            this.buttonAnnulerClient.Location = new System.Drawing.Point(45, 741);
             this.buttonAnnulerClient.Name = "buttonAnnulerClient";
-            this.buttonAnnulerClient.Size = new System.Drawing.Size(241, 40);
+            this.buttonAnnulerClient.Size = new System.Drawing.Size(499, 40);
             this.buttonAnnulerClient.TabIndex = 11;
             this.buttonAnnulerClient.Text = "Annuler";
             this.buttonAnnulerClient.UseVisualStyleBackColor = false;
+            // 
+            // textBoxNom
+            // 
+            this.textBoxNom.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxNom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNom.ForeColor = System.Drawing.Color.White;
+            this.textBoxNom.Location = new System.Drawing.Point(44, 100);
+            this.textBoxNom.Name = "textBoxNom";
+            this.textBoxNom.Size = new System.Drawing.Size(241, 22);
+            this.textBoxNom.TabIndex = 12;
+            // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNom.ForeColor = System.Drawing.Color.Crimson;
+            this.labelNom.Location = new System.Drawing.Point(40, 78);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(41, 19);
+            this.labelNom.TabIndex = 13;
+            this.labelNom.Text = "Nom";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(484, 227);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "label2";
+            // 
+            // labelPrenom
+            // 
+            this.labelPrenom.AutoSize = true;
+            this.labelPrenom.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrenom.ForeColor = System.Drawing.Color.Crimson;
+            this.labelPrenom.Location = new System.Drawing.Point(298, 78);
+            this.labelPrenom.Name = "labelPrenom";
+            this.labelPrenom.Size = new System.Drawing.Size(61, 19);
+            this.labelPrenom.TabIndex = 16;
+            this.labelPrenom.Text = "Prénom";
+            // 
+            // textBoxPrenom
+            // 
+            this.textBoxPrenom.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxPrenom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPrenom.ForeColor = System.Drawing.Color.White;
+            this.textBoxPrenom.Location = new System.Drawing.Point(302, 100);
+            this.textBoxPrenom.Name = "textBoxPrenom";
+            this.textBoxPrenom.Size = new System.Drawing.Size(241, 22);
+            this.textBoxPrenom.TabIndex = 15;
+            // 
+            // labelNumeroNational
+            // 
+            this.labelNumeroNational.AutoSize = true;
+            this.labelNumeroNational.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumeroNational.ForeColor = System.Drawing.Color.Crimson;
+            this.labelNumeroNational.Location = new System.Drawing.Point(298, 143);
+            this.labelNumeroNational.Name = "labelNumeroNational";
+            this.labelNumeroNational.Size = new System.Drawing.Size(200, 19);
+            this.labelNumeroNational.TabIndex = 18;
+            this.labelNumeroNational.Text = "Numéro de registre national";
+            // 
+            // textBoxNumeroNational
+            // 
+            this.textBoxNumeroNational.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxNumeroNational.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNumeroNational.ForeColor = System.Drawing.Color.White;
+            this.textBoxNumeroNational.Location = new System.Drawing.Point(302, 165);
+            this.textBoxNumeroNational.Name = "textBoxNumeroNational";
+            this.textBoxNumeroNational.Size = new System.Drawing.Size(241, 22);
+            this.textBoxNumeroNational.TabIndex = 17;
+            // 
+            // labelDateNaissance
+            // 
+            this.labelDateNaissance.AutoSize = true;
+            this.labelDateNaissance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateNaissance.ForeColor = System.Drawing.Color.Crimson;
+            this.labelDateNaissance.Location = new System.Drawing.Point(40, 143);
+            this.labelDateNaissance.Name = "labelDateNaissance";
+            this.labelDateNaissance.Size = new System.Drawing.Size(139, 19);
+            this.labelDateNaissance.TabIndex = 20;
+            this.labelDateNaissance.Text = "Date de naissance";
+            // 
+            // dateTimePickerDateNaissance
+            // 
+            this.dateTimePickerDateNaissance.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDateNaissance.Location = new System.Drawing.Point(44, 165);
+            this.dateTimePickerDateNaissance.Name = "dateTimePickerDateNaissance";
+            this.dateTimePickerDateNaissance.Size = new System.Drawing.Size(241, 22);
+            this.dateTimePickerDateNaissance.TabIndex = 21;
+            // 
+            // labelRue
+            // 
+            this.labelRue.AutoSize = true;
+            this.labelRue.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRue.ForeColor = System.Drawing.Color.Crimson;
+            this.labelRue.Location = new System.Drawing.Point(40, 261);
+            this.labelRue.Name = "labelRue";
+            this.labelRue.Size = new System.Drawing.Size(36, 19);
+            this.labelRue.TabIndex = 23;
+            this.labelRue.Text = "Rue";
+            // 
+            // textBoxRue
+            // 
+            this.textBoxRue.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxRue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRue.ForeColor = System.Drawing.Color.White;
+            this.textBoxRue.Location = new System.Drawing.Point(44, 283);
+            this.textBoxRue.Name = "textBoxRue";
+            this.textBoxRue.Size = new System.Drawing.Size(499, 22);
+            this.textBoxRue.TabIndex = 22;
+            // 
+            // labelCodePostal
+            // 
+            this.labelCodePostal.AutoSize = true;
+            this.labelCodePostal.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCodePostal.ForeColor = System.Drawing.Color.Crimson;
+            this.labelCodePostal.Location = new System.Drawing.Point(298, 326);
+            this.labelCodePostal.Name = "labelCodePostal";
+            this.labelCodePostal.Size = new System.Drawing.Size(88, 19);
+            this.labelCodePostal.TabIndex = 27;
+            this.labelCodePostal.Text = "CodePostal";
+            // 
+            // textBoxCodePostal
+            // 
+            this.textBoxCodePostal.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxCodePostal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxCodePostal.ForeColor = System.Drawing.Color.White;
+            this.textBoxCodePostal.Location = new System.Drawing.Point(302, 348);
+            this.textBoxCodePostal.Name = "textBoxCodePostal";
+            this.textBoxCodePostal.Size = new System.Drawing.Size(241, 22);
+            this.textBoxCodePostal.TabIndex = 26;
+            // 
+            // labelNumero
+            // 
+            this.labelNumero.AutoSize = true;
+            this.labelNumero.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumero.ForeColor = System.Drawing.Color.Crimson;
+            this.labelNumero.Location = new System.Drawing.Point(40, 326);
+            this.labelNumero.Name = "labelNumero";
+            this.labelNumero.Size = new System.Drawing.Size(63, 19);
+            this.labelNumero.TabIndex = 25;
+            this.labelNumero.Text = "Numéro";
+            // 
+            // textBoxNumero
+            // 
+            this.textBoxNumero.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNumero.ForeColor = System.Drawing.Color.White;
+            this.textBoxNumero.Location = new System.Drawing.Point(44, 348);
+            this.textBoxNumero.Name = "textBoxNumero";
+            this.textBoxNumero.Size = new System.Drawing.Size(241, 22);
+            this.textBoxNumero.TabIndex = 24;
+            // 
+            // labelPays
+            // 
+            this.labelPays.AutoSize = true;
+            this.labelPays.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPays.ForeColor = System.Drawing.Color.Crimson;
+            this.labelPays.Location = new System.Drawing.Point(299, 398);
+            this.labelPays.Name = "labelPays";
+            this.labelPays.Size = new System.Drawing.Size(40, 19);
+            this.labelPays.TabIndex = 31;
+            this.labelPays.Text = "Pays";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(303, 420);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(241, 22);
+            this.textBox1.TabIndex = 30;
+            // 
+            // labelVille
+            // 
+            this.labelVille.AutoSize = true;
+            this.labelVille.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVille.ForeColor = System.Drawing.Color.Crimson;
+            this.labelVille.Location = new System.Drawing.Point(41, 398);
+            this.labelVille.Name = "labelVille";
+            this.labelVille.Size = new System.Drawing.Size(36, 19);
+            this.labelVille.TabIndex = 29;
+            this.labelVille.Text = "Ville";
+            // 
+            // textBoxVille
+            // 
+            this.textBoxVille.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxVille.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxVille.ForeColor = System.Drawing.Color.White;
+            this.textBoxVille.Location = new System.Drawing.Point(45, 420);
+            this.textBoxVille.Name = "textBoxVille";
+            this.textBoxVille.Size = new System.Drawing.Size(241, 22);
+            this.textBoxVille.TabIndex = 28;
+            // 
+            // labelAdresseEmail
+            // 
+            this.labelAdresseEmail.AutoSize = true;
+            this.labelAdresseEmail.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAdresseEmail.ForeColor = System.Drawing.Color.Crimson;
+            this.labelAdresseEmail.Location = new System.Drawing.Point(41, 566);
+            this.labelAdresseEmail.Name = "labelAdresseEmail";
+            this.labelAdresseEmail.Size = new System.Drawing.Size(107, 19);
+            this.labelAdresseEmail.TabIndex = 35;
+            this.labelAdresseEmail.Text = "Adresse e-mail";
+            // 
+            // textBoxAdresseEmail
+            // 
+            this.textBoxAdresseEmail.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxAdresseEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxAdresseEmail.ForeColor = System.Drawing.Color.White;
+            this.textBoxAdresseEmail.Location = new System.Drawing.Point(45, 588);
+            this.textBoxAdresseEmail.Name = "textBoxAdresseEmail";
+            this.textBoxAdresseEmail.Size = new System.Drawing.Size(499, 22);
+            this.textBoxAdresseEmail.TabIndex = 34;
+            // 
+            // labelNumeroTelephone
+            // 
+            this.labelNumeroTelephone.AutoSize = true;
+            this.labelNumeroTelephone.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumeroTelephone.ForeColor = System.Drawing.Color.Crimson;
+            this.labelNumeroTelephone.Location = new System.Drawing.Point(41, 500);
+            this.labelNumeroTelephone.Name = "labelNumeroTelephone";
+            this.labelNumeroTelephone.Size = new System.Drawing.Size(162, 19);
+            this.labelNumeroTelephone.TabIndex = 33;
+            this.labelNumeroTelephone.Text = "Numéro de télephone";
+            // 
+            // textBoxNumeroTelephone
+            // 
+            this.textBoxNumeroTelephone.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxNumeroTelephone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNumeroTelephone.ForeColor = System.Drawing.Color.White;
+            this.textBoxNumeroTelephone.Location = new System.Drawing.Point(45, 522);
+            this.textBoxNumeroTelephone.Name = "textBoxNumeroTelephone";
+            this.textBoxNumeroTelephone.Size = new System.Drawing.Size(498, 22);
+            this.textBoxNumeroTelephone.TabIndex = 32;
             // 
             // UserControlClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.labelAdresseEmail);
+            this.Controls.Add(this.textBoxAdresseEmail);
+            this.Controls.Add(this.labelNumeroTelephone);
+            this.Controls.Add(this.textBoxNumeroTelephone);
+            this.Controls.Add(this.labelPays);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelVille);
+            this.Controls.Add(this.textBoxVille);
+            this.Controls.Add(this.labelCodePostal);
+            this.Controls.Add(this.textBoxCodePostal);
+            this.Controls.Add(this.labelNumero);
+            this.Controls.Add(this.textBoxNumero);
+            this.Controls.Add(this.labelRue);
+            this.Controls.Add(this.textBoxRue);
+            this.Controls.Add(this.dateTimePickerDateNaissance);
+            this.Controls.Add(this.labelDateNaissance);
+            this.Controls.Add(this.labelNumeroNational);
+            this.Controls.Add(this.textBoxNumeroNational);
+            this.Controls.Add(this.labelPrenom);
+            this.Controls.Add(this.textBoxPrenom);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelNom);
+            this.Controls.Add(this.textBoxNom);
             this.Controls.Add(this.buttonAnnulerClient);
             this.Controls.Add(this.buttonConfirmerClient);
             this.Controls.Add(this.buttonSupprimerClient);
@@ -179,5 +463,28 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Button buttonSupprimerClient;
         private System.Windows.Forms.Button buttonConfirmerClient;
         private System.Windows.Forms.Button buttonAnnulerClient;
+        private System.Windows.Forms.TextBox textBoxNom;
+        private System.Windows.Forms.Label labelNom;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelPrenom;
+        private System.Windows.Forms.TextBox textBoxPrenom;
+        private System.Windows.Forms.Label labelNumeroNational;
+        private System.Windows.Forms.TextBox textBoxNumeroNational;
+        private System.Windows.Forms.Label labelDateNaissance;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDateNaissance;
+        private System.Windows.Forms.Label labelRue;
+        private System.Windows.Forms.TextBox textBoxRue;
+        private System.Windows.Forms.Label labelCodePostal;
+        private System.Windows.Forms.TextBox textBoxCodePostal;
+        private System.Windows.Forms.Label labelNumero;
+        private System.Windows.Forms.TextBox textBoxNumero;
+        private System.Windows.Forms.Label labelPays;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelVille;
+        private System.Windows.Forms.TextBox textBoxVille;
+        private System.Windows.Forms.Label labelAdresseEmail;
+        private System.Windows.Forms.TextBox textBoxAdresseEmail;
+        private System.Windows.Forms.Label labelNumeroTelephone;
+        private System.Windows.Forms.TextBox textBoxNumeroTelephone;
     }
 }
