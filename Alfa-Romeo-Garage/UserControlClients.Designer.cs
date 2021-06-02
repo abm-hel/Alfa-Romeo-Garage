@@ -43,9 +43,9 @@ namespace Alfa_Romeo_Garage
             this.labelTitre.ForeColor = System.Drawing.Color.Crimson;
             this.labelTitre.Location = new System.Drawing.Point(39, 26);
             this.labelTitre.Name = "labelTitre";
-            this.labelTitre.Size = new System.Drawing.Size(104, 30);
+            this.labelTitre.Size = new System.Drawing.Size(263, 30);
             this.labelTitre.TabIndex = 4;
-            this.labelTitre.Text = "CLIENTS\r\n";
+            this.labelTitre.Text = "GESTION DES CLIENTS\r\n";
             // 
             // dataGridViewClients
             // 
