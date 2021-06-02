@@ -26,6 +26,9 @@ namespace Alfa_Romeo_Garage
         {
             //poitionnement de la fenêtre
             this.Location = Screen.AllScreens[1].WorkingArea.Location;
+            
+            panelButtonSelectionne.Height = buttonAccueil.Height;
+            userControlAccueil1.BringToFront();
         }
 
         private void panelPosition_MouseDown(object sender, MouseEventArgs e)
@@ -52,7 +55,8 @@ namespace Alfa_Romeo_Garage
 
         private void buttonAccueil_Click(object sender, EventArgs e)
         {
-
+            panelButtonSelectionne.Height = buttonAccueil.Height;
+            userControlAccueil1.BringToFront();
         }
 
         private void buttonClients_Click(object sender, EventArgs e)
