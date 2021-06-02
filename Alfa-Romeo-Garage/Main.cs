@@ -83,7 +83,7 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Height = buttonModeles.Height;
             panelButtonSelectionne.Top = buttonModeles.Top;
 
-        
+            //afficher l'écran des modèles
             userControlModeles1.BringToFront();
         }
 
@@ -93,6 +93,7 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Height = buttonVehicules.Height;
             panelButtonSelectionne.Top = buttonVehicules.Top;
 
+            //afficher l'écran des véhicules
             userControlVehiculescs1.BringToFront();
         }
 
@@ -101,6 +102,7 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Height = buttonPieces.Height;
             panelButtonSelectionne.Top = buttonPieces.Top;
 
+            //afficher l'écran des pièces
             userControlPieces1.BringToFront();
         }
 
@@ -109,6 +111,7 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Height = buttonInterventions.Height;
             panelButtonSelectionne.Top = buttonInterventions.Top;
 
+            //afficher l'écran des interventions
             userControlIntervetions1.BringToFront();
         }
 
@@ -117,6 +120,7 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Height = buttonEntretiens.Height;
             panelButtonSelectionne.Top = buttonEntretiens.Top;
 
+            //afficher l'écran des entretients
             userControlEntretiens1.BringToFront();
         }
     }
