@@ -34,12 +34,12 @@ namespace Alfa_Romeo_Garage
             this.panelButtonSelectionne = new System.Windows.Forms.Panel();
             this.labelAccueil = new System.Windows.Forms.Label();
             this.panelPosition = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonInterventions = new System.Windows.Forms.Button();
+            this.buttonEntretiens = new System.Windows.Forms.Button();
+            this.buttonPieces = new System.Windows.Forms.Button();
+            this.buttonVehicules = new System.Windows.Forms.Button();
             this.pictureBoxLogoAccueil = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonModeles = new System.Windows.Forms.Button();
             this.buttonClients = new System.Windows.Forms.Button();
             this.buttonAccueil = new System.Windows.Forms.Button();
             this.userControlClients1 = new Alfa_Romeo_Garage.UserControlClients();
@@ -58,12 +58,12 @@ namespace Alfa_Romeo_Garage
             this.panelMenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMenu.Controls.Add(this.panelButtonSelectionne);
-            this.panelMenu.Controls.Add(this.button5);
-            this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button4);
+            this.panelMenu.Controls.Add(this.buttonInterventions);
+            this.panelMenu.Controls.Add(this.buttonEntretiens);
+            this.panelMenu.Controls.Add(this.buttonPieces);
+            this.panelMenu.Controls.Add(this.buttonVehicules);
             this.panelMenu.Controls.Add(this.pictureBoxLogoAccueil);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.buttonModeles);
             this.panelMenu.Controls.Add(this.buttonClients);
             this.panelMenu.Controls.Add(this.labelAccueil);
             this.panelMenu.Controls.Add(this.buttonAccueil);
@@ -103,69 +103,69 @@ namespace Alfa_Romeo_Garage
             this.panelPosition.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseMove);
             this.panelPosition.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseUp);
             // 
-            // button5
+            // buttonInterventions
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(57, 663);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(254, 62);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Interventions";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonInterventions.FlatAppearance.BorderSize = 0;
+            this.buttonInterventions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInterventions.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInterventions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonInterventions.Image = ((System.Drawing.Image)(resources.GetObject("buttonInterventions.Image")));
+            this.buttonInterventions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonInterventions.Location = new System.Drawing.Point(57, 663);
+            this.buttonInterventions.Name = "buttonInterventions";
+            this.buttonInterventions.Size = new System.Drawing.Size(254, 62);
+            this.buttonInterventions.TabIndex = 10;
+            this.buttonInterventions.Text = "Interventions";
+            this.buttonInterventions.UseVisualStyleBackColor = true;
+            this.buttonInterventions.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button2
+            // buttonEntretiens
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(57, 768);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(254, 62);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Entretiens";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonEntretiens.FlatAppearance.BorderSize = 0;
+            this.buttonEntretiens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEntretiens.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEntretiens.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEntretiens.Image = ((System.Drawing.Image)(resources.GetObject("buttonEntretiens.Image")));
+            this.buttonEntretiens.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonEntretiens.Location = new System.Drawing.Point(57, 768);
+            this.buttonEntretiens.Name = "buttonEntretiens";
+            this.buttonEntretiens.Size = new System.Drawing.Size(254, 62);
+            this.buttonEntretiens.TabIndex = 9;
+            this.buttonEntretiens.Text = "Entretiens";
+            this.buttonEntretiens.UseVisualStyleBackColor = true;
+            this.buttonEntretiens.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // buttonPieces
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(54, 569);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(254, 62);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Pièces";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonPieces.FlatAppearance.BorderSize = 0;
+            this.buttonPieces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPieces.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPieces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonPieces.Image = ((System.Drawing.Image)(resources.GetObject("buttonPieces.Image")));
+            this.buttonPieces.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPieces.Location = new System.Drawing.Point(54, 569);
+            this.buttonPieces.Name = "buttonPieces";
+            this.buttonPieces.Size = new System.Drawing.Size(254, 62);
+            this.buttonPieces.TabIndex = 8;
+            this.buttonPieces.Text = "Pièces";
+            this.buttonPieces.UseVisualStyleBackColor = true;
+            this.buttonPieces.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // buttonVehicules
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(57, 476);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(254, 62);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Véhicules";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonVehicules.FlatAppearance.BorderSize = 0;
+            this.buttonVehicules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVehicules.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVehicules.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonVehicules.Image = ((System.Drawing.Image)(resources.GetObject("buttonVehicules.Image")));
+            this.buttonVehicules.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonVehicules.Location = new System.Drawing.Point(57, 476);
+            this.buttonVehicules.Name = "buttonVehicules";
+            this.buttonVehicules.Size = new System.Drawing.Size(254, 62);
+            this.buttonVehicules.TabIndex = 7;
+            this.buttonVehicules.Text = "Véhicules";
+            this.buttonVehicules.UseVisualStyleBackColor = true;
+            this.buttonVehicules.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBoxLogoAccueil
             // 
@@ -177,21 +177,21 @@ namespace Alfa_Romeo_Garage
             this.pictureBoxLogoAccueil.TabIndex = 6;
             this.pictureBoxLogoAccueil.TabStop = false;
             // 
-            // button1
+            // buttonModeles
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(54, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 62);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Modèles\r\nAlfa Romeo";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonModeles.FlatAppearance.BorderSize = 0;
+            this.buttonModeles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonModeles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModeles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonModeles.Image = ((System.Drawing.Image)(resources.GetObject("buttonModeles.Image")));
+            this.buttonModeles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonModeles.Location = new System.Drawing.Point(54, 384);
+            this.buttonModeles.Name = "buttonModeles";
+            this.buttonModeles.Size = new System.Drawing.Size(254, 62);
+            this.buttonModeles.TabIndex = 5;
+            this.buttonModeles.Text = "Modèles\r\nAlfa Romeo";
+            this.buttonModeles.UseVisualStyleBackColor = true;
+            this.buttonModeles.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonClients
             // 
@@ -312,14 +312,14 @@ namespace Alfa_Romeo_Garage
 
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Button buttonAccueil;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonModeles;
         private System.Windows.Forms.Button buttonClients;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonEntretiens;
+        private System.Windows.Forms.Button buttonPieces;
+        private System.Windows.Forms.Button buttonVehicules;
         private System.Windows.Forms.PictureBox pictureBoxLogoAccueil;
         private System.Windows.Forms.Label labelAccueil;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonInterventions;
         private System.Windows.Forms.Panel panelPosition;
         private System.Windows.Forms.Panel panelButtonSelectionne;
         private UserControlAccueil userControlAccueil1;
