@@ -1,7 +1,7 @@
 ﻿
 namespace Alfa_Romeo_Garage
 {
-    partial class UserControlVehiculescs
+    partial class UserControlVehicules
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.

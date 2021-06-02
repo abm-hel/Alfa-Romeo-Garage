@@ -45,7 +45,7 @@ namespace Alfa_Romeo_Garage
             this.userControlClients1 = new Alfa_Romeo_Garage.UserControlClients();
             this.userControlAccueil1 = new Alfa_Romeo_Garage.UserControlAccueil();
             this.userControlModeles1 = new Alfa_Romeo_Garage.UserControlModeles();
-            this.userControlVehiculescs1 = new Alfa_Romeo_Garage.UserControlVehiculescs();
+            this.userControlVehiculescs1 = new Alfa_Romeo_Garage.UserControlVehicules();
             this.userControlPieces1 = new Alfa_Romeo_Garage.UserControlPieces();
             this.userControlIntervetions1 = new Alfa_Romeo_Garage.UserControlIntervetions();
             this.userControlEntretiens1 = new Alfa_Romeo_Garage.UserControlEntretiens();
@@ -325,7 +325,7 @@ namespace Alfa_Romeo_Garage
         private UserControlAccueil userControlAccueil1;
         private UserControlClients userControlClients1;
         private UserControlModeles userControlModeles1;
-        private UserControlVehiculescs userControlVehiculescs1;
+        private UserControlVehicules userControlVehiculescs1;
         private UserControlPieces userControlPieces1;
         private UserControlIntervetions userControlIntervetions1;
         private UserControlEntretiens userControlEntretiens1;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Alfa_Romeo_Garage
 {
-    public partial class UserControlVehiculescs : UserControl
+    public partial class UserControlVehicules : UserControl
     {
-        public UserControlVehiculescs()
+        public UserControlVehicules()
         {
             InitializeComponent();
         }
