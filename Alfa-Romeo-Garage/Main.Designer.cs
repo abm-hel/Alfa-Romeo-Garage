@@ -199,7 +199,7 @@ namespace Alfa_Romeo_Garage
             this.labelPub.AutoSize = true;
             this.labelPub.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPub.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelPub.Location = new System.Drawing.Point(810, 238);
+            this.labelPub.Location = new System.Drawing.Point(812, 255);
             this.labelPub.Name = "labelPub";
             this.labelPub.Size = new System.Drawing.Size(489, 114);
             this.labelPub.TabIndex = 1;
@@ -221,7 +221,7 @@ namespace Alfa_Romeo_Garage
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(1116, 378);
+            this.label1.Location = new System.Drawing.Point(1115, 385);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 46);
             this.label1.TabIndex = 8;
