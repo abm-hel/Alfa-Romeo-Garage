@@ -9,3 +9,4 @@ C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\A
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.exe
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.pdb
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlAccueil.resources
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlClients.resources
