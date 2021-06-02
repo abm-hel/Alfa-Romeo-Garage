@@ -40,14 +40,10 @@ namespace Alfa_Romeo_Garage
             this.buttonClients = new System.Windows.Forms.Button();
             this.labelAccueil = new System.Windows.Forms.Label();
             this.buttonAccueil = new System.Windows.Forms.Button();
-            this.labelPub = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelPosition = new System.Windows.Forms.Panel();
             this.panelButtonSelectionne = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoAccueil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -196,39 +192,6 @@ namespace Alfa_Romeo_Garage
             this.buttonAccueil.Text = "Accueil";
             this.buttonAccueil.UseVisualStyleBackColor = true;
             // 
-            // labelPub
-            // 
-            this.labelPub.AutoSize = true;
-            this.labelPub.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPub.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelPub.Location = new System.Drawing.Point(813, 188);
-            this.labelPub.Name = "labelPub";
-            this.labelPub.Size = new System.Drawing.Size(489, 114);
-            this.labelPub.TabIndex = 1;
-            this.labelPub.Text = "FAITES CONFIANCE AUX EXPERTS \r\n       QUI CONNAISSENT LE MIEUX\r\n                 " +
-    "         VOTRE VÉHICULE \r\n";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(313, 372);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1276, 645);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(1117, 323);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 46);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "ALFA ROMEO \r\n    GARAGE";
-            // 
             // panelPosition
             // 
             this.panelPosition.BackColor = System.Drawing.Color.Crimson;
@@ -255,9 +218,6 @@ namespace Alfa_Romeo_Garage
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1574, 1002);
             this.Controls.Add(this.panelPosition);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.labelPub);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
@@ -267,9 +227,7 @@ namespace Alfa_Romeo_Garage
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoAccueil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -282,9 +240,6 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label labelPub;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBoxLogoAccueil;
         private System.Windows.Forms.Label labelAccueil;
         private System.Windows.Forms.Button button5;
