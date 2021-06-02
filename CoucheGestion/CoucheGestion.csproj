@@ -31,12 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CoucheAcces">
-      <HintPath>..\CoucheAcces\bin\Debug\CoucheAcces.dll</HintPath>
-    </Reference>
-    <Reference Include="CoucheClasse">
-      <HintPath>..\CoucheClasse\bin\Debug\CoucheClasse.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
