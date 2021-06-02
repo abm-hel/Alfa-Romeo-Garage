@@ -44,6 +44,7 @@ namespace Alfa_Romeo_Garage
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelPosition = new System.Windows.Forms.Panel();
+            this.panelButtonSelectionne = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoAccueil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,6 +54,7 @@ namespace Alfa_Romeo_Garage
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.panelButtonSelectionne);
             this.panelMenu.Controls.Add(this.button5);
             this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.button3);
@@ -76,7 +78,7 @@ namespace Alfa_Romeo_Garage
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(36, 663);
+            this.button5.Location = new System.Drawing.Point(57, 663);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(254, 62);
             this.button5.TabIndex = 10;
@@ -91,7 +93,7 @@ namespace Alfa_Romeo_Garage
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(36, 768);
+            this.button2.Location = new System.Drawing.Point(57, 768);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(254, 62);
             this.button2.TabIndex = 9;
@@ -106,7 +108,7 @@ namespace Alfa_Romeo_Garage
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(33, 569);
+            this.button3.Location = new System.Drawing.Point(54, 569);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(254, 62);
             this.button3.TabIndex = 8;
@@ -121,7 +123,7 @@ namespace Alfa_Romeo_Garage
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(36, 476);
+            this.button4.Location = new System.Drawing.Point(57, 476);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(254, 62);
             this.button4.TabIndex = 7;
@@ -146,7 +148,7 @@ namespace Alfa_Romeo_Garage
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(33, 384);
+            this.button1.Location = new System.Drawing.Point(54, 384);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(254, 62);
             this.button1.TabIndex = 5;
@@ -161,7 +163,7 @@ namespace Alfa_Romeo_Garage
             this.buttonClients.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClients.Image = ((System.Drawing.Image)(resources.GetObject("buttonClients.Image")));
             this.buttonClients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonClients.Location = new System.Drawing.Point(33, 289);
+            this.buttonClients.Location = new System.Drawing.Point(54, 289);
             this.buttonClients.Name = "buttonClients";
             this.buttonClients.Size = new System.Drawing.Size(254, 62);
             this.buttonClients.TabIndex = 4;
@@ -187,7 +189,7 @@ namespace Alfa_Romeo_Garage
             this.buttonAccueil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAccueil.Image = ((System.Drawing.Image)(resources.GetObject("buttonAccueil.Image")));
             this.buttonAccueil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAccueil.Location = new System.Drawing.Point(36, 196);
+            this.buttonAccueil.Location = new System.Drawing.Point(57, 196);
             this.buttonAccueil.Name = "buttonAccueil";
             this.buttonAccueil.Size = new System.Drawing.Size(254, 62);
             this.buttonAccueil.TabIndex = 1;
@@ -238,6 +240,14 @@ namespace Alfa_Romeo_Garage
             this.panelPosition.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseMove);
             this.panelPosition.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseUp);
             // 
+            // panelButtonSelectionne
+            // 
+            this.panelButtonSelectionne.BackColor = System.Drawing.Color.Crimson;
+            this.panelButtonSelectionne.Location = new System.Drawing.Point(3, 196);
+            this.panelButtonSelectionne.Name = "panelButtonSelectionne";
+            this.panelButtonSelectionne.Size = new System.Drawing.Size(14, 62);
+            this.panelButtonSelectionne.TabIndex = 10;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -279,6 +289,7 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Label labelAccueil;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panelPosition;
+        private System.Windows.Forms.Panel panelButtonSelectionne;
     }
 }
 
