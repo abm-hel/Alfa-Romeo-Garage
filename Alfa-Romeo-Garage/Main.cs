@@ -79,7 +79,12 @@ namespace Alfa_Romeo_Garage
 
         private void buttonModeles_Click(object sender, EventArgs e)
         {
+            
+            panelButtonSelectionne.Height = buttonModeles.Height;
+            panelButtonSelectionne.Top = buttonModeles.Top;
 
+        
+            userControlModeles1.BringToFront();
         }
 
         private void buttonVehicules_Click(object sender, EventArgs e)
