@@ -14,4 +14,4 @@ C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\A
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlIntervetions.resources
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlModeles.resources
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlPieces.resources
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlVehiculescs.resources
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlVehicules.resources

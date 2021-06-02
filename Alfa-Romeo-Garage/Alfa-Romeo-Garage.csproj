@@ -90,11 +90,11 @@
     <Compile Include="UserControlPieces.Designer.cs">
       <DependentUpon>UserControlPieces.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlVehiculescs.cs">
+    <Compile Include="UserControlVehicules.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlVehiculescs.Designer.cs">
-      <DependentUpon>UserControlVehiculescs.cs</DependentUpon>
+    <Compile Include="UserControlVehicules.Designer.cs">
+      <DependentUpon>UserControlVehicules.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -127,8 +127,8 @@
     <EmbeddedResource Include="UserControlPieces.resx">
       <DependentUpon>UserControlPieces.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlVehiculescs.resx">
-      <DependentUpon>UserControlVehiculescs.cs</DependentUpon>
+    <EmbeddedResource Include="UserControlVehicules.resx">
+      <DependentUpon>UserControlVehicules.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
