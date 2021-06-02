@@ -24,11 +24,13 @@ namespace Alfa_Romeo_Garage
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            //poitionnement de la fenêtre
             this.Location = Screen.AllScreens[1].WorkingArea.Location;
         }
 
         private void panelPosition_MouseDown(object sender, MouseEventArgs e)
         {
+            //position de la souris
             mov = 1;
             movX = e.X;
             movY = e.Y;
@@ -41,6 +43,7 @@ namespace Alfa_Romeo_Garage
 
         private void panelPosition_MouseMove(object sender, MouseEventArgs e)
         {
+            //déplacement de la fenêtre
             if(mov==1)
             {
                 this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
