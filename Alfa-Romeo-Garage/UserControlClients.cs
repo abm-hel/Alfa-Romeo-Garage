@@ -27,12 +27,12 @@ namespace Alfa_Romeo_Garage
             InitializeComponent();
         }
 
-        private void ActiverBoutonsFormulaires(bool a)
+        private void ActiverBoutonsFormulaires(bool disponibilite)
         {
-            dataGridViewClients.Enabled = a;
-            buttonAjouterClient.Enabled = buttonEditerClient.Enabled = buttonSupprimerClient.Enabled = a;
-            textBoxPrenom.Enabled = textBoxNom.Enabled = dateTimePickerDateNaissance.Enabled = textBoxNumeroNational.Enabled = textBoxNumeroNational.Enabled = textBoxRue.Enabled = textBoxNumero.Enabled = textBoxCodePostal.Enabled = textBoxVille.Enabled = textBox1.Enabled = textBoxNumeroTelephone.Enabled = textBoxAdresseEmail.Enabled = !a;
-            buttonConfirmerClient.Enabled = buttonAnnulerClient.Enabled = !a;
+            dataGridViewClients.Enabled = disponibilite;
+            buttonAjouter.Enabled = buttonEditer.Enabled = buttonSupprimerClient.Enabled = disponibilite;
+            textBoxPrenom.Enabled = textBoxNom.Enabled = dateTimePickerDateNaissance.Enabled = textBoxNumeroNational.Enabled = textBoxNumeroNational.Enabled = textBoxRue.Enabled = textBoxNumero.Enabled = textBoxCodePostal.Enabled = textBoxVille.Enabled = textBoxPays.Enabled = textBoxNumeroTelephone.Enabled = textBoxAdresseEmail.Enabled = !disponibilite;
+            buttonConfirmer.Enabled = buttonAnnuler.Enabled = !disponibilite;
         }
 
         private void UserControlClients_Load(object sender, EventArgs e)

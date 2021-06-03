@@ -32,11 +32,11 @@ namespace Alfa_Romeo_Garage
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitre = new System.Windows.Forms.Label();
             this.dataGridViewClients = new System.Windows.Forms.DataGridView();
-            this.buttonAjouterClient = new System.Windows.Forms.Button();
-            this.buttonEditerClient = new System.Windows.Forms.Button();
+            this.buttonAjouter = new System.Windows.Forms.Button();
+            this.buttonEditer = new System.Windows.Forms.Button();
             this.buttonSupprimerClient = new System.Windows.Forms.Button();
-            this.buttonConfirmerClient = new System.Windows.Forms.Button();
-            this.buttonAnnulerClient = new System.Windows.Forms.Button();
+            this.buttonConfirmer = new System.Windows.Forms.Button();
+            this.buttonAnnuler = new System.Windows.Forms.Button();
             this.textBoxNom = new System.Windows.Forms.TextBox();
             this.labelNom = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@ namespace Alfa_Romeo_Garage
             this.labelNumero = new System.Windows.Forms.Label();
             this.textBoxNumero = new System.Windows.Forms.TextBox();
             this.labelPays = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPays = new System.Windows.Forms.TextBox();
             this.labelVille = new System.Windows.Forms.Label();
             this.textBoxVille = new System.Windows.Forms.TextBox();
             this.labelAdresseEmail = new System.Windows.Forms.Label();
@@ -121,35 +121,35 @@ namespace Alfa_Romeo_Garage
             // 
             // buttonAjouterClient
             // 
-            this.buttonAjouterClient.BackColor = System.Drawing.Color.Crimson;
-            this.buttonAjouterClient.FlatAppearance.BorderSize = 0;
-            this.buttonAjouterClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAjouterClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAjouterClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAjouterClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAjouterClient.Location = new System.Drawing.Point(613, 631);
-            this.buttonAjouterClient.Name = "buttonAjouterClient";
-            this.buttonAjouterClient.Size = new System.Drawing.Size(613, 40);
-            this.buttonAjouterClient.TabIndex = 7;
-            this.buttonAjouterClient.Text = "Ajouter un client";
-            this.buttonAjouterClient.UseVisualStyleBackColor = false;
-            this.buttonAjouterClient.Click += new System.EventHandler(this.buttonAjouterClient_Click);
+            this.buttonAjouter.BackColor = System.Drawing.Color.Crimson;
+            this.buttonAjouter.FlatAppearance.BorderSize = 0;
+            this.buttonAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAjouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAjouter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAjouter.Location = new System.Drawing.Point(613, 631);
+            this.buttonAjouter.Name = "buttonAjouterClient";
+            this.buttonAjouter.Size = new System.Drawing.Size(613, 40);
+            this.buttonAjouter.TabIndex = 7;
+            this.buttonAjouter.Text = "Ajouter un client";
+            this.buttonAjouter.UseVisualStyleBackColor = false;
+            this.buttonAjouter.Click += new System.EventHandler(this.buttonAjouterClient_Click);
             // 
             // buttonEditerClient
             // 
-            this.buttonEditerClient.BackColor = System.Drawing.Color.Crimson;
-            this.buttonEditerClient.FlatAppearance.BorderSize = 0;
-            this.buttonEditerClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditerClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditerClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEditerClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEditerClient.Location = new System.Drawing.Point(613, 686);
-            this.buttonEditerClient.Name = "buttonEditerClient";
-            this.buttonEditerClient.Size = new System.Drawing.Size(613, 40);
-            this.buttonEditerClient.TabIndex = 8;
-            this.buttonEditerClient.Text = "Editer un client";
-            this.buttonEditerClient.UseVisualStyleBackColor = false;
-            this.buttonEditerClient.Click += new System.EventHandler(this.buttonEditerClient_Click);
+            this.buttonEditer.BackColor = System.Drawing.Color.Crimson;
+            this.buttonEditer.FlatAppearance.BorderSize = 0;
+            this.buttonEditer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEditer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEditer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonEditer.Location = new System.Drawing.Point(613, 686);
+            this.buttonEditer.Name = "buttonEditerClient";
+            this.buttonEditer.Size = new System.Drawing.Size(613, 40);
+            this.buttonEditer.TabIndex = 8;
+            this.buttonEditer.Text = "Editer un client";
+            this.buttonEditer.UseVisualStyleBackColor = false;
+            this.buttonEditer.Click += new System.EventHandler(this.buttonEditerClient_Click);
             // 
             // buttonSupprimerClient
             // 
@@ -169,35 +169,35 @@ namespace Alfa_Romeo_Garage
             // 
             // buttonConfirmerClient
             // 
-            this.buttonConfirmerClient.BackColor = System.Drawing.Color.Crimson;
-            this.buttonConfirmerClient.FlatAppearance.BorderSize = 0;
-            this.buttonConfirmerClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonConfirmerClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConfirmerClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonConfirmerClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConfirmerClient.Location = new System.Drawing.Point(36, 686);
-            this.buttonConfirmerClient.Name = "buttonConfirmerClient";
-            this.buttonConfirmerClient.Size = new System.Drawing.Size(530, 40);
-            this.buttonConfirmerClient.TabIndex = 10;
-            this.buttonConfirmerClient.Text = "Confirmer";
-            this.buttonConfirmerClient.UseVisualStyleBackColor = false;
-            this.buttonConfirmerClient.Click += new System.EventHandler(this.buttonConfirmerClient_Click);
+            this.buttonConfirmer.BackColor = System.Drawing.Color.Crimson;
+            this.buttonConfirmer.FlatAppearance.BorderSize = 0;
+            this.buttonConfirmer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConfirmer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConfirmer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonConfirmer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonConfirmer.Location = new System.Drawing.Point(36, 686);
+            this.buttonConfirmer.Name = "buttonConfirmerClient";
+            this.buttonConfirmer.Size = new System.Drawing.Size(530, 40);
+            this.buttonConfirmer.TabIndex = 10;
+            this.buttonConfirmer.Text = "Confirmer";
+            this.buttonConfirmer.UseVisualStyleBackColor = false;
+            this.buttonConfirmer.Click += new System.EventHandler(this.buttonConfirmerClient_Click);
             // 
             // buttonAnnulerClient
             // 
-            this.buttonAnnulerClient.BackColor = System.Drawing.Color.Crimson;
-            this.buttonAnnulerClient.FlatAppearance.BorderSize = 0;
-            this.buttonAnnulerClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnnulerClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAnnulerClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAnnulerClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAnnulerClient.Location = new System.Drawing.Point(36, 741);
-            this.buttonAnnulerClient.Name = "buttonAnnulerClient";
-            this.buttonAnnulerClient.Size = new System.Drawing.Size(530, 40);
-            this.buttonAnnulerClient.TabIndex = 11;
-            this.buttonAnnulerClient.Text = "Annuler";
-            this.buttonAnnulerClient.UseVisualStyleBackColor = false;
-            this.buttonAnnulerClient.Click += new System.EventHandler(this.buttonAnnulerClient_Click);
+            this.buttonAnnuler.BackColor = System.Drawing.Color.Crimson;
+            this.buttonAnnuler.FlatAppearance.BorderSize = 0;
+            this.buttonAnnuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAnnuler.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAnnuler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAnnuler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAnnuler.Location = new System.Drawing.Point(36, 741);
+            this.buttonAnnuler.Name = "buttonAnnulerClient";
+            this.buttonAnnuler.Size = new System.Drawing.Size(530, 40);
+            this.buttonAnnuler.TabIndex = 11;
+            this.buttonAnnuler.Text = "Annuler";
+            this.buttonAnnuler.UseVisualStyleBackColor = false;
+            this.buttonAnnuler.Click += new System.EventHandler(this.buttonAnnulerClient_Click);
             // 
             // textBoxNom
             // 
@@ -372,13 +372,13 @@ namespace Alfa_Romeo_Garage
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(277, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 23);
-            this.textBox1.TabIndex = 30;
+            this.textBoxPays.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxPays.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPays.ForeColor = System.Drawing.Color.White;
+            this.textBoxPays.Location = new System.Drawing.Point(277, 185);
+            this.textBoxPays.Name = "textBox1";
+            this.textBoxPays.Size = new System.Drawing.Size(241, 23);
+            this.textBoxPays.TabIndex = 30;
             // 
             // labelVille
             // 
@@ -488,7 +488,7 @@ namespace Alfa_Romeo_Garage
             this.groupBoxAdresse.Controls.Add(this.textBoxVille);
             this.groupBoxAdresse.Controls.Add(this.labelPays);
             this.groupBoxAdresse.Controls.Add(this.labelVille);
-            this.groupBoxAdresse.Controls.Add(this.textBox1);
+            this.groupBoxAdresse.Controls.Add(this.textBoxPays);
             this.groupBoxAdresse.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxAdresse.ForeColor = System.Drawing.Color.White;
             this.groupBoxAdresse.Location = new System.Drawing.Point(35, 256);
@@ -562,11 +562,11 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.groupBoxAdresse);
             this.Controls.Add(this.groupBoxInformationsPersonnelles);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.buttonAnnulerClient);
-            this.Controls.Add(this.buttonConfirmerClient);
+            this.Controls.Add(this.buttonAnnuler);
+            this.Controls.Add(this.buttonConfirmer);
             this.Controls.Add(this.buttonSupprimerClient);
-            this.Controls.Add(this.buttonEditerClient);
-            this.Controls.Add(this.buttonAjouterClient);
+            this.Controls.Add(this.buttonEditer);
+            this.Controls.Add(this.buttonAjouter);
             this.Controls.Add(this.dataGridViewClients);
             this.Controls.Add(this.labelTitre);
             this.Name = "UserControlClients";
@@ -588,11 +588,11 @@ namespace Alfa_Romeo_Garage
 
         private System.Windows.Forms.Label labelTitre;
         private System.Windows.Forms.DataGridView dataGridViewClients;
-        private System.Windows.Forms.Button buttonAjouterClient;
-        private System.Windows.Forms.Button buttonEditerClient;
+        private System.Windows.Forms.Button buttonAjouter;
+        private System.Windows.Forms.Button buttonEditer;
         private System.Windows.Forms.Button buttonSupprimerClient;
-        private System.Windows.Forms.Button buttonConfirmerClient;
-        private System.Windows.Forms.Button buttonAnnulerClient;
+        private System.Windows.Forms.Button buttonConfirmer;
+        private System.Windows.Forms.Button buttonAnnuler;
         private System.Windows.Forms.TextBox textBoxNom;
         private System.Windows.Forms.Label labelNom;
         private System.Windows.Forms.Label label2;
@@ -609,7 +609,7 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Label labelNumero;
         private System.Windows.Forms.TextBox textBoxNumero;
         private System.Windows.Forms.Label labelPays;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPays;
         private System.Windows.Forms.Label labelVille;
         private System.Windows.Forms.TextBox textBoxVille;
         private System.Windows.Forms.Label labelAdresseEmail;
