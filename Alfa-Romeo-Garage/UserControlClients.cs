@@ -27,6 +27,14 @@ namespace Alfa_Romeo_Garage
             InitializeComponent();
         }
 
+        private void ActiverBoutonsFormulaires(bool a)
+        {
+            dataGridViewClients.Enabled = a;
+            buttonAjouterClient.Enabled = buttonEditerClient.Enabled = buttonSupprimerClient.Enabled = a;
+            textBoxPrenom.Enabled = textBoxNom.Enabled = dateTimePickerDateNaissance.Enabled = textBoxNumeroNational.Enabled = textBoxNumeroNational.Enabled = textBoxRue.Enabled = textBoxNumero.Enabled = textBoxCodePostal.Enabled = textBoxVille.Enabled = textBox1.Enabled = textBoxNumeroTelephone.Enabled = textBoxAdresseEmail.Enabled = !a;
+            buttonConfirmerClient.Enabled = buttonAnnulerClient.Enabled = !a;
+        }
+
         private void UserControlClients_Load(object sender, EventArgs e)
         {
             connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;   
