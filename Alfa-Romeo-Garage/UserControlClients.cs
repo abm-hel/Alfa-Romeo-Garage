@@ -69,7 +69,21 @@ namespace Alfa_Romeo_Garage
 
         private void UserControlClients_Load(object sender, EventArgs e)
         {
-            connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;   
+            connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;
+
+            RemplirDataGridView();
+
+            if (dataGridViewClients.Rows.Count > 0)
+            {
+                ActiverBoutonsFormulaires(true);
+                return;
+            }
+
+            if (dataGridViewClients.Rows.Count == 0)
+            {
+                ActiverBoutonsFormulaires(false);
+                return;
+            }
         }
 
         private void buttonConfirmerClient_Click(object sender, EventArgs e)
