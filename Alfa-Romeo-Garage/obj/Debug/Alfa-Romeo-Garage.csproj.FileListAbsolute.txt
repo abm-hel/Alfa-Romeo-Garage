@@ -15,3 +15,10 @@ C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\A
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlPieces.resources
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.UserControlVehicules.resources
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.csprojAssemblyReference.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Acces.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Classes.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Gestion.dll
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Acces.pdb
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Classes.pdb
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Gestion.pdb
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.csproj.CopyComplete

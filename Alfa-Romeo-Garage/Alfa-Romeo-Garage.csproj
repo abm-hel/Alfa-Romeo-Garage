@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Projet_HEL.Acces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Projet_HEL.Gestion\bin\Debug\Projet_HEL.Acces.dll</HintPath>
+    </Reference>
+    <Reference Include="Projet_HEL.Classes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Projet_HEL.Gestion\bin\Debug\Projet_HEL.Classes.dll</HintPath>
+    </Reference>
+    <Reference Include="Projet_HEL.Gestion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Projet_HEL.Gestion\bin\Debug\Projet_HEL.Gestion.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
