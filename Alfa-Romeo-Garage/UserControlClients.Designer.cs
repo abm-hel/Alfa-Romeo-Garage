@@ -29,6 +29,7 @@ namespace Alfa_Romeo_Garage
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitre = new System.Windows.Forms.Label();
             this.dataGridViewClients = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -63,6 +64,13 @@ namespace Alfa_Romeo_Garage
             this.groupBoxInformationsPersonnelles = new System.Windows.Forms.GroupBox();
             this.groupBoxContact = new System.Windows.Forms.GroupBox();
             this.groupBoxAdresse = new System.Windows.Forms.GroupBox();
+            this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNomPrenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNumNational = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAdresseEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNumeroPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBoxInformationsPersonnelles.SuspendLayout();
@@ -83,11 +91,33 @@ namespace Alfa_Romeo_Garage
             // 
             // dataGridViewClients
             // 
+            this.dataGridViewClients.AllowUserToAddRows = false;
+            this.dataGridViewClients.AllowUserToDeleteRows = false;
+            this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cID,
+            this.cNomPrenom,
+            this.cDateNaissance,
+            this.cNumNational,
+            this.cAdresse,
+            this.cAdresseEmail,
+            this.cNumeroPhone});
+            this.dataGridViewClients.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewClients.Location = new System.Drawing.Point(613, 78);
             this.dataGridViewClients.Name = "dataGridViewClients";
+            this.dataGridViewClients.RowHeadersVisible = false;
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
+            this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewClients.Size = new System.Drawing.Size(613, 534);
             this.dataGridViewClients.TabIndex = 5;
             // 
@@ -475,6 +505,61 @@ namespace Alfa_Romeo_Garage
             this.groupBoxAdresse.TabStop = false;
             this.groupBoxAdresse.Text = "Adresse";
             // 
+            // cID
+            // 
+            this.cID.DataPropertyName = "id";
+            this.cID.HeaderText = "ID";
+            this.cID.MinimumWidth = 6;
+            this.cID.Name = "cID";
+            this.cID.Width = 125;
+            // 
+            // cNomPrenom
+            // 
+            this.cNomPrenom.DataPropertyName = "nomPrenom";
+            this.cNomPrenom.HeaderText = "Nom complet";
+            this.cNomPrenom.MinimumWidth = 6;
+            this.cNomPrenom.Name = "cNomPrenom";
+            this.cNomPrenom.Width = 125;
+            // 
+            // cDateNaissance
+            // 
+            this.cDateNaissance.HeaderText = "Date de naissance";
+            this.cDateNaissance.MinimumWidth = 6;
+            this.cDateNaissance.Name = "cDateNaissance";
+            this.cDateNaissance.Width = 125;
+            // 
+            // cNumNational
+            // 
+            this.cNumNational.DataPropertyName = "numeroNational";
+            this.cNumNational.HeaderText = "Numéro du registre national";
+            this.cNumNational.MinimumWidth = 6;
+            this.cNumNational.Name = "cNumNational";
+            this.cNumNational.Width = 125;
+            // 
+            // cAdresse
+            // 
+            this.cAdresse.DataPropertyName = "adresse";
+            this.cAdresse.HeaderText = "Adresse";
+            this.cAdresse.MinimumWidth = 6;
+            this.cAdresse.Name = "cAdresse";
+            this.cAdresse.Width = 125;
+            // 
+            // cAdresseEmail
+            // 
+            this.cAdresseEmail.DataPropertyName = "adresseEmail";
+            this.cAdresseEmail.HeaderText = "Adresse e-mail";
+            this.cAdresseEmail.MinimumWidth = 6;
+            this.cAdresseEmail.Name = "cAdresseEmail";
+            this.cAdresseEmail.Width = 125;
+            // 
+            // cNumeroPhone
+            // 
+            this.cNumeroPhone.DataPropertyName = "numeroTelephone";
+            this.cNumeroPhone.HeaderText = "Numéro de télephone";
+            this.cNumeroPhone.MinimumWidth = 6;
+            this.cNumeroPhone.Name = "cNumeroPhone";
+            this.cNumeroPhone.Width = 125;
+            // 
             // UserControlClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -543,5 +628,12 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.GroupBox groupBoxInformationsPersonnelles;
         private System.Windows.Forms.GroupBox groupBoxContact;
         private System.Windows.Forms.GroupBox groupBoxAdresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNomPrenom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDateNaissance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNumNational;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresseEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroPhone;
     }
 }
