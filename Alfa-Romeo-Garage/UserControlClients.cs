@@ -19,6 +19,9 @@ namespace Alfa_Romeo_Garage
     public partial class UserControlClients : UserControl
     {
         string connexionBD;
+        private DataTable dataTableClients;
+        private BindingSource bindingSourcesClients;
+      
         public UserControlClients()
         {
             InitializeComponent();
@@ -26,7 +29,7 @@ namespace Alfa_Romeo_Garage
 
         private void UserControlClients_Load(object sender, EventArgs e)
         {
-            connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;    
+            connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;   
         }
 
         private void buttonConfirmerClient_Click(object sender, EventArgs e)
