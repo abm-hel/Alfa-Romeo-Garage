@@ -35,6 +35,38 @@ namespace Alfa_Romeo_Garage
             buttonConfirmer.Enabled = buttonAnnuler.Enabled = !disponibilite;
         }
 
+        private void RemplirDataGridView()
+        {
+            dataTableClients = new DataTable();
+            dataTableClients.Columns.Add(new DataColumn("id", System.Type.GetType("System.Int32")));
+            dataTableClients.Columns.Add(new DataColumn("dateNaissance"));
+            dataTableClients.Columns.Add(new DataColumn("nomPrenom"));
+            dataTableClients.Columns.Add(new DataColumn("numeroNational"));
+            dataTableClients.Columns.Add(new DataColumn("adresse"));
+            dataTableClients.Columns.Add(new DataColumn("adresseEmail"));
+            dataTableClients.Columns.Add(new DataColumn("numeroTelephone"));
+
+            List<C_CUSTOMER> listClients = new G_CUSTOMER(connexionBD).Lire("nomPrenom");
+
+            foreach (C_CUSTOMER client in listClients)
+            {
+                dataTableClients.Rows.Add
+                (
+                    client.ID,
+                    client.FIRST_NAME + " " + client.LAST_NAME,
+                    client.BIRTH_DATE.ToString(),
+                    client.NATIONAL_NUMBER,
+                    client.ADDRESS + " " + client.NUMBER + ", " + client.POSTAL_CODE + " " + client.CITY + " " + client.COUNTRY,
+                    client.EMAIL_ADDRESS,
+                    client.PHONE_NUMBER
+                );
+            }
+
+            bindingSourcesClients = new BindingSource();
+            bindingSourcesClients.DataSource = dataTableClients;
+            dataGridViewClients.DataSource = bindingSourcesClients;
+        }
+
         private void UserControlClients_Load(object sender, EventArgs e)
         {
             connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;   
