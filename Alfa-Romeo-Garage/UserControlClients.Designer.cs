@@ -262,8 +262,12 @@ namespace Alfa_Romeo_Garage
             // dateTimePickerDateNaissance
             // 
             this.dateTimePickerDateNaissance.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDateNaissance.CalendarMonthBackground = System.Drawing.Color.Transparent;
-            this.dateTimePickerDateNaissance.CalendarTitleBackColor = System.Drawing.Color.Transparent;
+            this.dateTimePickerDateNaissance.CalendarForeColor = System.Drawing.Color.White;
+            this.dateTimePickerDateNaissance.CalendarMonthBackground = System.Drawing.Color.Black;
+            this.dateTimePickerDateNaissance.CalendarTitleBackColor = System.Drawing.Color.Black;
+            this.dateTimePickerDateNaissance.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dateTimePickerDateNaissance.CalendarTrailingForeColor = System.Drawing.Color.Black;
+            this.dateTimePickerDateNaissance.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.dateTimePickerDateNaissance.Location = new System.Drawing.Point(19, 115);
             this.dateTimePickerDateNaissance.Name = "dateTimePickerDateNaissance";
             this.dateTimePickerDateNaissance.Size = new System.Drawing.Size(241, 23);
