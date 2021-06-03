@@ -21,5 +21,35 @@ namespace Alfa_Romeo_Garage
         {
             InitializeComponent();
         }
+
+        private void buttonConfirmerClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAnnulerClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAjouterClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEditerClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSupprimerClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserControlClients_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
