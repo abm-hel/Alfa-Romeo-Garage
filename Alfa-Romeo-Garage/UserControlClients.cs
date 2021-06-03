@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Projet_HEL.Classes;
 using Projet_HEL.Acces;
 using Projet_HEL.Gestion;
+using System.Configuration;
 
 
 
@@ -17,9 +18,15 @@ namespace Alfa_Romeo_Garage
 {
     public partial class UserControlClients : UserControl
     {
+        string connexionBD;
         public UserControlClients()
         {
             InitializeComponent();
+        }
+
+        private void UserControlClients_Load(object sender, EventArgs e)
+        {
+            connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;    
         }
 
         private void buttonConfirmerClient_Click(object sender, EventArgs e)
@@ -47,9 +54,6 @@ namespace Alfa_Romeo_Garage
 
         }
 
-        private void UserControlClients_Load(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
