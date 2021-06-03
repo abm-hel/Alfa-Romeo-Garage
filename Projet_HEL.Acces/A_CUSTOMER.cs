@@ -22,7 +22,7 @@ namespace Projet_HEL.Acces
   #endregion
   public int Ajouter(string FIRST_NAME, string LAST_NAME, DateTime? BIRTH_DATE, string ADDRESS, string NUMBER, string POSTAL_CODE, string CITY, string COUNTRY, string PHONE_NUMBER, string EMAIL_ADDRESS, string NATIONAL_NUMBER, DateTime? DATA_REGISTRATION)
   {
-   CreerCommande("AjouterCUSTOMER");
+   CreerCommande("[dbo].[AjouterCUSTOMER]");
    int res = 0;
    Commande.Parameters.Add("ID", SqlDbType.Int);
    Direction("ID", ParameterDirection.Output);
