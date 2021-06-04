@@ -21,7 +21,9 @@ namespace Alfa_Romeo_Garage
         string connexionBD;
         private DataTable dataTableClients;
         private BindingSource bindingSourcesClients;
-        int idModif;
+        string id;
+
+
 
 
         public UserControlClients()
@@ -53,12 +55,13 @@ namespace Alfa_Romeo_Garage
         {
             dataTableClients = new DataTable();
             dataTableClients.Columns.Add(new DataColumn("id", System.Type.GetType("System.Int32")));
-            dataTableClients.Columns.Add(new DataColumn("dateNaissance"));
             dataTableClients.Columns.Add(new DataColumn("nomPrenom"));
+            dataTableClients.Columns.Add(new DataColumn("dateNaissance"));
             dataTableClients.Columns.Add(new DataColumn("numeroNational"));
             dataTableClients.Columns.Add(new DataColumn("adresse"));
             dataTableClients.Columns.Add(new DataColumn("adresseEmail"));
             dataTableClients.Columns.Add(new DataColumn("numeroTelephone"));
+            dataTableClients.Columns.Add(new DataColumn("dateEnregistrement"));
 
             List<C_CUSTOMER> listClients = new G_CUSTOMER(connexionBD).Lire("LAST_NAME");
             
@@ -67,12 +70,13 @@ namespace Alfa_Romeo_Garage
                 dataTableClients.Rows.Add
                 (
                     client.ID,
-                    client.FIRST_NAME + " " + client.LAST_NAME,
-                    client.BIRTH_DATE.ToString(),
+                    client.LAST_NAME + " " + client.FIRST_NAME,
+                    Convert.ToDateTime(client.BIRTH_DATE).Day.ToString("D2")+"/"+ Convert.ToDateTime(client.BIRTH_DATE).Month.ToString("D2") + "/"+ Convert.ToDateTime(client.BIRTH_DATE).Year.ToString("D4"),
                     client.NATIONAL_NUMBER,
                     client.ADDRESS + " " + client.NUMBER + ", " + client.POSTAL_CODE + " " + client.CITY + " " + client.COUNTRY,
                     client.EMAIL_ADDRESS,
-                    client.PHONE_NUMBER
+                    client.PHONE_NUMBER,
+                    Convert.ToDateTime(client.DATA_REGISTRATION).Day.ToString("D2") + "/" + Convert.ToDateTime(client.DATA_REGISTRATION).Month.ToString("D2") + "/" + Convert.ToDateTime(client.DATA_REGISTRATION).Year.ToString("D4")
                 );
             }
 
@@ -89,20 +93,20 @@ namespace Alfa_Romeo_Garage
 
             if (dataGridViewClients.Rows.Count > 0)
             {
-                ActiverBoutonsFormulaires(false);
+                ActiverBoutonsFormulaires(true);
                
             }
 
             else
             {
-                ActiverBoutonsFormulaires(true);
+                ActiverBoutonsFormulaires(false);
                 
             }
         }
 
         private void buttonAjouterClient_Click(object sender, EventArgs e)
         {
-            textBoxID.Text = "";
+            
             textBoxPrenom.Text = "";
             textBoxNom.Text = "";
             textBoxNumeroNational.Text = "";
@@ -124,8 +128,8 @@ namespace Alfa_Romeo_Garage
         {
             if (dataGridViewClients.SelectedRows.Count > 0)
             {
-                textBoxID.Text= dataGridViewClients.SelectedRows[0].Cells["cID"].Value.ToString();
-                C_CUSTOMER clientModification = new G_CUSTOMER(connexionBD).Lire_ID(int.Parse(textBoxID.Text));
+                id = dataGridViewClients.SelectedRows[0].Cells["cID"].Value.ToString();
+                C_CUSTOMER clientModification = new G_CUSTOMER(connexionBD).Lire_ID(int.Parse(id));
 
                 textBoxNom.Text = clientModification.LAST_NAME;
                 textBoxPrenom.Text = clientModification.FIRST_NAME;
@@ -169,7 +173,7 @@ namespace Alfa_Romeo_Garage
                 MessageBox.Show("Renseigner le nom");
             }
 
-            else if (textBoxID.Text == "")
+            else if (id == null)
             //Ajout
             {
                 int idClientAjout = new G_CUSTOMER(connexionBD).Ajouter
@@ -179,25 +183,26 @@ namespace Alfa_Romeo_Garage
                     dateTimePickerDateNaissance.Value,
                     textBoxRue.Text,
                     textBoxNumero.Text,
-                    textBoxVille.Text,
                     textBoxCodePostal.Text,
+                    textBoxVille.Text,
                     textBoxPays.Text,
-                    textBoxNumero.Text,
+                    textBoxNumeroTelephone.Text,
                     textBoxAdresseEmail.Text,
                     textBoxNumeroNational.Text,
                     DateTime.Today
                 );
-                textBoxID.Text = idClientAjout.ToString();
+                
 
                 dataTableClients.Rows.Add
                 (
-                   idClientAjout,
+                   idClientAjout.ToString(),
                    textBoxNom.Text + " " + textBoxPrenom.Text,
-                   dateTimePickerDateNaissance.Value.ToString(),
+                   dateTimePickerDateNaissance.Value.Day.ToString("D2")+"/"+ dateTimePickerDateNaissance.Value.Month.ToString("D2") + "/" + dateTimePickerDateNaissance.Value.Year.ToString("D4"),
                    textBoxNumeroNational.Text,
-                   textBoxRue.Text +" " + textBoxNumero + ", " + textBoxCodePostal + " " + textBoxVille + " " + textBoxPays,
+                   textBoxRue.Text +" " + textBoxNumero.Text + ", " + textBoxCodePostal.Text + " " + textBoxVille.Text + " " + textBoxPays.Text,
+                   textBoxAdresseEmail.Text,
                    textBoxNumeroTelephone.Text,
-                   textBoxAdresseEmail.Text
+                   DateTime.Today.Day.ToString("D2") + "/" + DateTime.Today.Month.ToString("D2") + "/" + DateTime.Today.Year.ToString("D4")
                 );
 
             }
@@ -207,7 +212,7 @@ namespace Alfa_Romeo_Garage
             {
                int idClientModification = new G_CUSTOMER(connexionBD).Modifier
                 (
-                    idModif,
+                   int.Parse(id),
                     textBoxPrenom.Text,
                     textBoxNom.Text,
                     dateTimePickerDateNaissance.Value,
@@ -216,22 +221,23 @@ namespace Alfa_Romeo_Garage
                     textBoxVille.Text,
                     textBoxCodePostal.Text,
                     textBoxPays.Text,
-                    textBoxNumero.Text,
+                    textBoxNumeroTelephone.Text,
                     textBoxAdresseEmail.Text,
                     textBoxNumeroNational.Text,
                     DateTime.Today
                 );
-                textBoxID.Text = idClientModification.ToString();
 
-                dataGridViewClients.SelectedRows[0].Cells["cID"].Value = idModif.ToString();
+                dataGridViewClients.SelectedRows[0].Cells["cID"].Value = int.Parse(id).ToString();
                 dataGridViewClients.SelectedRows[0].Cells["cNomPrenom"].Value = textBoxNom.Text + " " + textBoxPrenom.Text;
-                dataGridViewClients.SelectedRows[0].Cells["cDateNaissance"].Value = dateTimePickerDateNaissance.Value.ToString();
+                dataGridViewClients.SelectedRows[0].Cells["cDateNaissance"].Value = dateTimePickerDateNaissance.Value.Day.ToString("D2") + "/" + dateTimePickerDateNaissance.Value.Month.ToString("D2") + "/" + dateTimePickerDateNaissance.Value.Year.ToString("D4");
                 dataGridViewClients.SelectedRows[0].Cells["cNumeroNational"].Value = textBoxNumeroNational.Text;
-                dataGridViewClients.SelectedRows[0].Cells["cAdresse"].Value = textBoxRue.Text + " " + textBoxNumero + ", " + textBoxCodePostal + " " + textBoxVille + " " + textBoxPays;
-                dataGridViewClients.SelectedRows[0].Cells["cNumeroTelephone"].Value = textBoxNumeroTelephone.Text;
+                dataGridViewClients.SelectedRows[0].Cells["cAdresse"].Value = textBoxRue.Text + " " + textBoxNumero.Text + ", " + textBoxCodePostal.Text + " " + textBoxVille.Text + " " + textBoxPays.Text;
                 dataGridViewClients.SelectedRows[0].Cells["cAdresseEmail"].Value = textBoxAdresseEmail.Text;
-
+                dataGridViewClients.SelectedRows[0].Cells["cNumeroTelephone"].Value = textBoxNumeroTelephone.Text;
+                
+                
                 bindingSourcesClients.EndEdit();
+                id = null;
 
             }
             ActiverBoutonsFormulaires(true);
@@ -241,6 +247,5 @@ namespace Alfa_Romeo_Garage
         {
             ActiverBoutonsFormulaires(true);
         }
-      
     }
 }
