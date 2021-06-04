@@ -29,10 +29,10 @@ namespace Alfa_Romeo_Garage
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitre = new System.Windows.Forms.Label();
             this.buttonAjouter = new System.Windows.Forms.Button();
             this.buttonEditer = new System.Windows.Forms.Button();
@@ -46,7 +46,6 @@ namespace Alfa_Romeo_Garage
             this.labelNumeroNational = new System.Windows.Forms.Label();
             this.textBoxNumeroNational = new System.Windows.Forms.TextBox();
             this.labelDateNaissance = new System.Windows.Forms.Label();
-            this.dateTimePickerDateNaissance = new System.Windows.Forms.DateTimePicker();
             this.labelRue = new System.Windows.Forms.Label();
             this.textBoxRue = new System.Windows.Forms.TextBox();
             this.labelCodePostal = new System.Windows.Forms.Label();
@@ -67,6 +66,7 @@ namespace Alfa_Romeo_Garage
             this.label2 = new System.Windows.Forms.Label();
             this.panelBorder = new System.Windows.Forms.Panel();
             this.dataGridViewClients = new System.Windows.Forms.DataGridView();
+            this.dateTimePickerDateNaissance = new CustomControls.RJControls.RJDatePicker();
             this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNomPrenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -227,7 +227,7 @@ namespace Alfa_Romeo_Garage
             this.labelNumeroNational.AutoSize = true;
             this.labelNumeroNational.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumeroNational.ForeColor = System.Drawing.Color.Crimson;
-            this.labelNumeroNational.Location = new System.Drawing.Point(236, 84);
+            this.labelNumeroNational.Location = new System.Drawing.Point(6, 137);
             this.labelNumeroNational.Name = "labelNumeroNational";
             this.labelNumeroNational.Size = new System.Drawing.Size(200, 19);
             this.labelNumeroNational.TabIndex = 18;
@@ -238,10 +238,10 @@ namespace Alfa_Romeo_Garage
             this.textBoxNumeroNational.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxNumeroNational.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNumeroNational.ForeColor = System.Drawing.Color.White;
-            this.textBoxNumeroNational.Location = new System.Drawing.Point(240, 105);
+            this.textBoxNumeroNational.Location = new System.Drawing.Point(10, 158);
             this.textBoxNumeroNational.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNumeroNational.Name = "textBoxNumeroNational";
-            this.textBoxNumeroNational.Size = new System.Drawing.Size(218, 23);
+            this.textBoxNumeroNational.Size = new System.Drawing.Size(452, 23);
             this.textBoxNumeroNational.TabIndex = 17;
             // 
             // labelDateNaissance
@@ -249,26 +249,11 @@ namespace Alfa_Romeo_Garage
             this.labelDateNaissance.AutoSize = true;
             this.labelDateNaissance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateNaissance.ForeColor = System.Drawing.Color.Crimson;
-            this.labelDateNaissance.Location = new System.Drawing.Point(2, 84);
+            this.labelDateNaissance.Location = new System.Drawing.Point(6, 72);
             this.labelDateNaissance.Name = "labelDateNaissance";
             this.labelDateNaissance.Size = new System.Drawing.Size(139, 19);
             this.labelDateNaissance.TabIndex = 20;
             this.labelDateNaissance.Text = "Date de naissance";
-            // 
-            // dateTimePickerDateNaissance
-            // 
-            this.dateTimePickerDateNaissance.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDateNaissance.CalendarForeColor = System.Drawing.Color.White;
-            this.dateTimePickerDateNaissance.CalendarMonthBackground = System.Drawing.Color.Black;
-            this.dateTimePickerDateNaissance.CalendarTitleBackColor = System.Drawing.Color.Black;
-            this.dateTimePickerDateNaissance.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.dateTimePickerDateNaissance.CalendarTrailingForeColor = System.Drawing.Color.Black;
-            this.dateTimePickerDateNaissance.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.dateTimePickerDateNaissance.Location = new System.Drawing.Point(8, 105);
-            this.dateTimePickerDateNaissance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePickerDateNaissance.Name = "dateTimePickerDateNaissance";
-            this.dateTimePickerDateNaissance.Size = new System.Drawing.Size(219, 23);
-            this.dateTimePickerDateNaissance.TabIndex = 21;
             // 
             // labelRue
             // 
@@ -426,21 +411,21 @@ namespace Alfa_Romeo_Garage
             // 
             // groupBoxInformationsPersonnelles
             // 
-            this.groupBoxInformationsPersonnelles.Controls.Add(this.labelNom);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.dateTimePickerDateNaissance);
+            this.groupBoxInformationsPersonnelles.Controls.Add(this.labelNom);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelDateNaissance);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelNumeroNational);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxNom);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxPrenom);
-            this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxNumeroNational);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelPrenom);
+            this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxNumeroNational);
             this.groupBoxInformationsPersonnelles.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxInformationsPersonnelles.ForeColor = System.Drawing.Color.White;
-            this.groupBoxInformationsPersonnelles.Location = new System.Drawing.Point(23, 78);
+            this.groupBoxInformationsPersonnelles.Location = new System.Drawing.Point(23, 70);
             this.groupBoxInformationsPersonnelles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxInformationsPersonnelles.Name = "groupBoxInformationsPersonnelles";
             this.groupBoxInformationsPersonnelles.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxInformationsPersonnelles.Size = new System.Drawing.Size(471, 146);
+            this.groupBoxInformationsPersonnelles.Size = new System.Drawing.Size(471, 199);
             this.groupBoxInformationsPersonnelles.TabIndex = 36;
             this.groupBoxInformationsPersonnelles.TabStop = false;
             this.groupBoxInformationsPersonnelles.Text = "Informations personnelles";
@@ -476,11 +461,11 @@ namespace Alfa_Romeo_Garage
             this.groupBoxAdresse.Controls.Add(this.textBoxPays);
             this.groupBoxAdresse.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxAdresse.ForeColor = System.Drawing.Color.White;
-            this.groupBoxAdresse.Location = new System.Drawing.Point(23, 238);
+            this.groupBoxAdresse.Location = new System.Drawing.Point(23, 273);
             this.groupBoxAdresse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxAdresse.Name = "groupBoxAdresse";
             this.groupBoxAdresse.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxAdresse.Size = new System.Drawing.Size(471, 211);
+            this.groupBoxAdresse.Size = new System.Drawing.Size(471, 192);
             this.groupBoxAdresse.TabIndex = 37;
             this.groupBoxAdresse.TabStop = false;
             this.groupBoxAdresse.Text = "Adresse";
@@ -498,33 +483,33 @@ namespace Alfa_Romeo_Garage
             // 
             this.panelBorder.BackColor = System.Drawing.Color.White;
             this.panelBorder.Controls.Add(this.dataGridViewClients);
-            this.panelBorder.Location = new System.Drawing.Point(514, 88);
+            this.panelBorder.Location = new System.Drawing.Point(514, 70);
             this.panelBorder.Name = "panelBorder";
             this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
-            this.panelBorder.Size = new System.Drawing.Size(732, 690);
+            this.panelBorder.Size = new System.Drawing.Size(732, 708);
             this.panelBorder.TabIndex = 39;
             // 
             // dataGridViewClients
             // 
             this.dataGridViewClients.AllowUserToAddRows = false;
             this.dataGridViewClients.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 8F);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
-            this.dataGridViewClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewClients.ColumnHeadersHeight = 29;
             this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
             this.cNomPrenom,
@@ -534,33 +519,47 @@ namespace Alfa_Romeo_Garage
             this.cAdresseEmail,
             this.cNumeroTelephone,
             this.cDateEnregistrement});
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewClients.GridColor = System.Drawing.Color.White;
             this.dataGridViewClients.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewClients.Name = "dataGridViewClients";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewClients.RowHeadersVisible = false;
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(730, 688);
+            this.dataGridViewClients.Size = new System.Drawing.Size(730, 706);
             this.dataGridViewClients.TabIndex = 40;
+            // 
+            // dateTimePickerDateNaissance
+            // 
+            this.dateTimePickerDateNaissance.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.dateTimePickerDateNaissance.BorderSize = 1;
+            this.dateTimePickerDateNaissance.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDateNaissance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDateNaissance.Location = new System.Drawing.Point(10, 94);
+            this.dateTimePickerDateNaissance.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dateTimePickerDateNaissance.Name = "dateTimePickerDateNaissance";
+            this.dateTimePickerDateNaissance.Size = new System.Drawing.Size(452, 35);
+            this.dateTimePickerDateNaissance.SkinColor = System.Drawing.Color.Black;
+            this.dateTimePickerDateNaissance.TabIndex = 40;
+            this.dateTimePickerDateNaissance.TextColor = System.Drawing.Color.White;
             // 
             // cID
             // 
@@ -569,7 +568,7 @@ namespace Alfa_Romeo_Garage
             this.cID.MinimumWidth = 6;
             this.cID.Name = "cID";
             this.cID.ReadOnly = true;
-            this.cID.Width = 125;
+            this.cID.Width = 50;
             // 
             // cNomPrenom
             // 
@@ -578,7 +577,7 @@ namespace Alfa_Romeo_Garage
             this.cNomPrenom.MinimumWidth = 6;
             this.cNomPrenom.Name = "cNomPrenom";
             this.cNomPrenom.ReadOnly = true;
-            this.cNomPrenom.Width = 125;
+            this.cNomPrenom.Width = 180;
             // 
             // cDateNaissance
             // 
@@ -587,7 +586,7 @@ namespace Alfa_Romeo_Garage
             this.cDateNaissance.MinimumWidth = 6;
             this.cDateNaissance.Name = "cDateNaissance";
             this.cDateNaissance.ReadOnly = true;
-            this.cDateNaissance.Width = 125;
+            this.cDateNaissance.Width = 150;
             // 
             // cNumeroNational
             // 
@@ -596,7 +595,7 @@ namespace Alfa_Romeo_Garage
             this.cNumeroNational.MinimumWidth = 6;
             this.cNumeroNational.Name = "cNumeroNational";
             this.cNumeroNational.ReadOnly = true;
-            this.cNumeroNational.Width = 125;
+            this.cNumeroNational.Width = 150;
             // 
             // cAdresse
             // 
@@ -605,7 +604,7 @@ namespace Alfa_Romeo_Garage
             this.cAdresse.MinimumWidth = 6;
             this.cAdresse.Name = "cAdresse";
             this.cAdresse.ReadOnly = true;
-            this.cAdresse.Width = 125;
+            this.cAdresse.Width = 280;
             // 
             // cAdresseEmail
             // 
@@ -614,7 +613,7 @@ namespace Alfa_Romeo_Garage
             this.cAdresseEmail.MinimumWidth = 6;
             this.cAdresseEmail.Name = "cAdresseEmail";
             this.cAdresseEmail.ReadOnly = true;
-            this.cAdresseEmail.Width = 125;
+            this.cAdresseEmail.Width = 190;
             // 
             // cNumeroTelephone
             // 
@@ -623,7 +622,7 @@ namespace Alfa_Romeo_Garage
             this.cNumeroTelephone.MinimumWidth = 6;
             this.cNumeroTelephone.Name = "cNumeroTelephone";
             this.cNumeroTelephone.ReadOnly = true;
-            this.cNumeroTelephone.Width = 125;
+            this.cNumeroTelephone.Width = 150;
             // 
             // cDateEnregistrement
             // 
@@ -632,7 +631,7 @@ namespace Alfa_Romeo_Garage
             this.cDateEnregistrement.MinimumWidth = 6;
             this.cDateEnregistrement.Name = "cDateEnregistrement";
             this.cDateEnregistrement.ReadOnly = true;
-            this.cDateEnregistrement.Width = 125;
+            this.cDateEnregistrement.Width = 150;
             // 
             // UserControlClients
             // 
@@ -682,7 +681,6 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Label labelNumeroNational;
         private System.Windows.Forms.TextBox textBoxNumeroNational;
         private System.Windows.Forms.Label labelDateNaissance;
-        private System.Windows.Forms.DateTimePicker dateTimePickerDateNaissance;
         private System.Windows.Forms.Label labelRue;
         private System.Windows.Forms.TextBox textBoxRue;
         private System.Windows.Forms.Label labelCodePostal;
@@ -703,6 +701,7 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelBorder;
         private System.Windows.Forms.DataGridView dataGridViewClients;
+        private CustomControls.RJControls.RJDatePicker dateTimePickerDateNaissance;
         private System.Windows.Forms.DataGridViewTextBoxColumn cID;
         private System.Windows.Forms.DataGridViewTextBoxColumn cNomPrenom;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDateNaissance;
