@@ -248,45 +248,5 @@ namespace Alfa_Romeo_Garage
         {
             ActiverBoutonsFormulaires(true);
         }
-
-        private void textBoxNom_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelPrenom_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxNumeroNational_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelNumeroNational_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePickerDateNaissance_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDateNaissance_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxPrenom_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelNom_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

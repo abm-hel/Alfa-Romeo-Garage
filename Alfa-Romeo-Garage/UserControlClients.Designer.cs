@@ -29,10 +29,10 @@ namespace Alfa_Romeo_Garage
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitre = new System.Windows.Forms.Label();
             this.buttonAjouter = new System.Windows.Forms.Button();
             this.buttonEditer = new System.Windows.Forms.Button();
@@ -188,7 +188,6 @@ namespace Alfa_Romeo_Garage
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(218, 23);
             this.textBoxNom.TabIndex = 12;
-            this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
             // 
             // labelNom
             // 
@@ -200,7 +199,6 @@ namespace Alfa_Romeo_Garage
             this.labelNom.Size = new System.Drawing.Size(41, 19);
             this.labelNom.TabIndex = 13;
             this.labelNom.Text = "Nom";
-            this.labelNom.Click += new System.EventHandler(this.labelNom_Click);
             // 
             // labelPrenom
             // 
@@ -212,7 +210,6 @@ namespace Alfa_Romeo_Garage
             this.labelPrenom.Size = new System.Drawing.Size(61, 19);
             this.labelPrenom.TabIndex = 16;
             this.labelPrenom.Text = "Prénom";
-            this.labelPrenom.Click += new System.EventHandler(this.labelPrenom_Click);
             // 
             // textBoxPrenom
             // 
@@ -224,7 +221,6 @@ namespace Alfa_Romeo_Garage
             this.textBoxPrenom.Name = "textBoxPrenom";
             this.textBoxPrenom.Size = new System.Drawing.Size(220, 23);
             this.textBoxPrenom.TabIndex = 15;
-            this.textBoxPrenom.TextChanged += new System.EventHandler(this.textBoxPrenom_TextChanged);
             // 
             // labelNumeroNational
             // 
@@ -236,7 +232,6 @@ namespace Alfa_Romeo_Garage
             this.labelNumeroNational.Size = new System.Drawing.Size(200, 19);
             this.labelNumeroNational.TabIndex = 18;
             this.labelNumeroNational.Text = "Numéro de registre national";
-            this.labelNumeroNational.Click += new System.EventHandler(this.labelNumeroNational_Click);
             // 
             // textBoxNumeroNational
             // 
@@ -248,7 +243,6 @@ namespace Alfa_Romeo_Garage
             this.textBoxNumeroNational.Name = "textBoxNumeroNational";
             this.textBoxNumeroNational.Size = new System.Drawing.Size(218, 23);
             this.textBoxNumeroNational.TabIndex = 17;
-            this.textBoxNumeroNational.TextChanged += new System.EventHandler(this.textBoxNumeroNational_TextChanged);
             // 
             // labelDateNaissance
             // 
@@ -260,7 +254,6 @@ namespace Alfa_Romeo_Garage
             this.labelDateNaissance.Size = new System.Drawing.Size(139, 19);
             this.labelDateNaissance.TabIndex = 20;
             this.labelDateNaissance.Text = "Date de naissance";
-            this.labelDateNaissance.Click += new System.EventHandler(this.labelDateNaissance_Click);
             // 
             // dateTimePickerDateNaissance
             // 
@@ -276,7 +269,6 @@ namespace Alfa_Romeo_Garage
             this.dateTimePickerDateNaissance.Name = "dateTimePickerDateNaissance";
             this.dateTimePickerDateNaissance.Size = new System.Drawing.Size(219, 23);
             this.dateTimePickerDateNaissance.TabIndex = 21;
-            this.dateTimePickerDateNaissance.ValueChanged += new System.EventHandler(this.dateTimePickerDateNaissance_ValueChanged);
             // 
             // labelRue
             // 
@@ -516,22 +508,22 @@ namespace Alfa_Romeo_Garage
             // 
             this.dataGridViewClients.AllowUserToAddRows = false;
             this.dataGridViewClients.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridViewClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
@@ -542,27 +534,27 @@ namespace Alfa_Romeo_Garage
             this.cAdresseEmail,
             this.cNumeroTelephone,
             this.cDateEnregistrement});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewClients.GridColor = System.Drawing.Color.White;
             this.dataGridViewClients.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewClients.Name = "dataGridViewClients";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewClients.RowHeadersVisible = false;
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
