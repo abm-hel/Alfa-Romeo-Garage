@@ -41,7 +41,6 @@ namespace Alfa_Romeo_Garage
             this.buttonClients = new System.Windows.Forms.Button();
             this.labelAccueil = new System.Windows.Forms.Label();
             this.buttonAccueil = new System.Windows.Forms.Button();
-            this.panelPosition = new System.Windows.Forms.Panel();
             this.userControlEntretiens1 = new Alfa_Romeo_Garage.UserControlEntretiens();
             this.userControlIntervetions1 = new Alfa_Romeo_Garage.UserControlIntervetions();
             this.userControlPieces1 = new Alfa_Romeo_Garage.UserControlPieces();
@@ -214,17 +213,6 @@ namespace Alfa_Romeo_Garage
             this.buttonAccueil.UseVisualStyleBackColor = true;
             this.buttonAccueil.Click += new System.EventHandler(this.buttonAccueil_Click);
             // 
-            // panelPosition
-            // 
-            this.panelPosition.BackColor = System.Drawing.Color.Crimson;
-            this.panelPosition.Location = new System.Drawing.Point(313, 0);
-            this.panelPosition.Name = "panelPosition";
-            this.panelPosition.Size = new System.Drawing.Size(1260, 18);
-            this.panelPosition.TabIndex = 9;
-            this.panelPosition.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseDown);
-            this.panelPosition.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseMove);
-            this.panelPosition.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelPosition_MouseUp);
-            // 
             // userControlEntretiens1
             // 
             this.userControlEntretiens1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -286,7 +274,7 @@ namespace Alfa_Romeo_Garage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1574, 1002);
             this.Controls.Add(this.userControlEntretiens1);
             this.Controls.Add(this.userControlIntervetions1);
@@ -295,9 +283,7 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.userControlModeles1);
             this.Controls.Add(this.userControlClients1);
             this.Controls.Add(this.userControlAccueil1);
-            this.Controls.Add(this.panelPosition);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -321,7 +307,6 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.PictureBox pictureBoxLogoAccueil;
         private System.Windows.Forms.Label labelAccueil;
         private System.Windows.Forms.Button buttonInterventions;
-        private System.Windows.Forms.Panel panelPosition;
         private System.Windows.Forms.Panel panelButtonSelectionne;
         private UserControlAccueil userControlAccueil1;
         private UserControlClients userControlClients1;
