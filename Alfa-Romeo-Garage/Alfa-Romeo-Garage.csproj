@@ -59,6 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,46 +70,46 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlAccueil.cs">
+    <Compile Include="Interfaces\UserControlAccueil.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlAccueil.Designer.cs">
+    <Compile Include="Interfaces\UserControlAccueil.Designer.cs">
       <DependentUpon>UserControlAccueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlClients.cs">
+    <Compile Include="Interfaces\UserControlClients.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlClients.Designer.cs">
+    <Compile Include="Interfaces\UserControlClients.Designer.cs">
       <DependentUpon>UserControlClients.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlEntretiens.cs">
+    <Compile Include="Interfaces\UserControlEntretiens.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlEntretiens.Designer.cs">
+    <Compile Include="Interfaces\UserControlEntretiens.Designer.cs">
       <DependentUpon>UserControlEntretiens.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlIntervetions.cs">
+    <Compile Include="Interfaces\UserControlIntervetions.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlIntervetions.Designer.cs">
+    <Compile Include="Interfaces\UserControlIntervetions.Designer.cs">
       <DependentUpon>UserControlIntervetions.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlModeles.cs">
+    <Compile Include="Interfaces\UserControlModeles.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlModeles.Designer.cs">
+    <Compile Include="Interfaces\UserControlModeles.Designer.cs">
       <DependentUpon>UserControlModeles.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlPieces.cs">
+    <Compile Include="Interfaces\UserControlPieces.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlPieces.Designer.cs">
+    <Compile Include="Interfaces\UserControlPieces.Designer.cs">
       <DependentUpon>UserControlPieces.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlVehicules.cs">
+    <Compile Include="Interfaces\UserControlVehicules.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlVehicules.Designer.cs">
+    <Compile Include="Interfaces\UserControlVehicules.Designer.cs">
       <DependentUpon>UserControlVehicules.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Main.resx">
@@ -122,25 +125,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControlAccueil.resx">
+    <EmbeddedResource Include="Interfaces\UserControlAccueil.resx">
       <DependentUpon>UserControlAccueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlClients.resx">
+    <EmbeddedResource Include="Interfaces\UserControlClients.resx">
       <DependentUpon>UserControlClients.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlEntretiens.resx">
+    <EmbeddedResource Include="Interfaces\UserControlEntretiens.resx">
       <DependentUpon>UserControlEntretiens.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlIntervetions.resx">
+    <EmbeddedResource Include="Interfaces\UserControlIntervetions.resx">
       <DependentUpon>UserControlIntervetions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlModeles.resx">
+    <EmbeddedResource Include="Interfaces\UserControlModeles.resx">
       <DependentUpon>UserControlModeles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlPieces.resx">
+    <EmbeddedResource Include="Interfaces\UserControlPieces.resx">
       <DependentUpon>UserControlPieces.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlVehicules.resx">
+    <EmbeddedResource Include="Interfaces\UserControlVehicules.resx">
       <DependentUpon>UserControlVehicules.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -176,6 +179,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-alfa-romeo-50 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

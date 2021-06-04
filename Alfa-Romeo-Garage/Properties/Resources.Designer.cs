@@ -93,6 +93,26 @@ namespace Alfa_Romeo_Garage.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendarDark {
+            get {
+                object obj = ResourceManager.GetObject("calendarDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendarWhite {
+            get {
+                object obj = ResourceManager.GetObject("calendarWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_accueil_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-accueil-50", resourceCulture);
