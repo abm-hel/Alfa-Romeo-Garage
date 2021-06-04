@@ -156,12 +156,12 @@
   </data>
   <data name="buttonVehicules.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPtJREFUSEvt
-        zTFqAlEUheHRQrAMWA82lpIibsEuq7DMKtyCe7BzEYIBu7Q2WomYWkgVAuN5+vtgvF4zjtPpB6d558yd
-        5HFkWZYqXyTluRo62FXWyslWeaO+jw71lV24euZHeWdWjg4MlN9wzfGnfDAvTh/VlGG4UNBIqfP5dRo2
-        lHH46kYTpcmZyzR4UaZhXdJcaXEuT0VbWYTVnZZKh7NHenhVNqGtyLfS4/zhB6vDc7WWnM+jLI0zPnal
-        ccbHzqCOeDaofewM6ohng9rHzqCOeDaofewM6ohng9rHzqCOeDaofewM6ohng9qnzedxmjOjjvRWaPf0
-        jyTZA36R6I8PXffcAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADZSURBVFhH7Y5BDoIwEEW5ivEyXFAvoJfCJe50zwaTOp0+GkFIqAwLm75k0sz/M9NfFf4S51wt
+        dZcaaKVq7P3hwyktth0cXoSx1XPJsL8IY/sHoI0gf4EdQc4wwFpYLwHsA4h0Dc6IC3YE3TaAtAepXo0x
+        L6kjY0qQ7QOcgzrLiTEFzTxAJ9WoMcZrHWNKkO0DNLw3NQNR8+9AsOwDeD4/H1CNMUVVgTYd9qdHn1IP
+        2sicLr1Cmw77Px9gPbMASIswpiBlFiAF1kuA7QG2wrl02N8M5wqFGarqDaRnldKp/PGTAAAAAElFTkSu
+        QmCC
 </value>
   </data>
   <data name="buttonModeles.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
