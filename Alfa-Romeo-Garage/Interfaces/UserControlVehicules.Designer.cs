@@ -34,14 +34,6 @@ namespace Alfa_Romeo_Garage
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewClients = new System.Windows.Forms.DataGridView();
-            this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNomPrenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNumeroNational = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cAdresseEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNumeroTelephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDateEnregistrement = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonAnnuler = new System.Windows.Forms.Button();
             this.buttonConfirmer = new System.Windows.Forms.Button();
             this.buttonSupprimerClient = new System.Windows.Forms.Button();
@@ -60,6 +52,14 @@ namespace Alfa_Romeo_Garage
             this.textBoxCouleurVehicule = new System.Windows.Forms.TextBox();
             this.buttonEditer = new System.Windows.Forms.Button();
             this.buttonAjouter = new System.Windows.Forms.Button();
+            this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNumeroImmatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDatePremiereImmatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDateDerniereImmatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cClasse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNumeroChassis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cCouleurVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDateEnregistrement = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,12 +86,12 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.ColumnHeadersHeight = 29;
             this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
-            this.cNomPrenom,
-            this.cDateNaissance,
-            this.cNumeroNational,
-            this.cAdresse,
-            this.cAdresseEmail,
-            this.cNumeroTelephone,
+            this.cNumeroImmatriculation,
+            this.cDatePremiereImmatriculation,
+            this.cDateDerniereImmatriculation,
+            this.cClasse,
+            this.cNumeroChassis,
+            this.cCouleurVehicule,
             this.cDateEnregistrement});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
@@ -119,78 +119,6 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewClients.Size = new System.Drawing.Size(727, 699);
             this.dataGridViewClients.TabIndex = 48;
-            // 
-            // cID
-            // 
-            this.cID.DataPropertyName = "id";
-            this.cID.HeaderText = "ID";
-            this.cID.MinimumWidth = 6;
-            this.cID.Name = "cID";
-            this.cID.ReadOnly = true;
-            this.cID.Width = 50;
-            // 
-            // cNomPrenom
-            // 
-            this.cNomPrenom.DataPropertyName = "nomPrenom";
-            this.cNomPrenom.HeaderText = "Nom complet";
-            this.cNomPrenom.MinimumWidth = 6;
-            this.cNomPrenom.Name = "cNomPrenom";
-            this.cNomPrenom.ReadOnly = true;
-            this.cNomPrenom.Width = 180;
-            // 
-            // cDateNaissance
-            // 
-            this.cDateNaissance.DataPropertyName = "dateNaissance";
-            this.cDateNaissance.HeaderText = "Date de naissance";
-            this.cDateNaissance.MinimumWidth = 6;
-            this.cDateNaissance.Name = "cDateNaissance";
-            this.cDateNaissance.ReadOnly = true;
-            this.cDateNaissance.Width = 150;
-            // 
-            // cNumeroNational
-            // 
-            this.cNumeroNational.DataPropertyName = "numeroNational";
-            this.cNumeroNational.HeaderText = "Numéro du registre national";
-            this.cNumeroNational.MinimumWidth = 6;
-            this.cNumeroNational.Name = "cNumeroNational";
-            this.cNumeroNational.ReadOnly = true;
-            this.cNumeroNational.Width = 150;
-            // 
-            // cAdresse
-            // 
-            this.cAdresse.DataPropertyName = "adresse";
-            this.cAdresse.HeaderText = "Adresse";
-            this.cAdresse.MinimumWidth = 6;
-            this.cAdresse.Name = "cAdresse";
-            this.cAdresse.ReadOnly = true;
-            this.cAdresse.Width = 280;
-            // 
-            // cAdresseEmail
-            // 
-            this.cAdresseEmail.DataPropertyName = "adresseEmail";
-            this.cAdresseEmail.HeaderText = "Adresse e-mail";
-            this.cAdresseEmail.MinimumWidth = 6;
-            this.cAdresseEmail.Name = "cAdresseEmail";
-            this.cAdresseEmail.ReadOnly = true;
-            this.cAdresseEmail.Width = 190;
-            // 
-            // cNumeroTelephone
-            // 
-            this.cNumeroTelephone.DataPropertyName = "numeroTelephone";
-            this.cNumeroTelephone.HeaderText = "Numéro de télephone";
-            this.cNumeroTelephone.MinimumWidth = 6;
-            this.cNumeroTelephone.Name = "cNumeroTelephone";
-            this.cNumeroTelephone.ReadOnly = true;
-            this.cNumeroTelephone.Width = 150;
-            // 
-            // cDateEnregistrement
-            // 
-            this.cDateEnregistrement.DataPropertyName = "dateEnregistrement";
-            this.cDateEnregistrement.HeaderText = "Date de dernière modification";
-            this.cDateEnregistrement.MinimumWidth = 6;
-            this.cDateEnregistrement.Name = "cDateEnregistrement";
-            this.cDateEnregistrement.ReadOnly = true;
-            this.cDateEnregistrement.Width = 150;
             // 
             // buttonAnnuler
             // 
@@ -421,6 +349,78 @@ namespace Alfa_Romeo_Garage
             this.buttonAjouter.Text = "Ajouter un client";
             this.buttonAjouter.UseVisualStyleBackColor = false;
             // 
+            // cID
+            // 
+            this.cID.DataPropertyName = "id";
+            this.cID.HeaderText = "ID";
+            this.cID.MinimumWidth = 6;
+            this.cID.Name = "cID";
+            this.cID.ReadOnly = true;
+            this.cID.Width = 50;
+            // 
+            // cNumeroImmatriculation
+            // 
+            this.cNumeroImmatriculation.DataPropertyName = "numeroImmatriculation";
+            this.cNumeroImmatriculation.HeaderText = "Numéro d\'immatriculation";
+            this.cNumeroImmatriculation.MinimumWidth = 6;
+            this.cNumeroImmatriculation.Name = "cNumeroImmatriculation";
+            this.cNumeroImmatriculation.ReadOnly = true;
+            this.cNumeroImmatriculation.Width = 180;
+            // 
+            // cDatePremiereImmatriculation
+            // 
+            this.cDatePremiereImmatriculation.DataPropertyName = "datePremiereImmatriculation";
+            this.cDatePremiereImmatriculation.HeaderText = "Date première immatriculation";
+            this.cDatePremiereImmatriculation.MinimumWidth = 6;
+            this.cDatePremiereImmatriculation.Name = "cDatePremiereImmatriculation";
+            this.cDatePremiereImmatriculation.ReadOnly = true;
+            this.cDatePremiereImmatriculation.Width = 150;
+            // 
+            // cDateDerniereImmatriculation
+            // 
+            this.cDateDerniereImmatriculation.DataPropertyName = "dateDerniereImmatriculation";
+            this.cDateDerniereImmatriculation.HeaderText = "Date dernière immatriculation";
+            this.cDateDerniereImmatriculation.MinimumWidth = 6;
+            this.cDateDerniereImmatriculation.Name = "cDateDerniereImmatriculation";
+            this.cDateDerniereImmatriculation.ReadOnly = true;
+            this.cDateDerniereImmatriculation.Width = 150;
+            // 
+            // cClasse
+            // 
+            this.cClasse.DataPropertyName = "classe";
+            this.cClasse.HeaderText = "Classe environnementale";
+            this.cClasse.MinimumWidth = 6;
+            this.cClasse.Name = "cClasse";
+            this.cClasse.ReadOnly = true;
+            this.cClasse.Width = 280;
+            // 
+            // cNumeroChassis
+            // 
+            this.cNumeroChassis.DataPropertyName = "numeroChassis";
+            this.cNumeroChassis.HeaderText = "Numéro de chassis NIV";
+            this.cNumeroChassis.MinimumWidth = 6;
+            this.cNumeroChassis.Name = "cNumeroChassis";
+            this.cNumeroChassis.ReadOnly = true;
+            this.cNumeroChassis.Width = 190;
+            // 
+            // cCouleurVehicule
+            // 
+            this.cCouleurVehicule.DataPropertyName = "couleurVehicule";
+            this.cCouleurVehicule.HeaderText = "Couleur du véhicule";
+            this.cCouleurVehicule.MinimumWidth = 6;
+            this.cCouleurVehicule.Name = "cCouleurVehicule";
+            this.cCouleurVehicule.ReadOnly = true;
+            this.cCouleurVehicule.Width = 150;
+            // 
+            // cDateEnregistrement
+            // 
+            this.cDateEnregistrement.DataPropertyName = "dateEnregistrement";
+            this.cDateEnregistrement.HeaderText = "Date de dernière modification";
+            this.cDateEnregistrement.MinimumWidth = 6;
+            this.cDateEnregistrement.Name = "cDateEnregistrement";
+            this.cDateEnregistrement.ReadOnly = true;
+            this.cDateEnregistrement.Width = 150;
+            // 
             // UserControlVehicules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -456,14 +456,6 @@ namespace Alfa_Romeo_Garage
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewClients;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNomPrenom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDateNaissance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroNational;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresseEmail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroTelephone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDateEnregistrement;
         private System.Windows.Forms.Button buttonAnnuler;
         private System.Windows.Forms.Button buttonConfirmer;
         private System.Windows.Forms.Button buttonSupprimerClient;
@@ -482,5 +474,13 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.TextBox textBoxCouleurVehicule;
         private System.Windows.Forms.Button buttonEditer;
         private System.Windows.Forms.Button buttonAjouter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroImmatriculation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDatePremiereImmatriculation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDateDerniereImmatriculation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cClasse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroChassis;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cCouleurVehicule;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDateEnregistrement;
     }
 }
