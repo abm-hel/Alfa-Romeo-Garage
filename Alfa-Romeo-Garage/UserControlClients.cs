@@ -88,6 +88,7 @@ namespace Alfa_Romeo_Garage
         private void UserControlClients_Load(object sender, EventArgs e)
         {
             connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;
+           
 
             RemplirDataGridView();
 

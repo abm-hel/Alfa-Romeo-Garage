@@ -29,7 +29,10 @@ namespace Alfa_Romeo_Garage
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitre = new System.Windows.Forms.Label();
             this.buttonAjouter = new System.Windows.Forms.Button();
             this.buttonEditer = new System.Windows.Forms.Button();
@@ -62,6 +65,7 @@ namespace Alfa_Romeo_Garage
             this.groupBoxContact = new System.Windows.Forms.GroupBox();
             this.groupBoxAdresse = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.panelBorder = new System.Windows.Forms.Panel();
             this.dataGridViewClients = new System.Windows.Forms.DataGridView();
             this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNomPrenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,6 +78,7 @@ namespace Alfa_Romeo_Garage
             this.groupBoxInformationsPersonnelles.SuspendLayout();
             this.groupBoxContact.SuspendLayout();
             this.groupBoxAdresse.SuspendLayout();
+            this.panelBorder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -431,7 +436,7 @@ namespace Alfa_Romeo_Garage
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelPrenom);
             this.groupBoxInformationsPersonnelles.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxInformationsPersonnelles.ForeColor = System.Drawing.Color.White;
-            this.groupBoxInformationsPersonnelles.Location = new System.Drawing.Point(35, 91);
+            this.groupBoxInformationsPersonnelles.Location = new System.Drawing.Point(34, 82);
             this.groupBoxInformationsPersonnelles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxInformationsPersonnelles.Name = "groupBoxInformationsPersonnelles";
             this.groupBoxInformationsPersonnelles.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -489,19 +494,36 @@ namespace Alfa_Romeo_Garage
             this.label2.TabIndex = 14;
             this.label2.Text = "label2";
             // 
+            // panelBorder
+            // 
+            this.panelBorder.BackColor = System.Drawing.Color.White;
+            this.panelBorder.Controls.Add(this.dataGridViewClients);
+            this.panelBorder.Location = new System.Drawing.Point(613, 91);
+            this.panelBorder.Name = "panelBorder";
+            this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
+            this.panelBorder.Size = new System.Drawing.Size(613, 518);
+            this.panelBorder.TabIndex = 39;
+            // 
             // dataGridViewClients
             // 
             this.dataGridViewClients.AllowUserToAddRows = false;
             this.dataGridViewClients.AllowUserToDeleteRows = false;
-            this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Black;
+            this.dataGridViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
@@ -512,16 +534,33 @@ namespace Alfa_Romeo_Garage
             this.cAdresseEmail,
             this.cNumeroTelephone,
             this.cDateEnregistrement});
-            this.dataGridViewClients.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridViewClients.Location = new System.Drawing.Point(613, 91);
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewClients.GridColor = System.Drawing.Color.White;
+            this.dataGridViewClients.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewClients.Name = "dataGridViewClients";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewClients.RowHeadersVisible = false;
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(613, 526);
-            this.dataGridViewClients.TabIndex = 38;
+            this.dataGridViewClients.Size = new System.Drawing.Size(611, 516);
+            this.dataGridViewClients.TabIndex = 39;
             // 
             // cID
             // 
@@ -600,7 +639,7 @@ namespace Alfa_Romeo_Garage
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Controls.Add(this.dataGridViewClients);
+            this.Controls.Add(this.panelBorder);
             this.Controls.Add(this.groupBoxContact);
             this.Controls.Add(this.groupBoxAdresse);
             this.Controls.Add(this.groupBoxInformationsPersonnelles);
@@ -621,6 +660,7 @@ namespace Alfa_Romeo_Garage
             this.groupBoxContact.PerformLayout();
             this.groupBoxAdresse.ResumeLayout(false);
             this.groupBoxAdresse.PerformLayout();
+            this.panelBorder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -661,6 +701,7 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.GroupBox groupBoxContact;
         private System.Windows.Forms.GroupBox groupBoxAdresse;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panelBorder;
         private System.Windows.Forms.DataGridView dataGridViewClients;
         private System.Windows.Forms.DataGridViewTextBoxColumn cID;
         private System.Windows.Forms.DataGridViewTextBoxColumn cNomPrenom;
