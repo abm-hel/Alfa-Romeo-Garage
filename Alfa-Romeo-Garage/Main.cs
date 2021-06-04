@@ -25,7 +25,7 @@ namespace Alfa_Romeo_Garage
         private void MainForm_Load(object sender, EventArgs e)
         {
             //poitionnement de la fenêtre
-            this.Location = Screen.AllScreens[1].WorkingArea.Location;
+            this.Location = Screen.AllScreens[0].WorkingArea.Location;
 
             //déplacement du pannel à la même hauteur que button Accueil
             panelButtonSelectionne.Height = buttonAccueil.Height;
