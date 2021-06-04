@@ -34,7 +34,7 @@ namespace Alfa_Romeo_Garage
         private void ActiverBoutonsFormulaires(bool disponibilite)
         {
             dataGridViewClients.Enabled = disponibilite;
-            buttonAjouter.Enabled = buttonEditer.Enabled = buttonSupprimerClient.Enabled = disponibilite;
+            buttonAjouter.Visible = buttonEditer.Visible = buttonSupprimerClient.Visible = disponibilite;
             
             textBoxPrenom.Enabled = !disponibilite;
             textBoxNom.Enabled = !disponibilite;
@@ -48,7 +48,7 @@ namespace Alfa_Romeo_Garage
             textBoxPays.Enabled = !disponibilite;
             textBoxNumeroTelephone.Enabled = !disponibilite;
             textBoxAdresseEmail.Enabled = !disponibilite;
-            buttonConfirmer.Enabled = buttonAnnuler.Enabled = !disponibilite;
+            buttonConfirmer.Visible = buttonAnnuler.Visible = !disponibilite;
         }
 
         private void RemplirDataGridView()
@@ -247,6 +247,46 @@ namespace Alfa_Romeo_Garage
         private void buttonAnnulerClient_Click(object sender, EventArgs e)
         {
             ActiverBoutonsFormulaires(true);
+        }
+
+        private void textBoxNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPrenom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNumeroNational_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNumeroNational_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerDateNaissance_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDateNaissance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPrenom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNom_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

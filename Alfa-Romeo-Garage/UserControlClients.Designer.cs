@@ -87,7 +87,7 @@ namespace Alfa_Romeo_Garage
             this.labelTitre.AutoSize = true;
             this.labelTitre.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitre.ForeColor = System.Drawing.Color.Crimson;
-            this.labelTitre.Location = new System.Drawing.Point(29, 26);
+            this.labelTitre.Location = new System.Drawing.Point(18, 24);
             this.labelTitre.Name = "labelTitre";
             this.labelTitre.Size = new System.Drawing.Size(263, 30);
             this.labelTitre.TabIndex = 4;
@@ -101,10 +101,10 @@ namespace Alfa_Romeo_Garage
             this.buttonAjouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAjouter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAjouter.Location = new System.Drawing.Point(613, 631);
+            this.buttonAjouter.Location = new System.Drawing.Point(23, 628);
             this.buttonAjouter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAjouter.Name = "buttonAjouter";
-            this.buttonAjouter.Size = new System.Drawing.Size(613, 39);
+            this.buttonAjouter.Size = new System.Drawing.Size(471, 39);
             this.buttonAjouter.TabIndex = 7;
             this.buttonAjouter.Text = "Ajouter un client";
             this.buttonAjouter.UseVisualStyleBackColor = false;
@@ -118,10 +118,10 @@ namespace Alfa_Romeo_Garage
             this.buttonEditer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEditer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEditer.Location = new System.Drawing.Point(613, 686);
+            this.buttonEditer.Location = new System.Drawing.Point(23, 682);
             this.buttonEditer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEditer.Name = "buttonEditer";
-            this.buttonEditer.Size = new System.Drawing.Size(613, 39);
+            this.buttonEditer.Size = new System.Drawing.Size(471, 39);
             this.buttonEditer.TabIndex = 8;
             this.buttonEditer.Text = "Editer un client";
             this.buttonEditer.UseVisualStyleBackColor = false;
@@ -135,10 +135,10 @@ namespace Alfa_Romeo_Garage
             this.buttonSupprimerClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSupprimerClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSupprimerClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupprimerClient.Location = new System.Drawing.Point(613, 741);
+            this.buttonSupprimerClient.Location = new System.Drawing.Point(23, 739);
             this.buttonSupprimerClient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSupprimerClient.Name = "buttonSupprimerClient";
-            this.buttonSupprimerClient.Size = new System.Drawing.Size(613, 39);
+            this.buttonSupprimerClient.Size = new System.Drawing.Size(471, 39);
             this.buttonSupprimerClient.TabIndex = 9;
             this.buttonSupprimerClient.Text = "Supprimer un client";
             this.buttonSupprimerClient.UseVisualStyleBackColor = false;
@@ -152,10 +152,10 @@ namespace Alfa_Romeo_Garage
             this.buttonConfirmer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirmer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonConfirmer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConfirmer.Location = new System.Drawing.Point(36, 686);
+            this.buttonConfirmer.Location = new System.Drawing.Point(23, 628);
             this.buttonConfirmer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonConfirmer.Name = "buttonConfirmer";
-            this.buttonConfirmer.Size = new System.Drawing.Size(531, 39);
+            this.buttonConfirmer.Size = new System.Drawing.Size(471, 39);
             this.buttonConfirmer.TabIndex = 10;
             this.buttonConfirmer.Text = "Confirmer";
             this.buttonConfirmer.UseVisualStyleBackColor = false;
@@ -169,10 +169,10 @@ namespace Alfa_Romeo_Garage
             this.buttonAnnuler.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAnnuler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAnnuler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAnnuler.Location = new System.Drawing.Point(36, 741);
+            this.buttonAnnuler.Location = new System.Drawing.Point(23, 682);
             this.buttonAnnuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAnnuler.Name = "buttonAnnuler";
-            this.buttonAnnuler.Size = new System.Drawing.Size(531, 39);
+            this.buttonAnnuler.Size = new System.Drawing.Size(471, 39);
             this.buttonAnnuler.TabIndex = 11;
             this.buttonAnnuler.Text = "Annuler";
             this.buttonAnnuler.UseVisualStyleBackColor = false;
@@ -183,77 +183,84 @@ namespace Alfa_Romeo_Garage
             this.textBoxNom.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxNom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNom.ForeColor = System.Drawing.Color.White;
-            this.textBoxNom.Location = new System.Drawing.Point(19, 50);
+            this.textBoxNom.Location = new System.Drawing.Point(9, 47);
             this.textBoxNom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(245, 23);
+            this.textBoxNom.Size = new System.Drawing.Size(218, 23);
             this.textBoxNom.TabIndex = 12;
+            this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
             // 
             // labelNom
             // 
             this.labelNom.AutoSize = true;
             this.labelNom.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNom.ForeColor = System.Drawing.Color.Crimson;
-            this.labelNom.Location = new System.Drawing.Point(15, 28);
+            this.labelNom.Location = new System.Drawing.Point(5, 25);
             this.labelNom.Name = "labelNom";
             this.labelNom.Size = new System.Drawing.Size(41, 19);
             this.labelNom.TabIndex = 13;
             this.labelNom.Text = "Nom";
+            this.labelNom.Click += new System.EventHandler(this.labelNom_Click);
             // 
             // labelPrenom
             // 
             this.labelPrenom.AutoSize = true;
             this.labelPrenom.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrenom.ForeColor = System.Drawing.Color.Crimson;
-            this.labelPrenom.Location = new System.Drawing.Point(272, 28);
+            this.labelPrenom.Location = new System.Drawing.Point(236, 25);
             this.labelPrenom.Name = "labelPrenom";
             this.labelPrenom.Size = new System.Drawing.Size(61, 19);
             this.labelPrenom.TabIndex = 16;
             this.labelPrenom.Text = "Prénom";
+            this.labelPrenom.Click += new System.EventHandler(this.labelPrenom_Click);
             // 
             // textBoxPrenom
             // 
             this.textBoxPrenom.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxPrenom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPrenom.ForeColor = System.Drawing.Color.White;
-            this.textBoxPrenom.Location = new System.Drawing.Point(276, 50);
+            this.textBoxPrenom.Location = new System.Drawing.Point(240, 47);
             this.textBoxPrenom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPrenom.Name = "textBoxPrenom";
-            this.textBoxPrenom.Size = new System.Drawing.Size(238, 23);
+            this.textBoxPrenom.Size = new System.Drawing.Size(220, 23);
             this.textBoxPrenom.TabIndex = 15;
+            this.textBoxPrenom.TextChanged += new System.EventHandler(this.textBoxPrenom_TextChanged);
             // 
             // labelNumeroNational
             // 
             this.labelNumeroNational.AutoSize = true;
             this.labelNumeroNational.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumeroNational.ForeColor = System.Drawing.Color.Crimson;
-            this.labelNumeroNational.Location = new System.Drawing.Point(274, 84);
+            this.labelNumeroNational.Location = new System.Drawing.Point(236, 84);
             this.labelNumeroNational.Name = "labelNumeroNational";
             this.labelNumeroNational.Size = new System.Drawing.Size(200, 19);
             this.labelNumeroNational.TabIndex = 18;
             this.labelNumeroNational.Text = "Numéro de registre national";
+            this.labelNumeroNational.Click += new System.EventHandler(this.labelNumeroNational_Click);
             // 
             // textBoxNumeroNational
             // 
             this.textBoxNumeroNational.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxNumeroNational.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNumeroNational.ForeColor = System.Drawing.Color.White;
-            this.textBoxNumeroNational.Location = new System.Drawing.Point(278, 108);
+            this.textBoxNumeroNational.Location = new System.Drawing.Point(240, 105);
             this.textBoxNumeroNational.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNumeroNational.Name = "textBoxNumeroNational";
-            this.textBoxNumeroNational.Size = new System.Drawing.Size(239, 23);
+            this.textBoxNumeroNational.Size = new System.Drawing.Size(218, 23);
             this.textBoxNumeroNational.TabIndex = 17;
+            this.textBoxNumeroNational.TextChanged += new System.EventHandler(this.textBoxNumeroNational_TextChanged);
             // 
             // labelDateNaissance
             // 
             this.labelDateNaissance.AutoSize = true;
             this.labelDateNaissance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateNaissance.ForeColor = System.Drawing.Color.Crimson;
-            this.labelDateNaissance.Location = new System.Drawing.Point(12, 87);
+            this.labelDateNaissance.Location = new System.Drawing.Point(2, 84);
             this.labelDateNaissance.Name = "labelDateNaissance";
             this.labelDateNaissance.Size = new System.Drawing.Size(139, 19);
             this.labelDateNaissance.TabIndex = 20;
             this.labelDateNaissance.Text = "Date de naissance";
+            this.labelDateNaissance.Click += new System.EventHandler(this.labelDateNaissance_Click);
             // 
             // dateTimePickerDateNaissance
             // 
@@ -264,18 +271,19 @@ namespace Alfa_Romeo_Garage
             this.dateTimePickerDateNaissance.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dateTimePickerDateNaissance.CalendarTrailingForeColor = System.Drawing.Color.Black;
             this.dateTimePickerDateNaissance.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.dateTimePickerDateNaissance.Location = new System.Drawing.Point(18, 108);
+            this.dateTimePickerDateNaissance.Location = new System.Drawing.Point(8, 105);
             this.dateTimePickerDateNaissance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerDateNaissance.Name = "dateTimePickerDateNaissance";
-            this.dateTimePickerDateNaissance.Size = new System.Drawing.Size(240, 23);
+            this.dateTimePickerDateNaissance.Size = new System.Drawing.Size(219, 23);
             this.dateTimePickerDateNaissance.TabIndex = 21;
+            this.dateTimePickerDateNaissance.ValueChanged += new System.EventHandler(this.dateTimePickerDateNaissance_ValueChanged);
             // 
             // labelRue
             // 
             this.labelRue.AutoSize = true;
             this.labelRue.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRue.ForeColor = System.Drawing.Color.Crimson;
-            this.labelRue.Location = new System.Drawing.Point(13, 26);
+            this.labelRue.Location = new System.Drawing.Point(2, 26);
             this.labelRue.Name = "labelRue";
             this.labelRue.Size = new System.Drawing.Size(36, 19);
             this.labelRue.TabIndex = 23;
@@ -286,10 +294,10 @@ namespace Alfa_Romeo_Garage
             this.textBoxRue.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxRue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxRue.ForeColor = System.Drawing.Color.White;
-            this.textBoxRue.Location = new System.Drawing.Point(19, 48);
+            this.textBoxRue.Location = new System.Drawing.Point(8, 48);
             this.textBoxRue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRue.Name = "textBoxRue";
-            this.textBoxRue.Size = new System.Drawing.Size(499, 23);
+            this.textBoxRue.Size = new System.Drawing.Size(452, 23);
             this.textBoxRue.TabIndex = 22;
             // 
             // labelCodePostal
@@ -297,7 +305,7 @@ namespace Alfa_Romeo_Garage
             this.labelCodePostal.AutoSize = true;
             this.labelCodePostal.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCodePostal.ForeColor = System.Drawing.Color.Crimson;
-            this.labelCodePostal.Location = new System.Drawing.Point(271, 80);
+            this.labelCodePostal.Location = new System.Drawing.Point(225, 85);
             this.labelCodePostal.Name = "labelCodePostal";
             this.labelCodePostal.Size = new System.Drawing.Size(92, 19);
             this.labelCodePostal.TabIndex = 27;
@@ -308,10 +316,10 @@ namespace Alfa_Romeo_Garage
             this.textBoxCodePostal.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxCodePostal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxCodePostal.ForeColor = System.Drawing.Color.White;
-            this.textBoxCodePostal.Location = new System.Drawing.Point(276, 106);
+            this.textBoxCodePostal.Location = new System.Drawing.Point(229, 106);
             this.textBoxCodePostal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCodePostal.Name = "textBoxCodePostal";
-            this.textBoxCodePostal.Size = new System.Drawing.Size(241, 23);
+            this.textBoxCodePostal.Size = new System.Drawing.Size(231, 23);
             this.textBoxCodePostal.TabIndex = 26;
             // 
             // labelNumero
@@ -319,7 +327,7 @@ namespace Alfa_Romeo_Garage
             this.labelNumero.AutoSize = true;
             this.labelNumero.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumero.ForeColor = System.Drawing.Color.Crimson;
-            this.labelNumero.Location = new System.Drawing.Point(12, 80);
+            this.labelNumero.Location = new System.Drawing.Point(2, 85);
             this.labelNumero.Name = "labelNumero";
             this.labelNumero.Size = new System.Drawing.Size(63, 19);
             this.labelNumero.TabIndex = 25;
@@ -330,10 +338,10 @@ namespace Alfa_Romeo_Garage
             this.textBoxNumero.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNumero.ForeColor = System.Drawing.Color.White;
-            this.textBoxNumero.Location = new System.Drawing.Point(17, 102);
+            this.textBoxNumero.Location = new System.Drawing.Point(5, 106);
             this.textBoxNumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNumero.Name = "textBoxNumero";
-            this.textBoxNumero.Size = new System.Drawing.Size(241, 23);
+            this.textBoxNumero.Size = new System.Drawing.Size(211, 23);
             this.textBoxNumero.TabIndex = 24;
             // 
             // labelPays
@@ -341,7 +349,7 @@ namespace Alfa_Romeo_Garage
             this.labelPays.AutoSize = true;
             this.labelPays.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPays.ForeColor = System.Drawing.Color.Crimson;
-            this.labelPays.Location = new System.Drawing.Point(273, 138);
+            this.labelPays.Location = new System.Drawing.Point(225, 139);
             this.labelPays.Name = "labelPays";
             this.labelPays.Size = new System.Drawing.Size(40, 19);
             this.labelPays.TabIndex = 31;
@@ -352,10 +360,10 @@ namespace Alfa_Romeo_Garage
             this.textBoxPays.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxPays.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPays.ForeColor = System.Drawing.Color.White;
-            this.textBoxPays.Location = new System.Drawing.Point(277, 160);
+            this.textBoxPays.Location = new System.Drawing.Point(229, 160);
             this.textBoxPays.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPays.Name = "textBoxPays";
-            this.textBoxPays.Size = new System.Drawing.Size(241, 23);
+            this.textBoxPays.Size = new System.Drawing.Size(231, 23);
             this.textBoxPays.TabIndex = 30;
             // 
             // labelVille
@@ -363,7 +371,7 @@ namespace Alfa_Romeo_Garage
             this.labelVille.AutoSize = true;
             this.labelVille.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVille.ForeColor = System.Drawing.Color.Crimson;
-            this.labelVille.Location = new System.Drawing.Point(15, 138);
+            this.labelVille.Location = new System.Drawing.Point(4, 138);
             this.labelVille.Name = "labelVille";
             this.labelVille.Size = new System.Drawing.Size(36, 19);
             this.labelVille.TabIndex = 29;
@@ -374,10 +382,10 @@ namespace Alfa_Romeo_Garage
             this.textBoxVille.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxVille.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxVille.ForeColor = System.Drawing.Color.White;
-            this.textBoxVille.Location = new System.Drawing.Point(19, 160);
+            this.textBoxVille.Location = new System.Drawing.Point(8, 160);
             this.textBoxVille.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxVille.Name = "textBoxVille";
-            this.textBoxVille.Size = new System.Drawing.Size(241, 23);
+            this.textBoxVille.Size = new System.Drawing.Size(208, 23);
             this.textBoxVille.TabIndex = 28;
             // 
             // labelAdresseEmail
@@ -385,7 +393,7 @@ namespace Alfa_Romeo_Garage
             this.labelAdresseEmail.AutoSize = true;
             this.labelAdresseEmail.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdresseEmail.ForeColor = System.Drawing.Color.Crimson;
-            this.labelAdresseEmail.Location = new System.Drawing.Point(12, 91);
+            this.labelAdresseEmail.Location = new System.Drawing.Point(4, 81);
             this.labelAdresseEmail.Name = "labelAdresseEmail";
             this.labelAdresseEmail.Size = new System.Drawing.Size(107, 19);
             this.labelAdresseEmail.TabIndex = 35;
@@ -396,10 +404,10 @@ namespace Alfa_Romeo_Garage
             this.textBoxAdresseEmail.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxAdresseEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAdresseEmail.ForeColor = System.Drawing.Color.White;
-            this.textBoxAdresseEmail.Location = new System.Drawing.Point(16, 113);
+            this.textBoxAdresseEmail.Location = new System.Drawing.Point(8, 103);
             this.textBoxAdresseEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxAdresseEmail.Name = "textBoxAdresseEmail";
-            this.textBoxAdresseEmail.Size = new System.Drawing.Size(499, 23);
+            this.textBoxAdresseEmail.Size = new System.Drawing.Size(450, 23);
             this.textBoxAdresseEmail.TabIndex = 34;
             // 
             // labelNumeroTelephone
@@ -407,7 +415,7 @@ namespace Alfa_Romeo_Garage
             this.labelNumeroTelephone.AutoSize = true;
             this.labelNumeroTelephone.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumeroTelephone.ForeColor = System.Drawing.Color.Crimson;
-            this.labelNumeroTelephone.Location = new System.Drawing.Point(12, 27);
+            this.labelNumeroTelephone.Location = new System.Drawing.Point(4, 27);
             this.labelNumeroTelephone.Name = "labelNumeroTelephone";
             this.labelNumeroTelephone.Size = new System.Drawing.Size(162, 19);
             this.labelNumeroTelephone.TabIndex = 33;
@@ -418,29 +426,29 @@ namespace Alfa_Romeo_Garage
             this.textBoxNumeroTelephone.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBoxNumeroTelephone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNumeroTelephone.ForeColor = System.Drawing.Color.White;
-            this.textBoxNumeroTelephone.Location = new System.Drawing.Point(16, 49);
+            this.textBoxNumeroTelephone.Location = new System.Drawing.Point(8, 49);
             this.textBoxNumeroTelephone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNumeroTelephone.Name = "textBoxNumeroTelephone";
-            this.textBoxNumeroTelephone.Size = new System.Drawing.Size(498, 23);
+            this.textBoxNumeroTelephone.Size = new System.Drawing.Size(452, 23);
             this.textBoxNumeroTelephone.TabIndex = 32;
             // 
             // groupBoxInformationsPersonnelles
             // 
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelNom);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.dateTimePickerDateNaissance);
-            this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxNom);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelDateNaissance);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelNumeroNational);
+            this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxNom);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxPrenom);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.textBoxNumeroNational);
             this.groupBoxInformationsPersonnelles.Controls.Add(this.labelPrenom);
             this.groupBoxInformationsPersonnelles.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxInformationsPersonnelles.ForeColor = System.Drawing.Color.White;
-            this.groupBoxInformationsPersonnelles.Location = new System.Drawing.Point(34, 82);
+            this.groupBoxInformationsPersonnelles.Location = new System.Drawing.Point(23, 78);
             this.groupBoxInformationsPersonnelles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxInformationsPersonnelles.Name = "groupBoxInformationsPersonnelles";
             this.groupBoxInformationsPersonnelles.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxInformationsPersonnelles.Size = new System.Drawing.Size(531, 152);
+            this.groupBoxInformationsPersonnelles.Size = new System.Drawing.Size(471, 146);
             this.groupBoxInformationsPersonnelles.TabIndex = 36;
             this.groupBoxInformationsPersonnelles.TabStop = false;
             this.groupBoxInformationsPersonnelles.Text = "Informations personnelles";
@@ -453,11 +461,11 @@ namespace Alfa_Romeo_Garage
             this.groupBoxContact.Controls.Add(this.labelAdresseEmail);
             this.groupBoxContact.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxContact.ForeColor = System.Drawing.Color.White;
-            this.groupBoxContact.Location = new System.Drawing.Point(34, 499);
+            this.groupBoxContact.Location = new System.Drawing.Point(23, 469);
             this.groupBoxContact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxContact.Name = "groupBoxContact";
             this.groupBoxContact.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxContact.Size = new System.Drawing.Size(531, 153);
+            this.groupBoxContact.Size = new System.Drawing.Size(471, 137);
             this.groupBoxContact.TabIndex = 37;
             this.groupBoxContact.TabStop = false;
             this.groupBoxContact.Text = "Coordonnées";
@@ -476,11 +484,11 @@ namespace Alfa_Romeo_Garage
             this.groupBoxAdresse.Controls.Add(this.textBoxPays);
             this.groupBoxAdresse.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxAdresse.ForeColor = System.Drawing.Color.White;
-            this.groupBoxAdresse.Location = new System.Drawing.Point(35, 258);
+            this.groupBoxAdresse.Location = new System.Drawing.Point(23, 238);
             this.groupBoxAdresse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxAdresse.Name = "groupBoxAdresse";
             this.groupBoxAdresse.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxAdresse.Size = new System.Drawing.Size(531, 211);
+            this.groupBoxAdresse.Size = new System.Drawing.Size(471, 211);
             this.groupBoxAdresse.TabIndex = 37;
             this.groupBoxAdresse.TabStop = false;
             this.groupBoxAdresse.Text = "Adresse";
@@ -498,10 +506,10 @@ namespace Alfa_Romeo_Garage
             // 
             this.panelBorder.BackColor = System.Drawing.Color.White;
             this.panelBorder.Controls.Add(this.dataGridViewClients);
-            this.panelBorder.Location = new System.Drawing.Point(613, 91);
+            this.panelBorder.Location = new System.Drawing.Point(514, 88);
             this.panelBorder.Name = "panelBorder";
             this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
-            this.panelBorder.Size = new System.Drawing.Size(613, 518);
+            this.panelBorder.Size = new System.Drawing.Size(732, 690);
             this.panelBorder.TabIndex = 39;
             // 
             // dataGridViewClients
@@ -559,8 +567,8 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(611, 516);
-            this.dataGridViewClients.TabIndex = 39;
+            this.dataGridViewClients.Size = new System.Drawing.Size(730, 688);
+            this.dataGridViewClients.TabIndex = 40;
             // 
             // cID
             // 
@@ -643,9 +651,9 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.groupBoxContact);
             this.Controls.Add(this.groupBoxAdresse);
             this.Controls.Add(this.groupBoxInformationsPersonnelles);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonAnnuler);
             this.Controls.Add(this.buttonConfirmer);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonSupprimerClient);
             this.Controls.Add(this.buttonEditer);
             this.Controls.Add(this.buttonAjouter);
