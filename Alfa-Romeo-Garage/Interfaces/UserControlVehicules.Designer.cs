@@ -53,6 +53,8 @@ namespace Alfa_Romeo_Garage
             this.buttonEditer = new System.Windows.Forms.Button();
             this.buttonAjouter = new System.Windows.Forms.Button();
             this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cModeleVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNomProprietaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNumeroImmatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDatePremiereImmatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDateDerniereImmatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +62,9 @@ namespace Alfa_Romeo_Garage
             this.cNumeroChassis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cCouleurVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDateEnregistrement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelBorder = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
+            this.panelBorder.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewClients
@@ -86,6 +90,8 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.ColumnHeadersHeight = 29;
             this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
+            this.cModeleVehicule,
+            this.cNomProprietaire,
             this.cNumeroImmatriculation,
             this.cDatePremiereImmatriculation,
             this.cDateDerniereImmatriculation,
@@ -101,8 +107,9 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewClients.GridColor = System.Drawing.Color.White;
-            this.dataGridViewClients.Location = new System.Drawing.Point(517, 79);
+            this.dataGridViewClients.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewClients.Name = "dataGridViewClients";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -117,7 +124,7 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(727, 699);
+            this.dataGridViewClients.Size = new System.Drawing.Size(725, 697);
             this.dataGridViewClients.TabIndex = 48;
             // 
             // buttonAnnuler
@@ -165,7 +172,7 @@ namespace Alfa_Romeo_Garage
             this.buttonSupprimerClient.Name = "buttonSupprimerClient";
             this.buttonSupprimerClient.Size = new System.Drawing.Size(471, 39);
             this.buttonSupprimerClient.TabIndex = 42;
-            this.buttonSupprimerClient.Text = "Supprimer un client";
+            this.buttonSupprimerClient.Text = "Supprimer un véhicule";
             this.buttonSupprimerClient.UseVisualStyleBackColor = false;
             // 
             // labelTitre
@@ -282,7 +289,7 @@ namespace Alfa_Romeo_Garage
             this.labelNumeroChassis.Name = "labelNumeroChassis";
             this.labelNumeroChassis.Size = new System.Drawing.Size(162, 19);
             this.labelNumeroChassis.TabIndex = 58;
-            this.labelNumeroChassis.Text = "Numero de chassis NIV";
+            this.labelNumeroChassis.Text = "Numéro de chassis NIV";
             // 
             // textBoxNumeroChassis
             // 
@@ -330,7 +337,7 @@ namespace Alfa_Romeo_Garage
             this.buttonEditer.Name = "buttonEditer";
             this.buttonEditer.Size = new System.Drawing.Size(471, 39);
             this.buttonEditer.TabIndex = 61;
-            this.buttonEditer.Text = "Editer un client";
+            this.buttonEditer.Text = "Editer un véhicule";
             this.buttonEditer.UseVisualStyleBackColor = false;
             // 
             // buttonAjouter
@@ -346,7 +353,7 @@ namespace Alfa_Romeo_Garage
             this.buttonAjouter.Name = "buttonAjouter";
             this.buttonAjouter.Size = new System.Drawing.Size(471, 39);
             this.buttonAjouter.TabIndex = 62;
-            this.buttonAjouter.Text = "Ajouter un client";
+            this.buttonAjouter.Text = "Ajouter un véhicule";
             this.buttonAjouter.UseVisualStyleBackColor = false;
             // 
             // cID
@@ -357,6 +364,24 @@ namespace Alfa_Romeo_Garage
             this.cID.Name = "cID";
             this.cID.ReadOnly = true;
             this.cID.Width = 50;
+            // 
+            // cModeleVehicule
+            // 
+            this.cModeleVehicule.DataPropertyName = "nomVehicule";
+            this.cModeleVehicule.HeaderText = "Modèle du véhicule";
+            this.cModeleVehicule.MinimumWidth = 6;
+            this.cModeleVehicule.Name = "cModeleVehicule";
+            this.cModeleVehicule.ReadOnly = true;
+            this.cModeleVehicule.Width = 125;
+            // 
+            // cNomProprietaire
+            // 
+            this.cNomProprietaire.DataPropertyName = "nomProprietaire";
+            this.cNomProprietaire.HeaderText = "Nom du propriétaire";
+            this.cNomProprietaire.MinimumWidth = 6;
+            this.cNomProprietaire.Name = "cNomProprietaire";
+            this.cNomProprietaire.ReadOnly = true;
+            this.cNomProprietaire.Width = 125;
             // 
             // cNumeroImmatriculation
             // 
@@ -421,11 +446,22 @@ namespace Alfa_Romeo_Garage
             this.cDateEnregistrement.ReadOnly = true;
             this.cDateEnregistrement.Width = 150;
             // 
+            // panelBorder
+            // 
+            this.panelBorder.BackColor = System.Drawing.Color.White;
+            this.panelBorder.Controls.Add(this.dataGridViewClients);
+            this.panelBorder.Location = new System.Drawing.Point(516, 79);
+            this.panelBorder.Name = "panelBorder";
+            this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
+            this.panelBorder.Size = new System.Drawing.Size(727, 699);
+            this.panelBorder.TabIndex = 63;
+            // 
             // UserControlVehicules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.panelBorder);
             this.Controls.Add(this.buttonAjouter);
             this.Controls.Add(this.buttonEditer);
             this.Controls.Add(this.labelCouleurVehicule);
@@ -440,7 +476,6 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.labelDatePremiereImmatriculation);
             this.Controls.Add(this.labelDerniereImmatriculation);
             this.Controls.Add(this.textBoxImmatriculation);
-            this.Controls.Add(this.dataGridViewClients);
             this.Controls.Add(this.buttonAnnuler);
             this.Controls.Add(this.buttonConfirmer);
             this.Controls.Add(this.buttonSupprimerClient);
@@ -448,6 +483,7 @@ namespace Alfa_Romeo_Garage
             this.Name = "UserControlVehicules";
             this.Size = new System.Drawing.Size(1260, 805);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();
+            this.panelBorder.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -475,6 +511,8 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Button buttonEditer;
         private System.Windows.Forms.Button buttonAjouter;
         private System.Windows.Forms.DataGridViewTextBoxColumn cID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cModeleVehicule;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNomProprietaire;
         private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroImmatriculation;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDatePremiereImmatriculation;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDateDerniereImmatriculation;
@@ -482,5 +520,6 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroChassis;
         private System.Windows.Forms.DataGridViewTextBoxColumn cCouleurVehicule;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDateEnregistrement;
+        private System.Windows.Forms.Panel panelBorder;
     }
 }
