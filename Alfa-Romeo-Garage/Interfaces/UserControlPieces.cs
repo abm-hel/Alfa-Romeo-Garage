@@ -46,9 +46,9 @@ namespace Alfa_Romeo_Garage
             dataTableClients.Columns.Add(new DataColumn("id", System.Type.GetType("System.Int32")));
             dataTableClients.Columns.Add(new DataColumn("piece"));
             dataTableClients.Columns.Add(new DataColumn("marque"));
-            dataTableClients.Columns.Add(new DataColumn("prix", System.Type.GetType("System.Int32")));
+            dataTableClients.Columns.Add(new DataColumn("prix", System.Type.GetType("System.Double")));
             dataTableClients.Columns.Add(new DataColumn("tva", System.Type.GetType("System.Double")));
-            dataTableClients.Columns.Add(new DataColumn("quantite", System.Type.GetType("System.Double")));
+            dataTableClients.Columns.Add(new DataColumn("quantite", System.Type.GetType("System.Int32")));
 
             List<C_PART> listPieces = new G_PART(connexionBD).Lire("NAME");
 
