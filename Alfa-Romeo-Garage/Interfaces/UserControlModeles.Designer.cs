@@ -68,7 +68,9 @@ namespace Alfa_Romeo_Garage
             this.cVitesseMaximale = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cConsommation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cMasse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelBorder = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
+            this.panelBorder.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonAjouter
@@ -405,8 +407,9 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewClients.GridColor = System.Drawing.Color.White;
-            this.dataGridViewClients.Location = new System.Drawing.Point(504, 91);
+            this.dataGridViewClients.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewClients.Name = "dataGridViewClients";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -421,7 +424,7 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(740, 695);
+            this.dataGridViewClients.Size = new System.Drawing.Size(742, 693);
             this.dataGridViewClients.TabIndex = 92;
             // 
             // cID
@@ -514,12 +517,22 @@ namespace Alfa_Romeo_Garage
             this.cMasse.ReadOnly = true;
             this.cMasse.Width = 125;
             // 
+            // panelBorder
+            // 
+            this.panelBorder.BackColor = System.Drawing.Color.White;
+            this.panelBorder.Controls.Add(this.dataGridViewClients);
+            this.panelBorder.Location = new System.Drawing.Point(495, 91);
+            this.panelBorder.Name = "panelBorder";
+            this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
+            this.panelBorder.Size = new System.Drawing.Size(744, 695);
+            this.panelBorder.TabIndex = 93;
+            // 
             // UserControlModeles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Controls.Add(this.dataGridViewClients);
+            this.Controls.Add(this.panelBorder);
             this.Controls.Add(this.buttonConfirmer);
             this.Controls.Add(this.buttonAnnuler);
             this.Controls.Add(this.labelMasse);
@@ -549,6 +562,7 @@ namespace Alfa_Romeo_Garage
             this.Size = new System.Drawing.Size(1260, 805);
             this.Load += new System.EventHandler(this.UserControlModeles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();
+            this.panelBorder.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -591,5 +605,6 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.DataGridViewTextBoxColumn cVitesseMaximale;
         private System.Windows.Forms.DataGridViewTextBoxColumn cConsommation;
         private System.Windows.Forms.DataGridViewTextBoxColumn cMasse;
+        private System.Windows.Forms.Panel panelBorder;
     }
 }
