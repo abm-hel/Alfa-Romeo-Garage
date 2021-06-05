@@ -29,10 +29,10 @@ namespace Alfa_Romeo_Garage
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonConfirmer = new System.Windows.Forms.Button();
             this.buttonAnnuler = new System.Windows.Forms.Button();
             this.labelMarque = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@ namespace Alfa_Romeo_Garage
             this.labelPiece = new System.Windows.Forms.Label();
             this.textBoxPiece = new System.Windows.Forms.TextBox();
             this.labelPrix = new System.Windows.Forms.Label();
-            this.textBoxCylindree = new System.Windows.Forms.TextBox();
+            this.textBoxPrix = new System.Windows.Forms.TextBox();
             this.labelTVA = new System.Windows.Forms.Label();
             this.textBoxTVA = new System.Windows.Forms.TextBox();
             this.buttonSupprimer = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@ namespace Alfa_Romeo_Garage
             this.buttonConfirmer.TabIndex = 91;
             this.buttonConfirmer.Text = "Confirmer";
             this.buttonConfirmer.UseVisualStyleBackColor = false;
+            this.buttonConfirmer.Click += new System.EventHandler(this.buttonConfirmer_Click);
             // 
             // buttonAnnuler
             // 
@@ -151,16 +152,16 @@ namespace Alfa_Romeo_Garage
             this.labelPrix.TabIndex = 88;
             this.labelPrix.Text = "Prix unité";
             // 
-            // textBoxCylindree
+            // textBoxPrix
             // 
-            this.textBoxCylindree.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBoxCylindree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCylindree.ForeColor = System.Drawing.Color.White;
-            this.textBoxCylindree.Location = new System.Drawing.Point(16, 159);
-            this.textBoxCylindree.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCylindree.Name = "textBoxCylindree";
-            this.textBoxCylindree.Size = new System.Drawing.Size(340, 20);
-            this.textBoxCylindree.TabIndex = 87;
+            this.textBoxPrix.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxPrix.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPrix.ForeColor = System.Drawing.Color.White;
+            this.textBoxPrix.Location = new System.Drawing.Point(16, 159);
+            this.textBoxPrix.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPrix.Name = "textBoxPrix";
+            this.textBoxPrix.Size = new System.Drawing.Size(340, 20);
+            this.textBoxPrix.TabIndex = 87;
             // 
             // labelTVA
             // 
@@ -193,13 +194,14 @@ namespace Alfa_Romeo_Garage
             this.buttonSupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSupprimer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSupprimer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupprimer.Location = new System.Drawing.Point(16, 602);
+            this.buttonSupprimer.Location = new System.Drawing.Point(17, 602);
             this.buttonSupprimer.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSupprimer.Name = "buttonSupprimer";
             this.buttonSupprimer.Size = new System.Drawing.Size(339, 32);
             this.buttonSupprimer.TabIndex = 84;
             this.buttonSupprimer.Text = "Supprimer un modèle";
             this.buttonSupprimer.UseVisualStyleBackColor = false;
+            this.buttonSupprimer.Click += new System.EventHandler(this.buttonSupprimer_Click);
             // 
             // labelTitle
             // 
@@ -228,6 +230,7 @@ namespace Alfa_Romeo_Garage
             this.buttonAjouter.TabIndex = 95;
             this.buttonAjouter.Text = "Ajouter une pièce";
             this.buttonAjouter.UseVisualStyleBackColor = false;
+            this.buttonAjouter.Click += new System.EventHandler(this.buttonAjouter_Click);
             // 
             // buttonEditer
             // 
@@ -237,13 +240,14 @@ namespace Alfa_Romeo_Garage
             this.buttonEditer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEditer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEditer.Location = new System.Drawing.Point(17, 558);
+            this.buttonEditer.Location = new System.Drawing.Point(15, 558);
             this.buttonEditer.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEditer.Name = "buttonEditer";
             this.buttonEditer.Size = new System.Drawing.Size(339, 32);
             this.buttonEditer.TabIndex = 96;
             this.buttonEditer.Text = "Editer une pièce";
             this.buttonEditer.UseVisualStyleBackColor = false;
+            this.buttonEditer.Click += new System.EventHandler(this.buttonEditer_Click);
             // 
             // labelQuantite
             // 
@@ -282,22 +286,22 @@ namespace Alfa_Romeo_Garage
             // 
             this.dataGridViewClients.AllowUserToAddRows = false;
             this.dataGridViewClients.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridViewClients.ColumnHeadersHeight = 29;
             this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
@@ -306,27 +310,27 @@ namespace Alfa_Romeo_Garage
             this.cPrix,
             this.cTva,
             this.cQuantite});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewClients.GridColor = System.Drawing.Color.White;
             this.dataGridViewClients.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewClients.Name = "dataGridViewClients";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.dataGridViewClients.RowHeadersVisible = false;
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
@@ -394,9 +398,9 @@ namespace Alfa_Romeo_Garage
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Controls.Add(this.panelBorder);
+            this.Controls.Add(this.buttonEditer);
             this.Controls.Add(this.labelQuantite);
             this.Controls.Add(this.textBoxQuantite);
-            this.Controls.Add(this.buttonEditer);
             this.Controls.Add(this.buttonAjouter);
             this.Controls.Add(this.buttonConfirmer);
             this.Controls.Add(this.buttonAnnuler);
@@ -405,7 +409,7 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.labelPiece);
             this.Controls.Add(this.textBoxPiece);
             this.Controls.Add(this.labelPrix);
-            this.Controls.Add(this.textBoxCylindree);
+            this.Controls.Add(this.textBoxPrix);
             this.Controls.Add(this.labelTVA);
             this.Controls.Add(this.textBoxTVA);
             this.Controls.Add(this.buttonSupprimer);
@@ -413,6 +417,7 @@ namespace Alfa_Romeo_Garage
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlPieces";
             this.Size = new System.Drawing.Size(945, 654);
+            this.Load += new System.EventHandler(this.UserControlPieces_Load);
             this.panelBorder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();
             this.ResumeLayout(false);
@@ -429,7 +434,7 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Label labelPiece;
         private System.Windows.Forms.TextBox textBoxPiece;
         private System.Windows.Forms.Label labelPrix;
-        private System.Windows.Forms.TextBox textBoxCylindree;
+        private System.Windows.Forms.TextBox textBoxPrix;
         private System.Windows.Forms.Label labelTVA;
         private System.Windows.Forms.TextBox textBoxTVA;
         private System.Windows.Forms.Button buttonSupprimer;
