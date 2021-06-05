@@ -88,7 +88,14 @@ namespace Alfa_Romeo_Garage
 
         private void buttonAjouter_Click(object sender, EventArgs e)
         {
+            textBoxPiece.Text = "";
+            textBoxMarque.Text = "";
+            textBoxPrix.Text = "";
+            textBoxTVA.Text = "";
+            textBoxTVA.Text = "";
 
+            ActiverBoutonsFormulaires(false);
+            textBoxPiece.Focus();
         }
 
         private void buttonEditer_Click(object sender, EventArgs e)
