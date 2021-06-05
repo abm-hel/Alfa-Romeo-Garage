@@ -121,12 +121,74 @@ namespace Alfa_Romeo_Garage
 
         private void buttonSupprimer_Click(object sender, EventArgs e)
         {
-
+            if (dataGridViewClients.SelectedRows.Count > 0)
+            {
+                if (MessageBox.Show("Voullez-vous vraiment supprimer le modele ?", "Confirmer", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int idSuppression = (int)dataGridViewClients.SelectedRows[0].Cells["cID"].Value;
+                    new G_PART(connexionBD).Supprimer(idSuppression);
+                    bindingSourcesClients.RemoveCurrent();
+                }
+            }
         }
 
         private void buttonConfirmer_Click(object sender, EventArgs e)
         {
+            if (textBoxPiece.Text.Trim() == "")
+            {
+                MessageBox.Show("Renseigner la pièce");
+            }
 
+            else if (id == null)
+            //Ajout
+            {
+                int idAjout = new G_PART(connexionBD).Ajouter
+                (
+                    textBoxPiece.Text,
+                    textBoxMarque.Text,
+                    Convert.ToSingle(textBoxPrix.Text),
+                    Convert.ToSingle(textBoxTVA.Text),
+                    Convert.ToInt32(textBoxQuantite.Text)
+                );
+
+
+                dataTableClients.Rows.Add
+                (
+                   idAjout.ToString(),
+                   textBoxPiece.Text,
+                   textBoxMarque.Text,
+                   textBoxPrix.Text,
+                   textBoxTVA,
+                   textBoxQuantite
+                ) ;
+
+            }
+
+            else
+            //Modification
+            {
+                int idModification = new G_PART(connexionBD).Modifier
+                (
+                   int.Parse(id),
+                   textBoxPiece.Text,
+                   textBoxMarque.Text,
+                   Convert.ToSingle(textBoxPrix.Text),
+                   Convert.ToSingle(textBoxTVA.Text),
+                   Convert.ToInt32(textBoxQuantite.Text)
+                 );
+
+                dataGridViewClients.SelectedRows[0].Cells["cID"].Value = int.Parse(id).ToString();
+                dataGridViewClients.SelectedRows[0].Cells["cPiece"].Value = textBoxPiece.Text;
+                dataGridViewClients.SelectedRows[0].Cells["cMarque"].Value = textBoxMarque.Text;
+                dataGridViewClients.SelectedRows[0].Cells["cPrix"].Value = textBoxPrix.Text;
+                dataGridViewClients.SelectedRows[0].Cells["cTva"].Value = textBoxTVA.Text;
+                dataGridViewClients.SelectedRows[0].Cells["cQuantite"].Value = textBoxQuantite.Text;
+
+                bindingSourcesClients.EndEdit();
+                id = null;
+
+            }
+            ActiverBoutonsFormulaires(true);
         }
     }
 }
