@@ -193,7 +193,7 @@ namespace Alfa_Romeo_Garage
 
         private void buttonAnnuler_Click(object sender, EventArgs e)
         {
-
+            ActiverBoutonsFormulaires(true);
         }
     }
 }
