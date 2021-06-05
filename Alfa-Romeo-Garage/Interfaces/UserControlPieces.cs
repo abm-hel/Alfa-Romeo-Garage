@@ -146,8 +146,8 @@ namespace Alfa_Romeo_Garage
                 (
                     textBoxPiece.Text,
                     textBoxMarque.Text,
-                    Convert.ToSingle(textBoxPrix.Text),
-                    Convert.ToSingle(textBoxTVA.Text),
+                    Convert.ToDouble(textBoxPrix.Text),
+                    Convert.ToDouble(textBoxTVA.Text),
                     Convert.ToInt32(textBoxQuantite.Text)
                 );
 
@@ -158,8 +158,8 @@ namespace Alfa_Romeo_Garage
                    textBoxPiece.Text,
                    textBoxMarque.Text,
                    textBoxPrix.Text,
-                   textBoxTVA,
-                   textBoxQuantite
+                   textBoxTVA.Text,
+                   textBoxQuantite.Text
                 ) ;
 
             }
@@ -172,8 +172,8 @@ namespace Alfa_Romeo_Garage
                    int.Parse(id),
                    textBoxPiece.Text,
                    textBoxMarque.Text,
-                   Convert.ToSingle(textBoxPrix.Text),
-                   Convert.ToSingle(textBoxTVA.Text),
+                   Convert.ToDouble(textBoxPrix.Text),
+                   Convert.ToDouble(textBoxTVA.Text),
                    Convert.ToInt32(textBoxQuantite.Text)
                  );
 
