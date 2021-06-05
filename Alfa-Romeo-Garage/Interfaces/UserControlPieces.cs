@@ -35,7 +35,7 @@ namespace Alfa_Romeo_Garage
             textBoxMarque.Enabled = !disponibilite;
             textBoxPrix.Enabled = !disponibilite;
             textBoxTVA.Enabled = !disponibilite;
-            textBoxTVA.Enabled = !disponibilite;
+            textBoxQuantite.Enabled = !disponibilite;
             
             buttonConfirmer.Visible = buttonAnnuler.Visible = !disponibilite;
         }
