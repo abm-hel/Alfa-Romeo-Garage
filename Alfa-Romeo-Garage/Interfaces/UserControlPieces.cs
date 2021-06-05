@@ -123,7 +123,7 @@ namespace Alfa_Romeo_Garage
         {
             if (dataGridViewClients.SelectedRows.Count > 0)
             {
-                if (MessageBox.Show("Voullez-vous vraiment supprimer le modele ?", "Confirmer", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Voullez-vous vraiment supprimer la pièce ?", "Confirmer", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     int idSuppression = (int)dataGridViewClients.SelectedRows[0].Cells["cID"].Value;
                     new G_PART(connexionBD).Supprimer(idSuppression);
