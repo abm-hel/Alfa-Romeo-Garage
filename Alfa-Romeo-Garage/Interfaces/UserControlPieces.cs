@@ -100,7 +100,23 @@ namespace Alfa_Romeo_Garage
 
         private void buttonEditer_Click(object sender, EventArgs e)
         {
+            if (dataGridViewClients.SelectedRows.Count > 0)
+            {
+                id = dataGridViewClients.SelectedRows[0].Cells["cID"].Value.ToString();
+                C_PART pieceModification = new G_PART(connexionBD).Lire_ID(int.Parse(id));
 
+                textBoxPiece.Text = pieceModification.NAME;
+                textBoxMarque.Text = pieceModification.PRODUCER;
+                textBoxPrix.Text = String.Format("{0:0.##}", pieceModification.PRICE).ToString();
+                textBoxTVA.Text = String.Format("{0:0.#}", pieceModification.TVA).ToString();
+                textBoxQuantite.Text = pieceModification.QUANTITY.ToString();
+
+                ActiverBoutonsFormulaires(false);
+            }
+            else
+            {
+                MessageBox.Show("Sélectionner l'enregistrement à éditer");
+            }
         }
 
         private void buttonSupprimer_Click(object sender, EventArgs e)
