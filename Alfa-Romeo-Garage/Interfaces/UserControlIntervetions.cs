@@ -16,5 +16,10 @@ namespace Alfa_Romeo_Garage
         {
             InitializeComponent();
         }
+
+        private void UserControlIntervetions_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
