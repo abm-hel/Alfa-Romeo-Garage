@@ -84,5 +84,40 @@ namespace Alfa_Romeo_Garage
                 ActiverBoutonsFormulaires(false);
             }
         }
+
+        
+        private void buttonAjouter_Click(object sender, EventArgs e)
+        {
+            textBoxIntervention.Text = "";
+            textBoxDuree.Text = "";
+            textBoxPrixHeure.Text = "";
+            textBoxTVA.Text = "";
+
+            ActiverBoutonsFormulaires(false);
+            textBoxPiece.Focus();
+        }
+
+        private void buttonEditer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSupprimer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void buttonConfirmer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }
