@@ -94,7 +94,7 @@ namespace Alfa_Romeo_Garage
             textBoxTVA.Text = "";
 
             ActiverBoutonsFormulaires(false);
-            textBoxPiece.Focus();
+            textBoxIntervention.Focus();
         }
 
         private void buttonEditer_Click(object sender, EventArgs e)
