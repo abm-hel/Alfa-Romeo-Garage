@@ -44,7 +44,7 @@ namespace Alfa_Romeo_Garage
             dataTableClients = new DataTable();
             dataTableClients.Columns.Add(new DataColumn("id", System.Type.GetType("System.Int32")));
             dataTableClients.Columns.Add(new DataColumn("intervention"));
-            dataTableClients.Columns.Add(new DataColumn("duree", System.Type.GetType("System.Int32")));
+            dataTableClients.Columns.Add(new DataColumn("duree"));
             dataTableClients.Columns.Add(new DataColumn("prix"));
             dataTableClients.Columns.Add(new DataColumn("tva"));
             dataTableClients.Columns.Add(new DataColumn("prixTotal"));
@@ -57,7 +57,7 @@ namespace Alfa_Romeo_Garage
                 (
                     intervention.ID,
                     intervention.DESCRIPTION,
-                    intervention.NUMBER_HOURS,
+                    intervention.NUMBER_HOURS.ToString()+" heure(s)",
                     String.Format("{0:0.00}", intervention.PRICE_HOUR).ToString()+" €",
                     String.Format("{0:0.0}", intervention.TVA).ToString()+ " %",
                     String.Format("{0:00.00}", intervention.PRIC).ToString()+ " €"
@@ -106,7 +106,7 @@ namespace Alfa_Romeo_Garage
 
                 textBoxIntervention.Text = modification.DESCRIPTION;
                 textBoxDuree.Text = modification.NUMBER_HOURS.ToString();
-                textBoxPrixHeure.Text = String.Format("{0:0.00}", modification.PRICE_HOUR).ToString();
+                textBoxPrixHeure.Text =  modification.PRICE_HOUR.ToString();
                 textBoxTVA.Text = modification.TVA.ToString();
                
                 ActiverBoutonsFormulaires(false);
@@ -124,7 +124,7 @@ namespace Alfa_Romeo_Garage
                 if (MessageBox.Show("Voullez-vous vraiment supprimer l'intervention ?", "Confirmer", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     int idSuppression = (int)dataGridViewClients.SelectedRows[0].Cells["cID"].Value;
-                    new G_PART(connexionBD).Supprimer(idSuppression);
+                    new G_INTERVENTION(connexionBD).Supprimer(idSuppression);
                     bindingSourcesClients.RemoveCurrent();
                 }
             }
@@ -133,7 +133,71 @@ namespace Alfa_Romeo_Garage
 
         private void buttonConfirmer_Click(object sender, EventArgs e)
         {
+            if (textBoxIntervention.Text.Trim() == "")
+            {
+                MessageBox.Show("Renseigner l'intervention");
+            }
 
+            else if (id == null)
+            //Ajout
+            {
+                int d = Convert.ToInt32(textBoxDuree.Text);
+                double ph = Convert.ToDouble(textBoxPrixHeure.Text);
+                double tva = Convert.ToDouble(textBoxTVA.Text);
+                double pt = ph * d + (ph * d * (tva / 100));
+
+                int idAjout = new G_INTERVENTION(connexionBD).Ajouter
+                (
+                    textBoxIntervention.Text,
+                    d,
+                    ph,
+                    (double)pt,
+                    tva
+                );
+
+                dataTableClients.Rows.Add
+                (
+                   idAjout.ToString(),
+                   textBoxIntervention.Text,
+                   d.ToString()+" heure(s)",
+                   String.Format("{0:0.00}", ph).ToString() + " €",
+                   tva.ToString() + " %",
+                   string.Format("{0:0.00}", pt).ToString() + " €"
+                );
+
+            }
+
+            else
+
+            //Modification
+            {
+                int d = Convert.ToInt32(textBoxDuree.Text);
+                double ph = Convert.ToDouble(textBoxPrixHeure.Text);
+                double tva = Convert.ToDouble(textBoxTVA.Text);
+                double pt = ph * d + (ph * d * (tva / 100));
+
+                int idModification = new G_INTERVENTION(connexionBD).Modifier
+                (
+                    int.Parse(id),
+                    textBoxIntervention.Text,
+                    d,
+                    ph,
+                    (double)pt,
+                    tva
+                 );
+
+                dataGridViewClients.SelectedRows[0].Cells["cID"].Value = int.Parse(id).ToString();
+                dataGridViewClients.SelectedRows[0].Cells["cIntervention"].Value = textBoxIntervention.Text;
+                dataGridViewClients.SelectedRows[0].Cells["cDuree"].Value = d.ToString() + " heure(s)";
+                dataGridViewClients.SelectedRows[0].Cells["cPrix"].Value = String.Format("{0:0.00}", ph).ToString() + " €";
+                dataGridViewClients.SelectedRows[0].Cells["cTVA"].Value = tva.ToString() + " %";
+                dataGridViewClients.SelectedRows[0].Cells["cPrixTotal"].Value = String.Format("{0:0.00}", pt).ToString() + " €";
+
+                bindingSourcesClients.EndEdit();
+                id = null;
+
+            }
+            ActiverBoutonsFormulaires(true);
         }
 
         private void buttonAnnuler_Click(object sender, EventArgs e)
