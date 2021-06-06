@@ -104,7 +104,15 @@ namespace Alfa_Romeo_Garage
 
         private void buttonSupprimer_Click(object sender, EventArgs e)
         {
-
+            if (dataGridViewClients.SelectedRows.Count > 0)
+            {
+                if (MessageBox.Show("Voullez-vous vraiment supprimer l'intervention ?", "Confirmer", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int idSuppression = (int)dataGridViewClients.SelectedRows[0].Cells["cID"].Value;
+                    new G_PART(connexionBD).Supprimer(idSuppression);
+                    bindingSourcesClients.RemoveCurrent();
+                }
+            }
         }
 
 
@@ -115,7 +123,7 @@ namespace Alfa_Romeo_Garage
 
         private void buttonAnnuler_Click(object sender, EventArgs e)
         {
-
+            ActiverBoutonsFormulaires(true);
         }
 
       
