@@ -68,16 +68,18 @@ namespace Alfa_Romeo_Garage
             this.panelMenu.Controls.Add(this.buttonAccueil);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(312, 1002);
+            this.panelMenu.Size = new System.Drawing.Size(234, 814);
             this.panelMenu.TabIndex = 0;
             // 
             // panelButtonSelectionne
             // 
             this.panelButtonSelectionne.BackColor = System.Drawing.Color.Crimson;
-            this.panelButtonSelectionne.Location = new System.Drawing.Point(3, 196);
+            this.panelButtonSelectionne.Location = new System.Drawing.Point(2, 159);
+            this.panelButtonSelectionne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelButtonSelectionne.Name = "panelButtonSelectionne";
-            this.panelButtonSelectionne.Size = new System.Drawing.Size(14, 62);
+            this.panelButtonSelectionne.Size = new System.Drawing.Size(10, 50);
             this.panelButtonSelectionne.TabIndex = 10;
             // 
             // buttonInterventions
@@ -88,9 +90,10 @@ namespace Alfa_Romeo_Garage
             this.buttonInterventions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonInterventions.Image = ((System.Drawing.Image)(resources.GetObject("buttonInterventions.Image")));
             this.buttonInterventions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonInterventions.Location = new System.Drawing.Point(57, 663);
+            this.buttonInterventions.Location = new System.Drawing.Point(43, 539);
+            this.buttonInterventions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonInterventions.Name = "buttonInterventions";
-            this.buttonInterventions.Size = new System.Drawing.Size(254, 62);
+            this.buttonInterventions.Size = new System.Drawing.Size(190, 50);
             this.buttonInterventions.TabIndex = 10;
             this.buttonInterventions.Text = "Interventions";
             this.buttonInterventions.UseVisualStyleBackColor = true;
@@ -104,9 +107,10 @@ namespace Alfa_Romeo_Garage
             this.buttonEntretiens.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEntretiens.Image = ((System.Drawing.Image)(resources.GetObject("buttonEntretiens.Image")));
             this.buttonEntretiens.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEntretiens.Location = new System.Drawing.Point(57, 767);
+            this.buttonEntretiens.Location = new System.Drawing.Point(43, 623);
+            this.buttonEntretiens.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonEntretiens.Name = "buttonEntretiens";
-            this.buttonEntretiens.Size = new System.Drawing.Size(254, 62);
+            this.buttonEntretiens.Size = new System.Drawing.Size(190, 50);
             this.buttonEntretiens.TabIndex = 9;
             this.buttonEntretiens.Text = "Entretiens";
             this.buttonEntretiens.UseVisualStyleBackColor = true;
@@ -120,9 +124,10 @@ namespace Alfa_Romeo_Garage
             this.buttonPieces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonPieces.Image = ((System.Drawing.Image)(resources.GetObject("buttonPieces.Image")));
             this.buttonPieces.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPieces.Location = new System.Drawing.Point(57, 569);
+            this.buttonPieces.Location = new System.Drawing.Point(43, 462);
+            this.buttonPieces.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPieces.Name = "buttonPieces";
-            this.buttonPieces.Size = new System.Drawing.Size(254, 62);
+            this.buttonPieces.Size = new System.Drawing.Size(190, 50);
             this.buttonPieces.TabIndex = 8;
             this.buttonPieces.Text = "Pièces";
             this.buttonPieces.UseVisualStyleBackColor = true;
@@ -136,9 +141,10 @@ namespace Alfa_Romeo_Garage
             this.buttonVehicules.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonVehicules.Image = ((System.Drawing.Image)(resources.GetObject("buttonVehicules.Image")));
             this.buttonVehicules.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonVehicules.Location = new System.Drawing.Point(54, 475);
+            this.buttonVehicules.Location = new System.Drawing.Point(40, 386);
+            this.buttonVehicules.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonVehicules.Name = "buttonVehicules";
-            this.buttonVehicules.Size = new System.Drawing.Size(257, 62);
+            this.buttonVehicules.Size = new System.Drawing.Size(193, 50);
             this.buttonVehicules.TabIndex = 7;
             this.buttonVehicules.Text = "Véhicules";
             this.buttonVehicules.UseVisualStyleBackColor = true;
@@ -147,9 +153,10 @@ namespace Alfa_Romeo_Garage
             // pictureBoxLogoAccueil
             // 
             this.pictureBoxLogoAccueil.Image = global::Alfa_Romeo_Garage.Properties.Resources.icons8_alfa_romeo_50__1_1;
-            this.pictureBoxLogoAccueil.Location = new System.Drawing.Point(117, 25);
+            this.pictureBoxLogoAccueil.Location = new System.Drawing.Point(88, 20);
+            this.pictureBoxLogoAccueil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxLogoAccueil.Name = "pictureBoxLogoAccueil";
-            this.pictureBoxLogoAccueil.Size = new System.Drawing.Size(67, 59);
+            this.pictureBoxLogoAccueil.Size = new System.Drawing.Size(50, 48);
             this.pictureBoxLogoAccueil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogoAccueil.TabIndex = 6;
             this.pictureBoxLogoAccueil.TabStop = false;
@@ -162,9 +169,10 @@ namespace Alfa_Romeo_Garage
             this.buttonModeles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonModeles.Image = ((System.Drawing.Image)(resources.GetObject("buttonModeles.Image")));
             this.buttonModeles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonModeles.Location = new System.Drawing.Point(57, 383);
+            this.buttonModeles.Location = new System.Drawing.Point(43, 311);
+            this.buttonModeles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonModeles.Name = "buttonModeles";
-            this.buttonModeles.Size = new System.Drawing.Size(254, 62);
+            this.buttonModeles.Size = new System.Drawing.Size(190, 50);
             this.buttonModeles.TabIndex = 5;
             this.buttonModeles.Text = "Modèles\r\nAlfa Romeo";
             this.buttonModeles.UseVisualStyleBackColor = true;
@@ -178,9 +186,10 @@ namespace Alfa_Romeo_Garage
             this.buttonClients.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClients.Image = ((System.Drawing.Image)(resources.GetObject("buttonClients.Image")));
             this.buttonClients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonClients.Location = new System.Drawing.Point(54, 289);
+            this.buttonClients.Location = new System.Drawing.Point(40, 235);
+            this.buttonClients.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonClients.Name = "buttonClients";
-            this.buttonClients.Size = new System.Drawing.Size(254, 62);
+            this.buttonClients.Size = new System.Drawing.Size(190, 50);
             this.buttonClients.TabIndex = 4;
             this.buttonClients.Text = "Clients";
             this.buttonClients.UseVisualStyleBackColor = true;
@@ -191,9 +200,10 @@ namespace Alfa_Romeo_Garage
             this.labelAccueil.AutoSize = true;
             this.labelAccueil.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAccueil.ForeColor = System.Drawing.Color.Crimson;
-            this.labelAccueil.Location = new System.Drawing.Point(77, 87);
+            this.labelAccueil.Location = new System.Drawing.Point(58, 71);
+            this.labelAccueil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAccueil.Name = "labelAccueil";
-            this.labelAccueil.Size = new System.Drawing.Size(145, 46);
+            this.labelAccueil.Size = new System.Drawing.Size(114, 42);
             this.labelAccueil.TabIndex = 3;
             this.labelAccueil.Text = "ALFA ROMEO \r\n    GARAGE";
             // 
@@ -205,9 +215,10 @@ namespace Alfa_Romeo_Garage
             this.buttonAccueil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAccueil.Image = ((System.Drawing.Image)(resources.GetObject("buttonAccueil.Image")));
             this.buttonAccueil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAccueil.Location = new System.Drawing.Point(57, 196);
+            this.buttonAccueil.Location = new System.Drawing.Point(43, 159);
+            this.buttonAccueil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAccueil.Name = "buttonAccueil";
-            this.buttonAccueil.Size = new System.Drawing.Size(254, 62);
+            this.buttonAccueil.Size = new System.Drawing.Size(190, 50);
             this.buttonAccueil.TabIndex = 1;
             this.buttonAccueil.Text = "Accueil";
             this.buttonAccueil.UseVisualStyleBackColor = true;
@@ -216,66 +227,74 @@ namespace Alfa_Romeo_Garage
             // userControlEntretiens1
             // 
             this.userControlEntretiens1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlEntretiens1.Location = new System.Drawing.Point(313, 197);
+            this.userControlEntretiens1.Location = new System.Drawing.Point(235, 160);
+            this.userControlEntretiens1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControlEntretiens1.Name = "userControlEntretiens1";
-            this.userControlEntretiens1.Size = new System.Drawing.Size(1260, 805);
+            this.userControlEntretiens1.Size = new System.Drawing.Size(945, 654);
             this.userControlEntretiens1.TabIndex = 16;
             // 
             // userControlIntervetions1
             // 
             this.userControlIntervetions1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlIntervetions1.Location = new System.Drawing.Point(313, 197);
+            this.userControlIntervetions1.Location = new System.Drawing.Point(235, 160);
+            this.userControlIntervetions1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControlIntervetions1.Name = "userControlIntervetions1";
-            this.userControlIntervetions1.Size = new System.Drawing.Size(1260, 805);
+            this.userControlIntervetions1.Padding = new System.Windows.Forms.Padding(1);
+            this.userControlIntervetions1.Size = new System.Drawing.Size(945, 654);
             this.userControlIntervetions1.TabIndex = 15;
             // 
             // userControlPieces1
             // 
             this.userControlPieces1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlPieces1.Location = new System.Drawing.Point(313, 197);
+            this.userControlPieces1.Location = new System.Drawing.Point(235, 160);
+            this.userControlPieces1.Margin = new System.Windows.Forms.Padding(2);
             this.userControlPieces1.Name = "userControlPieces1";
-            this.userControlPieces1.Size = new System.Drawing.Size(1260, 805);
+            this.userControlPieces1.Size = new System.Drawing.Size(945, 654);
             this.userControlPieces1.TabIndex = 14;
             // 
             // userControlVehiculescs1
             // 
             this.userControlVehiculescs1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlVehiculescs1.Location = new System.Drawing.Point(313, 197);
+            this.userControlVehiculescs1.Location = new System.Drawing.Point(235, 160);
+            this.userControlVehiculescs1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControlVehiculescs1.Name = "userControlVehiculescs1";
-            this.userControlVehiculescs1.Size = new System.Drawing.Size(1260, 805);
+            this.userControlVehiculescs1.Size = new System.Drawing.Size(945, 654);
             this.userControlVehiculescs1.TabIndex = 13;
             // 
             // userControlModeles1
             // 
             this.userControlModeles1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlModeles1.Location = new System.Drawing.Point(313, 193);
+            this.userControlModeles1.Location = new System.Drawing.Point(235, 157);
+            this.userControlModeles1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControlModeles1.Name = "userControlModeles1";
-            this.userControlModeles1.Size = new System.Drawing.Size(1260, 805);
+            this.userControlModeles1.Padding = new System.Windows.Forms.Padding(1);
+            this.userControlModeles1.Size = new System.Drawing.Size(945, 654);
             this.userControlModeles1.TabIndex = 12;
             // 
             // userControlClients1
             // 
             this.userControlClients1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlClients1.Location = new System.Drawing.Point(313, 197);
-            this.userControlClients1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userControlClients1.Location = new System.Drawing.Point(235, 160);
+            this.userControlClients1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControlClients1.Name = "userControlClients1";
-            this.userControlClients1.Size = new System.Drawing.Size(1260, 805);
+            this.userControlClients1.Size = new System.Drawing.Size(945, 654);
             this.userControlClients1.TabIndex = 11;
             // 
             // userControlAccueil1
             // 
             this.userControlAccueil1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlAccueil1.Location = new System.Drawing.Point(313, 202);
+            this.userControlAccueil1.Location = new System.Drawing.Point(235, 164);
+            this.userControlAccueil1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControlAccueil1.Name = "userControlAccueil1";
-            this.userControlAccueil1.Size = new System.Drawing.Size(1260, 800);
+            this.userControlAccueil1.Size = new System.Drawing.Size(945, 650);
             this.userControlAccueil1.TabIndex = 10;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1574, 1002);
+            this.ClientSize = new System.Drawing.Size(1180, 814);
             this.Controls.Add(this.userControlEntretiens1);
             this.Controls.Add(this.userControlIntervetions1);
             this.Controls.Add(this.userControlPieces1);
@@ -284,6 +303,10 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.userControlClients1);
             this.Controls.Add(this.userControlAccueil1);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
