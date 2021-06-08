@@ -33,7 +33,7 @@ namespace Alfa_Romeo_Garage
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridviewV = new System.Windows.Forms.DataGridView();
             this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cModeleVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNomProprietaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,8 +48,6 @@ namespace Alfa_Romeo_Garage
             this.buttonConfirmer = new System.Windows.Forms.Button();
             this.buttonSupprimer = new System.Windows.Forms.Button();
             this.labelTitre = new System.Windows.Forms.Label();
-            this.DateTimePickerDerniereImmatriculation = new CustomControls.RJControls.RJDatePicker();
-            this.dateTimePickerDatePremiereImmatriculation = new CustomControls.RJControls.RJDatePicker();
             this.labelImmatriculation = new System.Windows.Forms.Label();
             this.labelDatePremiereImmatriculation = new System.Windows.Forms.Label();
             this.labelDerniereImmatriculation = new System.Windows.Forms.Label();
@@ -67,22 +65,24 @@ namespace Alfa_Romeo_Garage
             this.labelModele = new System.Windows.Forms.Label();
             this.comboBoxProprietaire = new System.Windows.Forms.ComboBox();
             this.comboBoxModele = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.DateTimePickerDerniereImmatriculation = new CustomControls.RJControls.RJDatePicker();
+            this.dateTimePickerDatePremiereImmatriculation = new CustomControls.RJControls.RJDatePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridviewV)).BeginInit();
             this.panelBorder.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView
+            // DataGridviewV
             // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridviewV.AllowUserToAddRows = false;
+            this.dataGridviewV.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView.BackgroundColor = System.Drawing.Color.Black;
-            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridviewV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridviewV.BackgroundColor = System.Drawing.Color.Black;
+            this.dataGridviewV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8F);
@@ -90,9 +90,9 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView.ColumnHeadersHeight = 29;
-            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridviewV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridviewV.ColumnHeadersHeight = 29;
+            this.dataGridviewV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
             this.cModeleVehicule,
             this.cNomProprietaire,
@@ -110,12 +110,12 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView.GridColor = System.Drawing.Color.White;
-            this.dataGridView.Location = new System.Drawing.Point(1, 1);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView.Name = "dataGridView";
+            this.dataGridviewV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridviewV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridviewV.GridColor = System.Drawing.Color.White;
+            this.dataGridviewV.Location = new System.Drawing.Point(1, 1);
+            this.dataGridviewV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridviewV.Name = "DataGridviewV";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,13 +123,13 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.RowHeadersWidth = 51;
-            this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(725, 675);
-            this.dataGridView.TabIndex = 48;
+            this.dataGridviewV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridviewV.RowHeadersVisible = false;
+            this.dataGridviewV.RowHeadersWidth = 51;
+            this.dataGridviewV.RowTemplate.Height = 24;
+            this.dataGridviewV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridviewV.Size = new System.Drawing.Size(725, 675);
+            this.dataGridviewV.TabIndex = 48;
             // 
             // cID
             // 
@@ -283,36 +283,6 @@ namespace Alfa_Romeo_Garage
             this.labelTitre.TabIndex = 41;
             this.labelTitre.Text = "GESTION DES VÉHICULES";
             // 
-            // DateTimePickerDerniereImmatriculation
-            // 
-            this.DateTimePickerDerniereImmatriculation.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.DateTimePickerDerniereImmatriculation.BorderSize = 1;
-            this.DateTimePickerDerniereImmatriculation.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimePickerDerniereImmatriculation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimePickerDerniereImmatriculation.Location = new System.Drawing.Point(24, 361);
-            this.DateTimePickerDerniereImmatriculation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DateTimePickerDerniereImmatriculation.MinimumSize = new System.Drawing.Size(4, 35);
-            this.DateTimePickerDerniereImmatriculation.Name = "DateTimePickerDerniereImmatriculation";
-            this.DateTimePickerDerniereImmatriculation.Size = new System.Drawing.Size(473, 35);
-            this.DateTimePickerDerniereImmatriculation.SkinColor = System.Drawing.Color.Black;
-            this.DateTimePickerDerniereImmatriculation.TabIndex = 54;
-            this.DateTimePickerDerniereImmatriculation.TextColor = System.Drawing.Color.White;
-            // 
-            // dateTimePickerDatePremiereImmatriculation
-            // 
-            this.dateTimePickerDatePremiereImmatriculation.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.dateTimePickerDatePremiereImmatriculation.BorderSize = 1;
-            this.dateTimePickerDatePremiereImmatriculation.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDatePremiereImmatriculation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDatePremiereImmatriculation.Location = new System.Drawing.Point(24, 286);
-            this.dateTimePickerDatePremiereImmatriculation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePickerDatePremiereImmatriculation.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dateTimePickerDatePremiereImmatriculation.Name = "dateTimePickerDatePremiereImmatriculation";
-            this.dateTimePickerDatePremiereImmatriculation.Size = new System.Drawing.Size(473, 35);
-            this.dateTimePickerDatePremiereImmatriculation.SkinColor = System.Drawing.Color.Black;
-            this.dateTimePickerDatePremiereImmatriculation.TabIndex = 53;
-            this.dateTimePickerDatePremiereImmatriculation.TextColor = System.Drawing.Color.White;
-            // 
             // labelImmatriculation
             // 
             this.labelImmatriculation.AutoSize = true;
@@ -460,7 +430,7 @@ namespace Alfa_Romeo_Garage
             // panelBorder
             // 
             this.panelBorder.BackColor = System.Drawing.Color.White;
-            this.panelBorder.Controls.Add(this.dataGridView);
+            this.panelBorder.Controls.Add(this.dataGridviewV);
             this.panelBorder.Location = new System.Drawing.Point(516, 101);
             this.panelBorder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBorder.Name = "panelBorder";
@@ -512,6 +482,36 @@ namespace Alfa_Romeo_Garage
             this.comboBoxModele.Size = new System.Drawing.Size(473, 24);
             this.comboBoxModele.TabIndex = 68;
             // 
+            // DateTimePickerDerniereImmatriculation
+            // 
+            this.DateTimePickerDerniereImmatriculation.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.DateTimePickerDerniereImmatriculation.BorderSize = 1;
+            this.DateTimePickerDerniereImmatriculation.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePickerDerniereImmatriculation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePickerDerniereImmatriculation.Location = new System.Drawing.Point(24, 361);
+            this.DateTimePickerDerniereImmatriculation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DateTimePickerDerniereImmatriculation.MinimumSize = new System.Drawing.Size(4, 35);
+            this.DateTimePickerDerniereImmatriculation.Name = "DateTimePickerDerniereImmatriculation";
+            this.DateTimePickerDerniereImmatriculation.Size = new System.Drawing.Size(473, 35);
+            this.DateTimePickerDerniereImmatriculation.SkinColor = System.Drawing.Color.Black;
+            this.DateTimePickerDerniereImmatriculation.TabIndex = 54;
+            this.DateTimePickerDerniereImmatriculation.TextColor = System.Drawing.Color.White;
+            // 
+            // dateTimePickerDatePremiereImmatriculation
+            // 
+            this.dateTimePickerDatePremiereImmatriculation.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.dateTimePickerDatePremiereImmatriculation.BorderSize = 1;
+            this.dateTimePickerDatePremiereImmatriculation.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDatePremiereImmatriculation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDatePremiereImmatriculation.Location = new System.Drawing.Point(24, 286);
+            this.dateTimePickerDatePremiereImmatriculation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerDatePremiereImmatriculation.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dateTimePickerDatePremiereImmatriculation.Name = "dateTimePickerDatePremiereImmatriculation";
+            this.dateTimePickerDatePremiereImmatriculation.Size = new System.Drawing.Size(473, 35);
+            this.dateTimePickerDatePremiereImmatriculation.SkinColor = System.Drawing.Color.Black;
+            this.dateTimePickerDatePremiereImmatriculation.TabIndex = 53;
+            this.dateTimePickerDatePremiereImmatriculation.TextColor = System.Drawing.Color.White;
+            // 
             // UserControlVehicules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -544,7 +544,7 @@ namespace Alfa_Romeo_Garage
             this.Name = "UserControlVehicules";
             this.Size = new System.Drawing.Size(1260, 805);
             this.Load += new System.EventHandler(this.UserControlVehicules_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridviewV)).EndInit();
             this.panelBorder.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -553,7 +553,7 @@ namespace Alfa_Romeo_Garage
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.DataGridView dataGridviewV;
         private System.Windows.Forms.Button buttonAnnuler;
         private System.Windows.Forms.Button buttonConfirmer;
         private System.Windows.Forms.Button buttonSupprimer;

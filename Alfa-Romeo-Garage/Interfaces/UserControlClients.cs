@@ -235,8 +235,9 @@ namespace Alfa_Romeo_Garage
                 dataGridViewClients.SelectedRows[0].Cells["cAdresse"].Value = textBoxRue.Text + " " + textBoxNumero.Text + ", " + textBoxCodePostal.Text + " " + textBoxVille.Text + " " + textBoxPays.Text;
                 dataGridViewClients.SelectedRows[0].Cells["cAdresseEmail"].Value = textBoxAdresseEmail.Text;
                 dataGridViewClients.SelectedRows[0].Cells["cNumeroTelephone"].Value = textBoxNumeroTelephone.Text;
-                
-                
+                dataGridViewClients.SelectedRows[0].Cells["cDateEnregistrement"].Value = DateTime.Today.Day.ToString("D2") + "/" + DateTime.Today.Month.ToString("D2") + "/" + DateTime.Today.Year.ToString("D4");
+
+
                 bindingSourcesClients.EndEdit();
                 id = null;
 
