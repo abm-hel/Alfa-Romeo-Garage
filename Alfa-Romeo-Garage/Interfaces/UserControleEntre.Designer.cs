@@ -47,6 +47,8 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.cVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimePickerDateEntretien = new CustomControls.RJControls.RJDatePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +118,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.dataGridViewE.RowHeadersWidth = 51;
             this.dataGridViewE.RowTemplate.Height = 24;
             this.dataGridViewE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewE.Size = new System.Drawing.Size(360, 665);
+            this.dataGridViewE.Size = new System.Drawing.Size(725, 665);
             this.dataGridViewE.TabIndex = 110;
             // 
             // buttonAjouter
@@ -272,11 +274,47 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.dateTimePickerDateEntretien.TabIndex = 111;
             this.dateTimePickerDateEntretien.TextColor = System.Drawing.Color.White;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(32, 313);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(452, 39);
+            this.button1.TabIndex = 115;
+            this.button1.Text = "Main d\'oeuvre";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonP
+            // 
+            this.buttonP.BackColor = System.Drawing.Color.Crimson;
+            this.buttonP.FlatAppearance.BorderSize = 0;
+            this.buttonP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonP.Location = new System.Drawing.Point(32, 255);
+            this.buttonP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonP.Name = "buttonP";
+            this.buttonP.Size = new System.Drawing.Size(452, 39);
+            this.buttonP.TabIndex = 114;
+            this.buttonP.Text = "Vente Pièces";
+            this.buttonP.UseVisualStyleBackColor = false;
+            this.buttonP.Click += new System.EventHandler(this.buttonP_Click);
+            // 
             // UserControleEntre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonP);
             this.Controls.Add(this.comboBoxVehicule);
             this.Controls.Add(this.dateTimePickerDateEntretien);
             this.Controls.Add(this.buttonEditer);
@@ -313,5 +351,7 @@ namespace Alfa_Romeo_Garage.Interfaces
         private System.Windows.Forms.DataGridViewTextBoxColumn cID;
         private System.Windows.Forms.DataGridViewTextBoxColumn cVehicule;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDate;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonP;
     }
 }

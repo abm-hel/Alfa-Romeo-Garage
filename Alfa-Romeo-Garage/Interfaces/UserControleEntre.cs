@@ -151,7 +151,7 @@ namespace Alfa_Romeo_Garage.Interfaces
                 dataTableE.Rows.Add
                 (
                    idAjoutEntretien.ToString(),
-                   vehicule[1]+"-"+vehicule[2],
+                   vehicule[1]+"-"+vehicule[2]+"-" + vehicule[3],
                    
                    dateTimePickerDateEntretien.Value.Day.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Month.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Year.ToString("D4")
                 ) ;
@@ -171,7 +171,7 @@ namespace Alfa_Romeo_Garage.Interfaces
                    );
 
                 dataGridViewE.SelectedRows[0].Cells["cID"].Value = int.Parse(id).ToString();
-                dataGridViewE.SelectedRows[0].Cells["cVehicule"].Value = vehicule[1] +"-"+ vehicule[2];
+                dataGridViewE.SelectedRows[0].Cells["cVehicule"].Value = vehicule[1] +"-"+ vehicule[2]+ "-" + vehicule[3];
                 dataGridViewE.SelectedRows[0].Cells["cDate"].Value = dateTimePickerDateEntretien.Value.Day.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Month.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Year.ToString("D4");
 
                 bindingSourcesE.EndEdit();
@@ -180,6 +180,15 @@ namespace Alfa_Romeo_Garage.Interfaces
             ActiverBoutonsFormulaires(true);
         }
 
-       
+        private void buttonP_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormMainOeuvre f = new FormMainOeuvre();
+            f.ShowDialog();
+        }
     }
 }
