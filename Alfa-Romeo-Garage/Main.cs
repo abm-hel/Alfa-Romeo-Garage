@@ -122,7 +122,7 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Top = buttonEntretiens.Top;
 
             //afficher l'écran des entretients
-            userControlEntretiens1.BringToFront();
+            userControleEntre1.BringToFront();
         }
     }
 }
