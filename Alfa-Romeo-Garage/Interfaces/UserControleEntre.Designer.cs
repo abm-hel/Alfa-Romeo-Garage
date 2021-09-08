@@ -260,9 +260,9 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.labelVehicule.ForeColor = System.Drawing.Color.Crimson;
             this.labelVehicule.Location = new System.Drawing.Point(24, 61);
             this.labelVehicule.Name = "labelVehicule";
-            this.labelVehicule.Size = new System.Drawing.Size(70, 19);
+            this.labelVehicule.Size = new System.Drawing.Size(69, 19);
             this.labelVehicule.TabIndex = 106;
-            this.labelVehicule.Text = "Entretien";
+            this.labelVehicule.Text = "Véhicule";
             // 
             // buttonSupprimer
             // 

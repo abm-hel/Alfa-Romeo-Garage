@@ -155,6 +155,14 @@ namespace Alfa_Romeo_Garage.Interfaces
             foreach (C_INVOICE v in listC)
             {
                 comboBoxEntretien.Items.Add(v.ID);
+                comboBoxEntretien2.Items.Add(v.ID);
+            }
+
+            List<C_PART> listD = new G_PART(connexionBD).Lire("ID");
+
+            foreach (C_PART b in listD)
+            {
+                comboBoxPiece.Items.Add(b.ID);
             }
         }
 
@@ -219,9 +227,6 @@ namespace Alfa_Romeo_Garage.Interfaces
                    
                    dateTimePickerDateEntretien.Value.Day.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Month.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Year.ToString("D4")
                 ) ;
-
-                
-
             }
 
             else
