@@ -178,5 +178,30 @@ namespace Alfa_Romeo_Garage
                 comboBoxEntretien.Items.Add(v.ID);
             }
         }
+
+        private void Entretien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxIntervention_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxEntretien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelIntervention_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridviewV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
