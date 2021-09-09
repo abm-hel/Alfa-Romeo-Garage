@@ -46,8 +46,8 @@ namespace Alfa_Romeo_Garage
             dataTableClients.Columns.Add(new DataColumn("id", System.Type.GetType("System.Int32")));
             dataTableClients.Columns.Add(new DataColumn("piece"));
             dataTableClients.Columns.Add(new DataColumn("marque"));
-            dataTableClients.Columns.Add(new DataColumn("prix", System.Type.GetType("System.Double")));
-            dataTableClients.Columns.Add(new DataColumn("tva", System.Type.GetType("System.Double")));
+            dataTableClients.Columns.Add(new DataColumn("prix"));
+            dataTableClients.Columns.Add(new DataColumn("tva"));
             dataTableClients.Columns.Add(new DataColumn("quantite", System.Type.GetType("System.Int32")));
 
             List<C_PART> listPieces = new G_PART(connexionBD).Lire("NAME");
@@ -59,8 +59,8 @@ namespace Alfa_Romeo_Garage
                     piece.ID,
                     piece.NAME,
                     piece.PRODUCER,
-                    String.Format("{0:0.##}", piece.PRICE),
-                    String.Format("{0:0.#}", piece.TVA),
+                    String.Format("{0:0.00}", piece.PRICE)+ " €",
+                    String.Format("{0:0.0}", piece.TVA) + " %",
                     piece.QUANTITY 
                 ); ;
             }
@@ -107,8 +107,8 @@ namespace Alfa_Romeo_Garage
 
                 textBoxPiece.Text = pieceModification.NAME;
                 textBoxMarque.Text = pieceModification.PRODUCER;
-                textBoxPrix.Text = String.Format("{0:0.##}", pieceModification.PRICE).ToString();
-                textBoxTVA.Text = String.Format("{0:0.#}", pieceModification.TVA).ToString();
+                textBoxPrix.Text = String.Format("{0:0.00}", pieceModification.PRICE).ToString();
+                textBoxTVA.Text = String.Format("{0:0.0}", pieceModification.TVA).ToString();
                 textBoxQuantite.Text = pieceModification.QUANTITY.ToString();
 
                 ActiverBoutonsFormulaires(false);
@@ -157,9 +157,10 @@ namespace Alfa_Romeo_Garage
                    idAjout.ToString(),
                    textBoxPiece.Text,
                    textBoxMarque.Text,
-                   textBoxPrix.Text,
-                   textBoxTVA.Text,
+                   String.Format("{0:0.00}", Convert.ToDouble(textBoxPrix.Text)) + " €",
+                   String.Format("{0:0.0}", Convert.ToDouble(textBoxTVA.Text)) + " %",
                    textBoxQuantite.Text
+                
                 ) ;
 
             }
@@ -180,8 +181,8 @@ namespace Alfa_Romeo_Garage
                 dataGridViewClients.SelectedRows[0].Cells["cID"].Value = int.Parse(id).ToString();
                 dataGridViewClients.SelectedRows[0].Cells["cPiece"].Value = textBoxPiece.Text;
                 dataGridViewClients.SelectedRows[0].Cells["cMarque"].Value = textBoxMarque.Text;
-                dataGridViewClients.SelectedRows[0].Cells["cPrix"].Value = textBoxPrix.Text;
-                dataGridViewClients.SelectedRows[0].Cells["cTva"].Value = textBoxTVA.Text;
+                dataGridViewClients.SelectedRows[0].Cells["cPrix"].Value = String.Format("{0:0.00}", Convert.ToDouble(textBoxPrix.Text)) + " €";
+                dataGridViewClients.SelectedRows[0].Cells["cTva"].Value = String.Format("{0:0.0}", Convert.ToDouble(textBoxTVA.Text)) + " %";
                 dataGridViewClients.SelectedRows[0].Cells["cQuantite"].Value = textBoxQuantite.Text;
 
                 bindingSourcesClients.EndEdit();

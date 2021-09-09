@@ -64,35 +64,27 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.comboBoxEntretien = new System.Windows.Forms.ComboBox();
             this.comboBoxIntervention = new System.Windows.Forms.ComboBox();
             this.dataGridviewV = new System.Windows.Forms.DataGridView();
-            this.buttonConfirmerPiece = new System.Windows.Forms.Button();
-            this.buttonAnnulerPiece = new System.Windows.Forms.Button();
-            this.buttonSupprimerPiece = new System.Windows.Forms.Button();
-            this.labelEntretien2 = new System.Windows.Forms.Label();
-            this.labelPiece = new System.Windows.Forms.Label();
-            this.comboBoxEntretien2 = new System.Windows.Forms.ComboBox();
-            this.comboBoxPiece = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonEditerPiece = new System.Windows.Forms.Button();
-            this.buttonAjouterPiece = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cPiece3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNombre3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePickerDateEntretien = new CustomControls.RJControls.RJDatePicker();
             this.cID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDescription1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cVehicule1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cClient1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDate1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPrix1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTVA1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBoxNombrePieces = new System.Windows.Forms.TextBox();
-            this.labelNombre = new System.Windows.Forms.Label();
-            this.dateTimePickerDateEntretien = new CustomControls.RJControls.RJDatePicker();
+            this.dataGridViewClients = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNomPrenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNumeroNational = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAdresseEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNumeroTelephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDateEnregistrement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridviewV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonEditer
@@ -103,10 +95,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonEditer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEditer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEditer.Location = new System.Drawing.Point(21, 363);
+            this.buttonEditer.Location = new System.Drawing.Point(22, 257);
             this.buttonEditer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEditer.Name = "buttonEditer";
-            this.buttonEditer.Size = new System.Drawing.Size(362, 39);
+            this.buttonEditer.Size = new System.Drawing.Size(290, 39);
             this.buttonEditer.TabIndex = 109;
             this.buttonEditer.Text = "Editer un entretien";
             this.buttonEditer.UseVisualStyleBackColor = false;
@@ -146,7 +138,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewE.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewE.GridColor = System.Drawing.Color.White;
-            this.dataGridViewE.Location = new System.Drawing.Point(28, 188);
+            this.dataGridViewE.Location = new System.Drawing.Point(21, 377);
             this.dataGridViewE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewE.Name = "dataGridViewE";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -161,7 +153,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.dataGridViewE.RowHeadersWidth = 51;
             this.dataGridViewE.RowTemplate.Height = 24;
             this.dataGridViewE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewE.Size = new System.Drawing.Size(357, 111);
+            this.dataGridViewE.Size = new System.Drawing.Size(538, 188);
             this.dataGridViewE.TabIndex = 110;
             // 
             // cID
@@ -199,10 +191,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonAjouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAjouter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAjouter.Location = new System.Drawing.Point(21, 320);
+            this.buttonAjouter.Location = new System.Drawing.Point(22, 214);
             this.buttonAjouter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAjouter.Name = "buttonAjouter";
-            this.buttonAjouter.Size = new System.Drawing.Size(362, 39);
+            this.buttonAjouter.Size = new System.Drawing.Size(290, 39);
             this.buttonAjouter.TabIndex = 108;
             this.buttonAjouter.Text = "Ajouter un entretien";
             this.buttonAjouter.UseVisualStyleBackColor = false;
@@ -216,10 +208,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonConfirmer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirmer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonConfirmer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConfirmer.Location = new System.Drawing.Point(21, 320);
+            this.buttonConfirmer.Location = new System.Drawing.Point(22, 214);
             this.buttonConfirmer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonConfirmer.Name = "buttonConfirmer";
-            this.buttonConfirmer.Size = new System.Drawing.Size(362, 39);
+            this.buttonConfirmer.Size = new System.Drawing.Size(290, 39);
             this.buttonConfirmer.TabIndex = 105;
             this.buttonConfirmer.Text = "Confirmer";
             this.buttonConfirmer.UseVisualStyleBackColor = false;
@@ -233,10 +225,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonAnnuler.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAnnuler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAnnuler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAnnuler.Location = new System.Drawing.Point(21, 363);
+            this.buttonAnnuler.Location = new System.Drawing.Point(22, 257);
             this.buttonAnnuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAnnuler.Name = "buttonAnnuler";
-            this.buttonAnnuler.Size = new System.Drawing.Size(362, 39);
+            this.buttonAnnuler.Size = new System.Drawing.Size(289, 39);
             this.buttonAnnuler.TabIndex = 104;
             this.buttonAnnuler.Text = "Annuler";
             this.buttonAnnuler.UseVisualStyleBackColor = false;
@@ -247,7 +239,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.labelDate.AutoSize = true;
             this.labelDate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDate.ForeColor = System.Drawing.Color.Crimson;
-            this.labelDate.Location = new System.Drawing.Point(24, 114);
+            this.labelDate.Location = new System.Drawing.Point(18, 113);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(122, 19);
             this.labelDate.TabIndex = 107;
@@ -258,7 +250,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.labelVehicule.AutoSize = true;
             this.labelVehicule.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVehicule.ForeColor = System.Drawing.Color.Crimson;
-            this.labelVehicule.Location = new System.Drawing.Point(24, 61);
+            this.labelVehicule.Location = new System.Drawing.Point(18, 60);
             this.labelVehicule.Name = "labelVehicule";
             this.labelVehicule.Size = new System.Drawing.Size(69, 19);
             this.labelVehicule.TabIndex = 106;
@@ -272,10 +264,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonSupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSupprimer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSupprimer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupprimer.Location = new System.Drawing.Point(21, 406);
+            this.buttonSupprimer.Location = new System.Drawing.Point(22, 300);
             this.buttonSupprimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSupprimer.Name = "buttonSupprimer";
-            this.buttonSupprimer.Size = new System.Drawing.Size(362, 39);
+            this.buttonSupprimer.Size = new System.Drawing.Size(290, 39);
             this.buttonSupprimer.TabIndex = 103;
             this.buttonSupprimer.Text = "Supprimer un entretien";
             this.buttonSupprimer.UseVisualStyleBackColor = false;
@@ -298,9 +290,9 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.comboBoxVehicule.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxVehicule.ForeColor = System.Drawing.Color.White;
             this.comboBoxVehicule.FormattingEnabled = true;
-            this.comboBoxVehicule.Location = new System.Drawing.Point(28, 83);
+            this.comboBoxVehicule.Location = new System.Drawing.Point(21, 82);
             this.comboBoxVehicule.Name = "comboBoxVehicule";
-            this.comboBoxVehicule.Size = new System.Drawing.Size(357, 25);
+            this.comboBoxVehicule.Size = new System.Drawing.Size(290, 25);
             this.comboBoxVehicule.TabIndex = 113;
             // 
             // buttonConfirmerIntervention
@@ -311,10 +303,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonConfirmerIntervention.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirmerIntervention.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonConfirmerIntervention.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConfirmerIntervention.Location = new System.Drawing.Point(422, 395);
+            this.buttonConfirmerIntervention.Location = new System.Drawing.Point(411, 214);
             this.buttonConfirmerIntervention.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonConfirmerIntervention.Name = "buttonConfirmerIntervention";
-            this.buttonConfirmerIntervention.Size = new System.Drawing.Size(258, 39);
+            this.buttonConfirmerIntervention.Size = new System.Drawing.Size(290, 39);
             this.buttonConfirmerIntervention.TabIndex = 127;
             this.buttonConfirmerIntervention.Text = "Confirmer";
             this.buttonConfirmerIntervention.UseVisualStyleBackColor = false;
@@ -328,10 +320,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonAnnulerIntervention.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAnnulerIntervention.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAnnulerIntervention.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAnnulerIntervention.Location = new System.Drawing.Point(686, 395);
+            this.buttonAnnulerIntervention.Location = new System.Drawing.Point(411, 257);
             this.buttonAnnulerIntervention.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAnnulerIntervention.Name = "buttonAnnulerIntervention";
-            this.buttonAnnulerIntervention.Size = new System.Drawing.Size(258, 39);
+            this.buttonAnnulerIntervention.Size = new System.Drawing.Size(290, 39);
             this.buttonAnnulerIntervention.TabIndex = 126;
             this.buttonAnnulerIntervention.Text = "Annuler";
             this.buttonAnnulerIntervention.UseVisualStyleBackColor = false;
@@ -345,10 +337,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonEditerIntervention.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditerIntervention.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEditerIntervention.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEditerIntervention.Location = new System.Drawing.Point(686, 395);
+            this.buttonEditerIntervention.Location = new System.Drawing.Point(411, 257);
             this.buttonEditerIntervention.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEditerIntervention.Name = "buttonEditerIntervention";
-            this.buttonEditerIntervention.Size = new System.Drawing.Size(258, 39);
+            this.buttonEditerIntervention.Size = new System.Drawing.Size(290, 39);
             this.buttonEditerIntervention.TabIndex = 125;
             this.buttonEditerIntervention.Text = "Editer";
             this.buttonEditerIntervention.UseVisualStyleBackColor = false;
@@ -362,10 +354,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonAjouterIntervention.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAjouterIntervention.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAjouterIntervention.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAjouterIntervention.Location = new System.Drawing.Point(422, 395);
+            this.buttonAjouterIntervention.Location = new System.Drawing.Point(411, 214);
             this.buttonAjouterIntervention.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAjouterIntervention.Name = "buttonAjouterIntervention";
-            this.buttonAjouterIntervention.Size = new System.Drawing.Size(258, 39);
+            this.buttonAjouterIntervention.Size = new System.Drawing.Size(290, 39);
             this.buttonAjouterIntervention.TabIndex = 124;
             this.buttonAjouterIntervention.Text = "Ajouter";
             this.buttonAjouterIntervention.UseVisualStyleBackColor = false;
@@ -379,10 +371,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.buttonSupprimerIntervention.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSupprimerIntervention.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSupprimerIntervention.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupprimerIntervention.Location = new System.Drawing.Point(950, 395);
+            this.buttonSupprimerIntervention.Location = new System.Drawing.Point(411, 300);
             this.buttonSupprimerIntervention.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSupprimerIntervention.Name = "buttonSupprimerIntervention";
-            this.buttonSupprimerIntervention.Size = new System.Drawing.Size(257, 39);
+            this.buttonSupprimerIntervention.Size = new System.Drawing.Size(290, 39);
             this.buttonSupprimerIntervention.TabIndex = 123;
             this.buttonSupprimerIntervention.Text = "Supprimer ";
             this.buttonSupprimerIntervention.UseVisualStyleBackColor = false;
@@ -393,7 +385,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.Entretien.AutoSize = true;
             this.Entretien.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Entretien.ForeColor = System.Drawing.Color.Crimson;
-            this.Entretien.Location = new System.Drawing.Point(419, 124);
+            this.Entretien.Location = new System.Drawing.Point(407, 122);
             this.Entretien.Name = "Entretien";
             this.Entretien.Size = new System.Drawing.Size(70, 19);
             this.Entretien.TabIndex = 122;
@@ -404,7 +396,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.labelIntervention.AutoSize = true;
             this.labelIntervention.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIntervention.ForeColor = System.Drawing.Color.Crimson;
-            this.labelIntervention.Location = new System.Drawing.Point(419, 61);
+            this.labelIntervention.Location = new System.Drawing.Point(407, 58);
             this.labelIntervention.Name = "labelIntervention";
             this.labelIntervention.Size = new System.Drawing.Size(91, 19);
             this.labelIntervention.TabIndex = 121;
@@ -415,10 +407,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.comboBoxEntretien.BackColor = System.Drawing.Color.Black;
             this.comboBoxEntretien.ForeColor = System.Drawing.Color.White;
             this.comboBoxEntretien.FormattingEnabled = true;
-            this.comboBoxEntretien.Location = new System.Drawing.Point(422, 147);
+            this.comboBoxEntretien.Location = new System.Drawing.Point(411, 145);
             this.comboBoxEntretien.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxEntretien.Name = "comboBoxEntretien";
-            this.comboBoxEntretien.Size = new System.Drawing.Size(785, 24);
+            this.comboBoxEntretien.Size = new System.Drawing.Size(290, 24);
             this.comboBoxEntretien.TabIndex = 120;
             // 
             // comboBoxIntervention
@@ -426,10 +418,10 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.comboBoxIntervention.BackColor = System.Drawing.Color.Black;
             this.comboBoxIntervention.ForeColor = System.Drawing.Color.White;
             this.comboBoxIntervention.FormattingEnabled = true;
-            this.comboBoxIntervention.Location = new System.Drawing.Point(422, 84);
+            this.comboBoxIntervention.Location = new System.Drawing.Point(411, 81);
             this.comboBoxIntervention.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxIntervention.Name = "comboBoxIntervention";
-            this.comboBoxIntervention.Size = new System.Drawing.Size(785, 24);
+            this.comboBoxIntervention.Size = new System.Drawing.Size(290, 24);
             this.comboBoxIntervention.TabIndex = 119;
             // 
             // dataGridviewV
@@ -457,6 +449,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.cID1,
             this.cDescription1,
             this.cVehicule1,
+            this.cClient1,
             this.cDate1,
             this.cPrix1,
             this.cTVA1});
@@ -469,7 +462,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridviewV.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridviewV.GridColor = System.Drawing.Color.White;
-            this.dataGridviewV.Location = new System.Drawing.Point(423, 188);
+            this.dataGridviewV.Location = new System.Drawing.Point(656, 377);
             this.dataGridviewV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridviewV.Name = "dataGridviewV";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -484,255 +477,22 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.dataGridviewV.RowHeadersWidth = 51;
             this.dataGridviewV.RowTemplate.Height = 24;
             this.dataGridviewV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridviewV.Size = new System.Drawing.Size(784, 203);
+            this.dataGridviewV.Size = new System.Drawing.Size(551, 188);
             this.dataGridviewV.TabIndex = 118;
             // 
-            // buttonConfirmerPiece
+            // dateTimePickerDateEntretien
             // 
-            this.buttonConfirmerPiece.BackColor = System.Drawing.Color.Crimson;
-            this.buttonConfirmerPiece.FlatAppearance.BorderSize = 0;
-            this.buttonConfirmerPiece.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonConfirmerPiece.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConfirmerPiece.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonConfirmerPiece.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConfirmerPiece.Location = new System.Drawing.Point(422, 751);
-            this.buttonConfirmerPiece.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonConfirmerPiece.Name = "buttonConfirmerPiece";
-            this.buttonConfirmerPiece.Size = new System.Drawing.Size(258, 39);
-            this.buttonConfirmerPiece.TabIndex = 135;
-            this.buttonConfirmerPiece.Text = "Confirmer";
-            this.buttonConfirmerPiece.UseVisualStyleBackColor = false;
-            this.buttonConfirmerPiece.Click += new System.EventHandler(this.buttonConfirmerPiece_Click);
-            // 
-            // buttonAnnulerPiece
-            // 
-            this.buttonAnnulerPiece.BackColor = System.Drawing.Color.Crimson;
-            this.buttonAnnulerPiece.FlatAppearance.BorderSize = 0;
-            this.buttonAnnulerPiece.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnnulerPiece.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAnnulerPiece.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAnnulerPiece.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAnnulerPiece.Location = new System.Drawing.Point(686, 751);
-            this.buttonAnnulerPiece.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonAnnulerPiece.Name = "buttonAnnulerPiece";
-            this.buttonAnnulerPiece.Size = new System.Drawing.Size(258, 39);
-            this.buttonAnnulerPiece.TabIndex = 134;
-            this.buttonAnnulerPiece.Text = "Annuler";
-            this.buttonAnnulerPiece.UseVisualStyleBackColor = false;
-            this.buttonAnnulerPiece.Click += new System.EventHandler(this.buttonAnnulerPiece_Click);
-            // 
-            // buttonSupprimerPiece
-            // 
-            this.buttonSupprimerPiece.BackColor = System.Drawing.Color.Crimson;
-            this.buttonSupprimerPiece.FlatAppearance.BorderSize = 0;
-            this.buttonSupprimerPiece.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSupprimerPiece.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSupprimerPiece.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonSupprimerPiece.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupprimerPiece.Location = new System.Drawing.Point(951, 751);
-            this.buttonSupprimerPiece.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSupprimerPiece.Name = "buttonSupprimerPiece";
-            this.buttonSupprimerPiece.Size = new System.Drawing.Size(256, 39);
-            this.buttonSupprimerPiece.TabIndex = 133;
-            this.buttonSupprimerPiece.Text = "Supprimer ";
-            this.buttonSupprimerPiece.UseVisualStyleBackColor = false;
-            this.buttonSupprimerPiece.Click += new System.EventHandler(this.buttonSupprimerPiece_Click);
-            // 
-            // labelEntretien2
-            // 
-            this.labelEntretien2.AutoSize = true;
-            this.labelEntretien2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEntretien2.ForeColor = System.Drawing.Color.Crimson;
-            this.labelEntretien2.Location = new System.Drawing.Point(420, 511);
-            this.labelEntretien2.Name = "labelEntretien2";
-            this.labelEntretien2.Size = new System.Drawing.Size(70, 19);
-            this.labelEntretien2.TabIndex = 132;
-            this.labelEntretien2.Text = "Entretien";
-            // 
-            // labelPiece
-            // 
-            this.labelPiece.AutoSize = true;
-            this.labelPiece.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPiece.ForeColor = System.Drawing.Color.Crimson;
-            this.labelPiece.Location = new System.Drawing.Point(420, 448);
-            this.labelPiece.Name = "labelPiece";
-            this.labelPiece.Size = new System.Drawing.Size(135, 19);
-            this.labelPiece.TabIndex = 131;
-            this.labelPiece.Text = "Pièce(s) vendue(s)";
-            // 
-            // comboBoxEntretien2
-            // 
-            this.comboBoxEntretien2.BackColor = System.Drawing.Color.Black;
-            this.comboBoxEntretien2.ForeColor = System.Drawing.Color.White;
-            this.comboBoxEntretien2.FormattingEnabled = true;
-            this.comboBoxEntretien2.Location = new System.Drawing.Point(423, 534);
-            this.comboBoxEntretien2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxEntretien2.Name = "comboBoxEntretien2";
-            this.comboBoxEntretien2.Size = new System.Drawing.Size(784, 24);
-            this.comboBoxEntretien2.TabIndex = 130;
-            // 
-            // comboBoxPiece
-            // 
-            this.comboBoxPiece.BackColor = System.Drawing.Color.Black;
-            this.comboBoxPiece.ForeColor = System.Drawing.Color.White;
-            this.comboBoxPiece.FormattingEnabled = true;
-            this.comboBoxPiece.Location = new System.Drawing.Point(423, 471);
-            this.comboBoxPiece.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxPiece.Name = "comboBoxPiece";
-            this.comboBoxPiece.Size = new System.Drawing.Size(640, 24);
-            this.comboBoxPiece.TabIndex = 129;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Black;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 8F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView1.ColumnHeadersHeight = 29;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.cPiece3,
-            this.cNombre3,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(422, 569);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(783, 178);
-            this.dataGridView1.TabIndex = 128;
-            // 
-            // buttonEditerPiece
-            // 
-            this.buttonEditerPiece.BackColor = System.Drawing.Color.Crimson;
-            this.buttonEditerPiece.FlatAppearance.BorderSize = 0;
-            this.buttonEditerPiece.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditerPiece.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditerPiece.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEditerPiece.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEditerPiece.Location = new System.Drawing.Point(686, 751);
-            this.buttonEditerPiece.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonEditerPiece.Name = "buttonEditerPiece";
-            this.buttonEditerPiece.Size = new System.Drawing.Size(258, 39);
-            this.buttonEditerPiece.TabIndex = 137;
-            this.buttonEditerPiece.Text = "Editer";
-            this.buttonEditerPiece.UseVisualStyleBackColor = false;
-            this.buttonEditerPiece.Click += new System.EventHandler(this.buttonEditerPiece_Click);
-            // 
-            // buttonAjouterPiece
-            // 
-            this.buttonAjouterPiece.BackColor = System.Drawing.Color.Crimson;
-            this.buttonAjouterPiece.FlatAppearance.BorderSize = 0;
-            this.buttonAjouterPiece.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAjouterPiece.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAjouterPiece.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAjouterPiece.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAjouterPiece.Location = new System.Drawing.Point(422, 751);
-            this.buttonAjouterPiece.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonAjouterPiece.Name = "buttonAjouterPiece";
-            this.buttonAjouterPiece.Size = new System.Drawing.Size(258, 39);
-            this.buttonAjouterPiece.TabIndex = 136;
-            this.buttonAjouterPiece.Text = "Ajouter";
-            this.buttonAjouterPiece.UseVisualStyleBackColor = false;
-            this.buttonAjouterPiece.Click += new System.EventHandler(this.buttonAjouterPiece_Click);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // cPiece3
-            // 
-            this.cPiece3.DataPropertyName = "piece";
-            this.cPiece3.HeaderText = "Pièce";
-            this.cPiece3.MinimumWidth = 6;
-            this.cPiece3.Name = "cPiece3";
-            this.cPiece3.ReadOnly = true;
-            this.cPiece3.Width = 125;
-            // 
-            // cNombre3
-            // 
-            this.cNombre3.DataPropertyName = "nombre";
-            this.cNombre3.HeaderText = "nombre";
-            this.cNombre3.MinimumWidth = 6;
-            this.cNombre3.Name = "cNombre3";
-            this.cNombre3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "vehicule";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Vehicule";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "date";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "prix";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Prix";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 180;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "tva";
-            this.dataGridViewTextBoxColumn8.HeaderText = "TVA";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 125;
+            this.dateTimePickerDateEntretien.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.dateTimePickerDateEntretien.BorderSize = 1;
+            this.dateTimePickerDateEntretien.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDateEntretien.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDateEntretien.Location = new System.Drawing.Point(21, 135);
+            this.dateTimePickerDateEntretien.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dateTimePickerDateEntretien.Name = "dateTimePickerDateEntretien";
+            this.dateTimePickerDateEntretien.Size = new System.Drawing.Size(290, 35);
+            this.dateTimePickerDateEntretien.SkinColor = System.Drawing.Color.Black;
+            this.dateTimePickerDateEntretien.TabIndex = 111;
+            this.dateTimePickerDateEntretien.TextColor = System.Drawing.Color.White;
             // 
             // cID1
             // 
@@ -761,6 +521,14 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.cVehicule1.ReadOnly = true;
             this.cVehicule1.Width = 125;
             // 
+            // cClient1
+            // 
+            this.cClient1.DataPropertyName = "client";
+            this.cClient1.HeaderText = "Client";
+            this.cClient1.MinimumWidth = 6;
+            this.cClient1.Name = "cClient1";
+            this.cClient1.Width = 125;
+            // 
             // cDate1
             // 
             this.cDate1.DataPropertyName = "date";
@@ -788,59 +556,159 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.cTVA1.ReadOnly = true;
             this.cTVA1.Width = 125;
             // 
-            // textBoxNombrePieces
+            // dataGridViewClients
             // 
-            this.textBoxNombrePieces.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBoxNombrePieces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNombrePieces.ForeColor = System.Drawing.Color.White;
-            this.textBoxNombrePieces.Location = new System.Drawing.Point(1083, 473);
-            this.textBoxNombrePieces.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxNombrePieces.Name = "textBoxNombrePieces";
-            this.textBoxNombrePieces.Size = new System.Drawing.Size(122, 22);
-            this.textBoxNombrePieces.TabIndex = 138;
+            this.dataGridViewClients.AllowUserToAddRows = false;
+            this.dataGridViewClients.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Black;
+            this.dataGridViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewClients.ColumnHeadersHeight = 29;
+            this.dataGridViewClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.cNomPrenom,
+            this.cDateNaissance,
+            this.cNumeroNational,
+            this.cAdresse,
+            this.cAdresseEmail,
+            this.cNumeroTelephone,
+            this.cDateEnregistrement});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewClients.GridColor = System.Drawing.Color.White;
+            this.dataGridViewClients.Location = new System.Drawing.Point(656, 587);
+            this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewClients.Name = "dataGridViewClients";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewClients.RowHeadersVisible = false;
+            this.dataGridViewClients.RowHeadersWidth = 51;
+            this.dataGridViewClients.RowTemplate.Height = 24;
+            this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewClients.Size = new System.Drawing.Size(551, 201);
+            this.dataGridViewClients.TabIndex = 128;
             // 
-            // labelNombre
+            // dataGridViewTextBoxColumn1
             // 
-            this.labelNombre.AutoSize = true;
-            this.labelNombre.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.ForeColor = System.Drawing.Color.Crimson;
-            this.labelNombre.Location = new System.Drawing.Point(1079, 448);
-            this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(113, 19);
-            this.labelNombre.TabIndex = 139;
-            this.labelNombre.Text = "Nombre pièces";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 50;
             // 
-            // dateTimePickerDateEntretien
+            // cNomPrenom
             // 
-            this.dateTimePickerDateEntretien.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.dateTimePickerDateEntretien.BorderSize = 1;
-            this.dateTimePickerDateEntretien.CalendarFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDateEntretien.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDateEntretien.Location = new System.Drawing.Point(28, 136);
-            this.dateTimePickerDateEntretien.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dateTimePickerDateEntretien.Name = "dateTimePickerDateEntretien";
-            this.dateTimePickerDateEntretien.Size = new System.Drawing.Size(357, 35);
-            this.dateTimePickerDateEntretien.SkinColor = System.Drawing.Color.Black;
-            this.dateTimePickerDateEntretien.TabIndex = 111;
-            this.dateTimePickerDateEntretien.TextColor = System.Drawing.Color.White;
+            this.cNomPrenom.DataPropertyName = "nomPrenom";
+            this.cNomPrenom.HeaderText = "Nom complet";
+            this.cNomPrenom.MinimumWidth = 6;
+            this.cNomPrenom.Name = "cNomPrenom";
+            this.cNomPrenom.ReadOnly = true;
+            this.cNomPrenom.Width = 180;
+            // 
+            // cDateNaissance
+            // 
+            this.cDateNaissance.DataPropertyName = "dateNaissance";
+            this.cDateNaissance.HeaderText = "Date de naissance";
+            this.cDateNaissance.MinimumWidth = 6;
+            this.cDateNaissance.Name = "cDateNaissance";
+            this.cDateNaissance.ReadOnly = true;
+            this.cDateNaissance.Width = 150;
+            // 
+            // cNumeroNational
+            // 
+            this.cNumeroNational.DataPropertyName = "numeroNational";
+            this.cNumeroNational.HeaderText = "Numéro du registre national";
+            this.cNumeroNational.MinimumWidth = 6;
+            this.cNumeroNational.Name = "cNumeroNational";
+            this.cNumeroNational.ReadOnly = true;
+            this.cNumeroNational.Width = 150;
+            // 
+            // cAdresse
+            // 
+            this.cAdresse.DataPropertyName = "adresse";
+            this.cAdresse.HeaderText = "Adresse";
+            this.cAdresse.MinimumWidth = 6;
+            this.cAdresse.Name = "cAdresse";
+            this.cAdresse.ReadOnly = true;
+            this.cAdresse.Width = 280;
+            // 
+            // cAdresseEmail
+            // 
+            this.cAdresseEmail.DataPropertyName = "adresseEmail";
+            this.cAdresseEmail.HeaderText = "Adresse e-mail";
+            this.cAdresseEmail.MinimumWidth = 6;
+            this.cAdresseEmail.Name = "cAdresseEmail";
+            this.cAdresseEmail.ReadOnly = true;
+            this.cAdresseEmail.Width = 190;
+            // 
+            // cNumeroTelephone
+            // 
+            this.cNumeroTelephone.DataPropertyName = "numeroTelephone";
+            this.cNumeroTelephone.HeaderText = "Numéro de télephone";
+            this.cNumeroTelephone.MinimumWidth = 6;
+            this.cNumeroTelephone.Name = "cNumeroTelephone";
+            this.cNumeroTelephone.ReadOnly = true;
+            this.cNumeroTelephone.Width = 150;
+            // 
+            // cDateEnregistrement
+            // 
+            this.cDateEnregistrement.DataPropertyName = "dateEnregistrement";
+            this.cDateEnregistrement.HeaderText = "Date de dernière modification";
+            this.cDateEnregistrement.MinimumWidth = 6;
+            this.cDateEnregistrement.Name = "cDateEnregistrement";
+            this.cDateEnregistrement.ReadOnly = true;
+            this.cDateEnregistrement.Width = 150;
+            // 
+            // buttonRefresh
+            // 
+            this.buttonRefresh.BackColor = System.Drawing.Color.Crimson;
+            this.buttonRefresh.FlatAppearance.BorderSize = 0;
+            this.buttonRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRefresh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRefresh.Location = new System.Drawing.Point(1115, 20);
+            this.buttonRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Size = new System.Drawing.Size(92, 40);
+            this.buttonRefresh.TabIndex = 130;
+            this.buttonRefresh.Text = "Refresh";
+            this.buttonRefresh.UseVisualStyleBackColor = false;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
             // UserControleEntre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.textBoxNombrePieces);
-            this.Controls.Add(this.labelNombre);
-            this.Controls.Add(this.buttonEditerPiece);
-            this.Controls.Add(this.buttonAjouterPiece);
-            this.Controls.Add(this.buttonConfirmerPiece);
-            this.Controls.Add(this.buttonAnnulerPiece);
-            this.Controls.Add(this.buttonSupprimerPiece);
-            this.Controls.Add(this.labelEntretien2);
-            this.Controls.Add(this.labelPiece);
-            this.Controls.Add(this.comboBoxEntretien2);
-            this.Controls.Add(this.comboBoxPiece);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.buttonRefresh);
+            this.Controls.Add(this.dataGridViewClients);
             this.Controls.Add(this.buttonConfirmerIntervention);
             this.Controls.Add(this.buttonAnnulerIntervention);
             this.Controls.Add(this.buttonEditerIntervention);
@@ -867,7 +735,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.Load += new System.EventHandler(this.UserControleEntre_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridviewV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -899,30 +767,22 @@ namespace Alfa_Romeo_Garage.Interfaces
         private System.Windows.Forms.ComboBox comboBoxEntretien;
         private System.Windows.Forms.ComboBox comboBoxIntervention;
         private System.Windows.Forms.DataGridView dataGridviewV;
-        private System.Windows.Forms.Button buttonConfirmerPiece;
-        private System.Windows.Forms.Button buttonAnnulerPiece;
-        private System.Windows.Forms.Button buttonSupprimerPiece;
-        private System.Windows.Forms.Label labelEntretien2;
-        private System.Windows.Forms.Label labelPiece;
-        private System.Windows.Forms.ComboBox comboBoxEntretien2;
-        private System.Windows.Forms.ComboBox comboBoxPiece;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button buttonEditerPiece;
-        private System.Windows.Forms.Button buttonAjouterPiece;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cPiece3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNombre3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn cID1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDescription1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cVehicule1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cClient1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDate1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPrix1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTVA1;
-        private System.Windows.Forms.TextBox textBoxNombrePieces;
-        private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.DataGridView dataGridViewClients;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNomPrenom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDateNaissance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroNational;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresseEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNumeroTelephone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDateEnregistrement;
+        private System.Windows.Forms.Button buttonRefresh;
     }
 }
