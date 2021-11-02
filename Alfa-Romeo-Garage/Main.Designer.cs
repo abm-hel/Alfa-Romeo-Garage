@@ -90,7 +90,7 @@ namespace Alfa_Romeo_Garage
             this.buttonInterventions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonInterventions.Image = ((System.Drawing.Image)(resources.GetObject("buttonInterventions.Image")));
             this.buttonInterventions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonInterventions.Location = new System.Drawing.Point(40, 618);
+            this.buttonInterventions.Location = new System.Drawing.Point(43, 613);
             this.buttonInterventions.Margin = new System.Windows.Forms.Padding(2);
             this.buttonInterventions.Name = "buttonInterventions";
             this.buttonInterventions.Size = new System.Drawing.Size(190, 50);
@@ -107,7 +107,7 @@ namespace Alfa_Romeo_Garage
             this.buttonEntretiens.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEntretiens.Image = ((System.Drawing.Image)(resources.GetObject("buttonEntretiens.Image")));
             this.buttonEntretiens.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEntretiens.Location = new System.Drawing.Point(40, 244);
+            this.buttonEntretiens.Location = new System.Drawing.Point(37, 232);
             this.buttonEntretiens.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEntretiens.Name = "buttonEntretiens";
             this.buttonEntretiens.Size = new System.Drawing.Size(190, 50);
@@ -124,7 +124,7 @@ namespace Alfa_Romeo_Garage
             this.buttonPieces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonPieces.Image = ((System.Drawing.Image)(resources.GetObject("buttonPieces.Image")));
             this.buttonPieces.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPieces.Location = new System.Drawing.Point(40, 549);
+            this.buttonPieces.Location = new System.Drawing.Point(40, 539);
             this.buttonPieces.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPieces.Name = "buttonPieces";
             this.buttonPieces.Size = new System.Drawing.Size(190, 50);
@@ -141,7 +141,7 @@ namespace Alfa_Romeo_Garage
             this.buttonVehicules.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonVehicules.Image = ((System.Drawing.Image)(resources.GetObject("buttonVehicules.Image")));
             this.buttonVehicules.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonVehicules.Location = new System.Drawing.Point(37, 470);
+            this.buttonVehicules.Location = new System.Drawing.Point(37, 464);
             this.buttonVehicules.Margin = new System.Windows.Forms.Padding(2);
             this.buttonVehicules.Name = "buttonVehicules";
             this.buttonVehicules.Size = new System.Drawing.Size(193, 50);
@@ -169,7 +169,7 @@ namespace Alfa_Romeo_Garage
             this.buttonModeles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonModeles.Image = ((System.Drawing.Image)(resources.GetObject("buttonModeles.Image")));
             this.buttonModeles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonModeles.Location = new System.Drawing.Point(43, 403);
+            this.buttonModeles.Location = new System.Drawing.Point(37, 386);
             this.buttonModeles.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModeles.Name = "buttonModeles";
             this.buttonModeles.Size = new System.Drawing.Size(190, 50);
@@ -186,7 +186,7 @@ namespace Alfa_Romeo_Garage
             this.buttonClients.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClients.Image = ((System.Drawing.Image)(resources.GetObject("buttonClients.Image")));
             this.buttonClients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonClients.Location = new System.Drawing.Point(40, 323);
+            this.buttonClients.Location = new System.Drawing.Point(37, 305);
             this.buttonClients.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClients.Name = "buttonClients";
             this.buttonClients.Size = new System.Drawing.Size(190, 50);
@@ -274,16 +274,16 @@ namespace Alfa_Romeo_Garage
             // userControlAccueil1
             // 
             this.userControlAccueil1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlAccueil1.Location = new System.Drawing.Point(235, 37);
+            this.userControlAccueil1.Location = new System.Drawing.Point(235, 8);
             this.userControlAccueil1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControlAccueil1.Name = "userControlAccueil1";
-            this.userControlAccueil1.Size = new System.Drawing.Size(921, 650);
+            this.userControlAccueil1.Size = new System.Drawing.Size(921, 679);
             this.userControlAccueil1.TabIndex = 10;
             // 
             // userControleEntre1
             // 
             this.userControleEntre1.BackColor = System.Drawing.Color.Black;
-            this.userControleEntre1.Location = new System.Drawing.Point(235, 0);
+            this.userControleEntre1.Location = new System.Drawing.Point(235, 3);
             this.userControleEntre1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControleEntre1.Name = "userControleEntre1";
             this.userControleEntre1.Size = new System.Drawing.Size(921, 650);
@@ -305,9 +305,11 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Alfa Romeo Garage ";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
