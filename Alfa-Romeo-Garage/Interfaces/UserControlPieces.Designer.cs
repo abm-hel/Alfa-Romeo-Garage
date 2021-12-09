@@ -272,10 +272,10 @@ namespace Alfa_Romeo_Garage
             this.panelBorder.BackColor = System.Drawing.Color.White;
             this.panelBorder.Controls.Add(this.dataGridViewClients);
             this.panelBorder.Location = new System.Drawing.Point(504, 85);
-            this.panelBorder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelBorder.Margin = new System.Windows.Forms.Padding(4);
             this.panelBorder.Name = "panelBorder";
             this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
-            this.panelBorder.Size = new System.Drawing.Size(740, 695);
+            this.panelBorder.Size = new System.Drawing.Size(707, 695);
             this.panelBorder.TabIndex = 99;
             // 
             // dataGridViewClients
@@ -331,7 +331,7 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(738, 693);
+            this.dataGridViewClients.Size = new System.Drawing.Size(705, 693);
             this.dataGridViewClients.TabIndex = 101;
             // 
             // cID
@@ -412,7 +412,7 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.labelTitle);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlPieces";
-            this.Size = new System.Drawing.Size(1260, 805);
+            this.Size = new System.Drawing.Size(1228, 842);
             this.Load += new System.EventHandler(this.UserControlPieces_Load);
             this.panelBorder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();

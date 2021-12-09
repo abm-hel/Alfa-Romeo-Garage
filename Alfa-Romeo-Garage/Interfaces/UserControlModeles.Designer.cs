@@ -424,7 +424,7 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(742, 693);
+            this.dataGridViewClients.Size = new System.Drawing.Size(712, 693);
             this.dataGridViewClients.TabIndex = 92;
             // 
             // cID
@@ -524,7 +524,7 @@ namespace Alfa_Romeo_Garage
             this.panelBorder.Location = new System.Drawing.Point(495, 91);
             this.panelBorder.Name = "panelBorder";
             this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
-            this.panelBorder.Size = new System.Drawing.Size(744, 695);
+            this.panelBorder.Size = new System.Drawing.Size(714, 695);
             this.panelBorder.TabIndex = 93;
             // 
             // UserControlModeles
@@ -559,7 +559,7 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.labelTitre);
             this.Name = "UserControlModeles";
             this.Padding = new System.Windows.Forms.Padding(1);
-            this.Size = new System.Drawing.Size(1260, 805);
+            this.Size = new System.Drawing.Size(1228, 842);
             this.Load += new System.EventHandler(this.UserControlModeles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).EndInit();
             this.panelBorder.ResumeLayout(false);

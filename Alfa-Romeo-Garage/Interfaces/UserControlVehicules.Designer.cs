@@ -71,7 +71,7 @@ namespace Alfa_Romeo_Garage
             this.panelBorder.SuspendLayout();
             this.SuspendLayout();
             // 
-            // DataGridviewV
+            // dataGridviewV
             // 
             this.dataGridviewV.AllowUserToAddRows = false;
             this.dataGridviewV.AllowUserToDeleteRows = false;
@@ -115,7 +115,7 @@ namespace Alfa_Romeo_Garage
             this.dataGridviewV.GridColor = System.Drawing.Color.White;
             this.dataGridviewV.Location = new System.Drawing.Point(1, 1);
             this.dataGridviewV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridviewV.Name = "DataGridviewV";
+            this.dataGridviewV.Name = "dataGridviewV";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,7 +128,7 @@ namespace Alfa_Romeo_Garage
             this.dataGridviewV.RowHeadersWidth = 51;
             this.dataGridviewV.RowTemplate.Height = 24;
             this.dataGridviewV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridviewV.Size = new System.Drawing.Size(725, 675);
+            this.dataGridviewV.Size = new System.Drawing.Size(690, 675);
             this.dataGridviewV.TabIndex = 48;
             // 
             // cID
@@ -435,7 +435,7 @@ namespace Alfa_Romeo_Garage
             this.panelBorder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBorder.Name = "panelBorder";
             this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
-            this.panelBorder.Size = new System.Drawing.Size(727, 677);
+            this.panelBorder.Size = new System.Drawing.Size(692, 677);
             this.panelBorder.TabIndex = 63;
             // 
             // labelProprietaire
@@ -542,7 +542,7 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.labelTitre);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlVehicules";
-            this.Size = new System.Drawing.Size(1260, 805);
+            this.Size = new System.Drawing.Size(1228, 842);
             this.Load += new System.EventHandler(this.UserControlVehicules_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridviewV)).EndInit();
             this.panelBorder.ResumeLayout(false);
