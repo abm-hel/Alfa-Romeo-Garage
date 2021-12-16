@@ -33,20 +33,22 @@ namespace Alfa_Romeo_Garage.Interfaces
             InitializeComponent();
         }
 
-        private void ActiverBoutonsFormulaires(bool disponibilite)
+        private void ActiverBoutonsFormulairesEntretien(bool disponibilite)
         {
             dataGridViewE.Enabled = dataGridviewV.Enabled = disponibilite;
             buttonAjouter.Visible = buttonEditer.Visible = buttonSupprimer.Visible  = disponibilite;
-            buttonAjouterIntervention.Visible = buttonSupprimerIntervention.Visible = buttonEditerIntervention.Visible = disponibilite;
+            //buttonAjouterIntervention.Visible = buttonSupprimerIntervention.Visible = buttonEditerIntervention.Visible = disponibilite;
 
-            comboBoxVehicule.Enabled = !disponibilite;
-            dateTimePickerDateEntretien.Enabled = !disponibilite;
+            comboBoxVehicule.Visible = !disponibilite;
+            dateTimePickerDateEntretien.Visible = !disponibilite;
+            labelVehicule.Visible = !disponibilite;
+            labelDate.Visible = !disponibilite;
 
-            comboBoxEntretien.Enabled = !disponibilite;
-            comboBoxIntervention.Enabled = !disponibilite;
+            //comboBoxEntretien.Enabled = !disponibilite;
+            //comboBoxIntervention.Enabled = !disponibilite;
 
             buttonConfirmer.Visible = buttonAnnuler.Visible = !disponibilite;
-            buttonConfirmerIntervention.Visible = buttonAnnulerIntervention.Visible = !disponibilite;
+            buttonConfirmerIntervention.Visible = buttonAnnulerIntervention.Visible = false;
         }
 
         private void RemplirDataGridView()
@@ -58,6 +60,7 @@ namespace Alfa_Romeo_Garage.Interfaces
 
             dataTableV = new DataTable();
             dataTableV.Columns.Add(new DataColumn("id", System.Type.GetType("System.Int32")));
+            dataTableV.Columns.Add(new DataColumn("entretienId", System.Type.GetType("System.Int32")));
             dataTableV.Columns.Add(new DataColumn("description"));
             dataTableV.Columns.Add(new DataColumn("vehicule"));
             dataTableV.Columns.Add(new DataColumn("client"));
@@ -73,9 +76,9 @@ namespace Alfa_Romeo_Garage.Interfaces
 
             foreach (C_INVOICE entretien in listEntretiens)
             {
-                int idVehicule = Convert.ToInt32(entretien.ID_VEHICLE);
+                int idVeh = Convert.ToInt32(entretien.ID_VEHICLE);
 
-                C_VEHICLE vehicule = new G_VEHICLE(connexionBD).Lire_ID(idVehicule);
+                C_VEHICLE vehicule = new G_VEHICLE(connexionBD).Lire_ID(idVeh);
 
                 dataTableE.Rows.Add
                 (
@@ -101,6 +104,7 @@ namespace Alfa_Romeo_Garage.Interfaces
 
                 dataTableV.Rows.Add
                 (
+                    r.ID,
                     en.ID,
                     mainO.DESCRIPTION,
                     v.REGISTRATION,
@@ -141,7 +145,7 @@ namespace Alfa_Romeo_Garage.Interfaces
 
             bindingSourcesClients = new BindingSource();
             bindingSourcesClients.DataSource = dataTableClients;
-            dataGridViewClients.DataSource = bindingSourcesClients;
+            dataGridViewC.DataSource = bindingSourcesClients;
 
             bindingSourcesE = new BindingSource();
             bindingSourcesE.DataSource = dataTableE;
@@ -168,14 +172,17 @@ namespace Alfa_Romeo_Garage.Interfaces
 
             foreach (C_INTERVENTION b in listB)
             {
-                comboBoxIntervention.Items.Add(b.ID);
+                comboBoxIntervention.Items.Add(b.ID+" - "+b.DESCRIPTION);
             }
 
             List<C_INVOICE> listC = new G_INVOICE(connexionBD).Lire("ID");
-
+            int idVehicule;
             foreach (C_INVOICE v in listC)
             {
-                comboBoxEntretien.Items.Add(v.ID);
+                idVehicule = Convert.ToInt32(v.ID_VEHICLE);
+                C_VEHICLE vehicule = new G_VEHICLE(connexionBD).Lire_ID(idVehicule);
+                DateTime dateEntretien = Convert.ToDateTime(v.DATE);
+                comboBoxEntretien.Items.Add(v.ID +" - " + vehicule.REGISTRATION +" ("+ dateEntretien.Day.ToString("D2") +"/"+dateEntretien.Month.ToString("D2") + "/"+dateEntretien.Year.ToString("D4") +")");
             }
 
         }
@@ -183,25 +190,23 @@ namespace Alfa_Romeo_Garage.Interfaces
         private void UserControleEntre_Load(object sender, EventArgs e)
         {
             connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;
-
-
             RemplirDataGridView();
 
             if (dataGridViewE.Rows.Count > 0)
             {
-                ActiverBoutonsFormulaires(true);
+                ActiverBoutonsFormulairesEntretien(true);
             }
 
             else
             {
-                ActiverBoutonsFormulaires(false);
+                ActiverBoutonsFormulairesEntretien(false);
             } 
         }
 
         private void buttonAjouter_Click(object sender, EventArgs e)
         {
             dateTimePickerDateEntretien.Value = DateTime.Today;
-            ActiverBoutonsFormulaires(false);
+            ActiverBoutonsFormulairesEntretien(false);
         }
 
         private void buttonEditer_Click(object sender, EventArgs e)
@@ -210,7 +215,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             {
                 id = dataGridViewE.SelectedRows[0].Cells["cID"].Value.ToString();
                 C_INVOICE vehiculeModification = new G_INVOICE(connexionBD).Lire_ID(int.Parse(id));
-                ActiverBoutonsFormulaires(false);
+                ActiverBoutonsFormulairesEntretien(false);
             }
             else
             {
@@ -234,7 +239,7 @@ namespace Alfa_Romeo_Garage.Interfaces
 
         private void buttonAnnuler_Click(object sender, EventArgs e)
         {
-            ActiverBoutonsFormulaires(true);
+            ActiverBoutonsFormulairesEntretien(true);
         }
 
         private void buttonConfirmer_Click(object sender, EventArgs e)
@@ -278,14 +283,14 @@ namespace Alfa_Romeo_Garage.Interfaces
                 bindingSourcesE.EndEdit();
                 id = null;
             }
-            ActiverBoutonsFormulaires(true);
+            ActiverBoutonsFormulairesEntretien(true);
         }
 
     
 
         private void buttonAjouterIntervention_Click(object sender, EventArgs e)
         {
-            ActiverBoutonsFormulaires(false);
+            ActiverBoutonsFormulairesEntretien(false);
         }
 
         private void buttonEditerIntervention_Click(object sender, EventArgs e)
@@ -293,8 +298,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             if (dataGridviewV.SelectedRows.Count > 0)
             {
                 id = dataGridviewV.SelectedRows[0].Cells["cID1"].Value.ToString();
-
-                ActiverBoutonsFormulaires(false);
+                ActiverBoutonsFormulairesEntretien(false);
             }
             else
             {
@@ -317,14 +321,19 @@ namespace Alfa_Romeo_Garage.Interfaces
 
         private void buttonConfirmerIntervention_Click(object sender, EventArgs e)
         {
-            C_INTERVENTION IN = new G_INTERVENTION(connexionBD).Lire_ID(Convert.ToInt32(comboBoxIntervention.Text));
-            C_INVOICE INV = new G_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(comboBoxEntretien.Text));
+            string[] interventionT = comboBoxIntervention.Text.Trim().Split('-');
+            string[] entretienT = comboBoxEntretien.Text.Trim().Split('-');
+
+
+            C_INTERVENTION IN = new G_INTERVENTION(connexionBD).Lire_ID(Convert.ToInt32(interventionT[0]));
+            C_INVOICE INV = new G_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(entretienT[0]));
             C_VEHICLE V = new G_VEHICLE(connexionBD).Lire_ID(Convert.ToInt32(INV.ID_VEHICLE));
             C_CUSTOMER c = new G_CUSTOMER(connexionBD).Lire_ID(Convert.ToInt32(V.ID_CUSTOMER));
 
             if (id==null)
             {
-                int idAjouter = new G_INTERVENTION_INVOICE(connexionBD).Ajouter(Convert.ToInt32(comboBoxIntervention.Text.ToString()), Convert.ToInt32(comboBoxEntretien.Text.ToString()), IN.PRICE_HOUR, IN.PRIC, IN.TVA);
+
+                int idAjouter = new G_INTERVENTION_INVOICE(connexionBD).Ajouter(Convert.ToInt32(interventionT[0]), Convert.ToInt32(entretienT[0]), IN.PRICE_HOUR, IN.PRIC, IN.TVA);
                 MessageBox.Show(comboBoxIntervention.Text + "+" + comboBoxEntretien.Text);
 
                 dataTableV.Rows.Add
@@ -342,22 +351,26 @@ namespace Alfa_Romeo_Garage.Interfaces
             else
             //Modification
             {
-                IN = new G_INTERVENTION(connexionBD).Lire_ID(Convert.ToInt32(comboBoxIntervention.Text));
-                INV = new G_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(comboBoxEntretien.Text));
+                MessageBox.Show(interventionT[0]);
+                MessageBox.Show(entretienT[0]);
+                
+                IN = new G_INTERVENTION(connexionBD).Lire_ID(Convert.ToInt32(interventionT[0]));
+                INV = new G_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(entretienT[0]));
                 V = new G_VEHICLE(connexionBD).Lire_ID(Convert.ToInt32(INV.ID_VEHICLE));
                 c = new G_CUSTOMER(connexionBD).Lire_ID(Convert.ToInt32(V.ID_CUSTOMER));
 
-                int idVehiculeModification = new G_INTERVENTION_INVOICE(connexionBD).Modifier
+                int Modification = new G_INTERVENTION_INVOICE(connexionBD).Modifier
                    (
                     int.Parse(id),
-                    Convert.ToInt32(comboBoxIntervention.Text.ToString()),
-                    Convert.ToInt32(comboBoxEntretien.Text.ToString()),
+                    Convert.ToInt32(interventionT[0]),
+                    Convert.ToInt32(entretienT[0]),
                     IN.PRICE_HOUR,
                     IN.PRIC,
                     IN.TVA
                    );
 
                 dataGridviewV.SelectedRows[0].Cells["cID1"].Value = int.Parse(id).ToString();
+                dataGridviewV.SelectedRows[0].Cells["cEntretienID1"].Value = INV.ID;
                 dataGridviewV.SelectedRows[0].Cells["cDescription1"].Value = IN.DESCRIPTION;
                 dataGridviewV.SelectedRows[0].Cells["cVehicule1"].Value = V.REGISTRATION;
                 dataGridviewV.SelectedRows[0].Cells["cClient1"].Value = c.FIRST_NAME + " " + c.LAST_NAME;
@@ -368,12 +381,29 @@ namespace Alfa_Romeo_Garage.Interfaces
                 bindingSourcesV.EndEdit();
                 id = null;
             }
-            ActiverBoutonsFormulaires(true);
+            ActiverBoutonsFormulairesEntretien(true);
+
+            /*{
+                int idVehiculeModification = new G_INVOICE(connexionBD).Modifier
+                   (
+                    int.Parse(id),
+                    int.Parse(vehicule[0]),
+                    dateTimePickerDateEntretien.Value
+                   );
+
+                dataGridViewE.SelectedRows[0].Cells["cID"].Value = int.Parse(id).ToString();
+                dataGridViewE.SelectedRows[0].Cells["cVehicule"].Value = vehicule[1] +"-"+ vehicule[2]+ "-" + vehicule[3];
+                dataGridViewE.SelectedRows[0].Cells["cDate"].Value = dateTimePickerDateEntretien.Value.Day.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Month.ToString("D2") + "/" + dateTimePickerDateEntretien.Value.Year.ToString("D4");
+
+                bindingSourcesE.EndEdit();
+                id = null;
+            }
+            ActiverBoutonsFormulaires(true);*/
         }
 
         private void buttonAnnulerIntervention_Click(object sender, EventArgs e)
         {
-            ActiverBoutonsFormulaires(true);
+            ActiverBoutonsFormulairesEntretien(true);
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)

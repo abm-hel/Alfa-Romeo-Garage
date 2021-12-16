@@ -500,7 +500,7 @@ namespace Alfa_Romeo_Garage
             this.panelBorder.Location = new System.Drawing.Point(514, 70);
             this.panelBorder.Name = "panelBorder";
             this.panelBorder.Padding = new System.Windows.Forms.Padding(1);
-            this.panelBorder.Size = new System.Drawing.Size(699, 708);
+            this.panelBorder.Size = new System.Drawing.Size(680, 708);
             this.panelBorder.TabIndex = 39;
             // 
             // dataGridViewClients
@@ -517,7 +517,7 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -535,8 +535,8 @@ namespace Alfa_Romeo_Garage
             this.cDateEnregistrement});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -546,9 +546,10 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewClients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewClients.Name = "dataGridViewClients";
+            this.dataGridViewClients.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
@@ -558,8 +559,10 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.RowHeadersWidth = 51;
             this.dataGridViewClients.RowTemplate.Height = 24;
             this.dataGridViewClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewClients.Size = new System.Drawing.Size(697, 706);
+            this.dataGridViewClients.Size = new System.Drawing.Size(678, 706);
             this.dataGridViewClients.TabIndex = 40;
+            this.dataGridViewClients.VirtualMode = true;
+            
             // 
             // cID
             // 
@@ -651,7 +654,7 @@ namespace Alfa_Romeo_Garage
             this.Controls.Add(this.labelTitre);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlClients";
-            this.Size = new System.Drawing.Size(1228, 842);
+            this.Size = new System.Drawing.Size(1211, 825);
             this.Load += new System.EventHandler(this.UserControlClients_Load);
             this.groupBoxInformationsPersonnelles.ResumeLayout(false);
             this.groupBoxInformationsPersonnelles.PerformLayout();
@@ -700,8 +703,8 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.GroupBox groupBoxAdresse;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelBorder;
-        private System.Windows.Forms.DataGridView dataGridViewClients;
         private CustomControls.RJControls.RJDatePicker dateTimePickerDateNaissance;
+        private System.Windows.Forms.DataGridView dataGridViewClients;
         private System.Windows.Forms.DataGridViewTextBoxColumn cID;
         private System.Windows.Forms.DataGridViewTextBoxColumn cNomPrenom;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDateNaissance;

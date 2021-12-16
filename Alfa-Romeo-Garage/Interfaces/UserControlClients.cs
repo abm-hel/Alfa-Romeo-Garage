@@ -249,5 +249,7 @@ namespace Alfa_Romeo_Garage
         {
             ActiverBoutonsFormulaires(true);
         }
+
+        
     }
 }

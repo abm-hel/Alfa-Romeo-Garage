@@ -41,7 +41,7 @@ namespace Alfa_Romeo_Garage
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(490, 0);
+            this.label1.Location = new System.Drawing.Point(488, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(489, 114);
             this.label1.TabIndex = 1;
@@ -51,9 +51,9 @@ namespace Alfa_Romeo_Garage
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-10, 184);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 153);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1276, 645);
+            this.pictureBox1.Size = new System.Drawing.Size(1260, 634);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -63,7 +63,7 @@ namespace Alfa_Romeo_Garage
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(794, 135);
+            this.label2.Location = new System.Drawing.Point(816, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 46);
             this.label2.TabIndex = 8;

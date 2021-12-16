@@ -226,66 +226,66 @@ namespace Alfa_Romeo_Garage
             // userControlIntervetions1
             // 
             this.userControlIntervetions1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlIntervetions1.Location = new System.Drawing.Point(313, 0);
+            this.userControlIntervetions1.Location = new System.Drawing.Point(317, 10);
             this.userControlIntervetions1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControlIntervetions1.Name = "userControlIntervetions1";
             this.userControlIntervetions1.Padding = new System.Windows.Forms.Padding(1);
-            this.userControlIntervetions1.Size = new System.Drawing.Size(1362, 842);
+            this.userControlIntervetions1.Size = new System.Drawing.Size(1211, 825);
             this.userControlIntervetions1.TabIndex = 15;
             // 
             // userControlPieces1
             // 
             this.userControlPieces1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlPieces1.Location = new System.Drawing.Point(313, 0);
+            this.userControlPieces1.Location = new System.Drawing.Point(317, 10);
             this.userControlPieces1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControlPieces1.Name = "userControlPieces1";
-            this.userControlPieces1.Size = new System.Drawing.Size(1228, 842);
+            this.userControlPieces1.Size = new System.Drawing.Size(1211, 825);
             this.userControlPieces1.TabIndex = 14;
             // 
             // userControlVehiculescs1
             // 
             this.userControlVehiculescs1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlVehiculescs1.Location = new System.Drawing.Point(313, 0);
+            this.userControlVehiculescs1.Location = new System.Drawing.Point(317, 10);
             this.userControlVehiculescs1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControlVehiculescs1.Name = "userControlVehiculescs1";
-            this.userControlVehiculescs1.Size = new System.Drawing.Size(1228, 842);
+            this.userControlVehiculescs1.Size = new System.Drawing.Size(1211, 825);
             this.userControlVehiculescs1.TabIndex = 13;
             // 
             // userControlModeles1
             // 
             this.userControlModeles1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlModeles1.Location = new System.Drawing.Point(313, 0);
+            this.userControlModeles1.Location = new System.Drawing.Point(317, 10);
             this.userControlModeles1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControlModeles1.Name = "userControlModeles1";
             this.userControlModeles1.Padding = new System.Windows.Forms.Padding(1);
-            this.userControlModeles1.Size = new System.Drawing.Size(1228, 842);
+            this.userControlModeles1.Size = new System.Drawing.Size(1211, 825);
             this.userControlModeles1.TabIndex = 12;
             // 
             // userControlClients1
             // 
             this.userControlClients1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlClients1.Location = new System.Drawing.Point(317, 0);
+            this.userControlClients1.Location = new System.Drawing.Point(317, 10);
             this.userControlClients1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControlClients1.Name = "userControlClients1";
-            this.userControlClients1.Size = new System.Drawing.Size(1228, 842);
+            this.userControlClients1.Size = new System.Drawing.Size(1211, 825);
             this.userControlClients1.TabIndex = 11;
             // 
             // userControlAccueil1
             // 
             this.userControlAccueil1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userControlAccueil1.Location = new System.Drawing.Point(313, 10);
+            this.userControlAccueil1.Location = new System.Drawing.Point(317, 10);
             this.userControlAccueil1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControlAccueil1.Name = "userControlAccueil1";
-            this.userControlAccueil1.Size = new System.Drawing.Size(1228, 842);
+            this.userControlAccueil1.Size = new System.Drawing.Size(1211, 825);
             this.userControlAccueil1.TabIndex = 10;
             // 
             // userControleEntre1
             // 
             this.userControleEntre1.BackColor = System.Drawing.Color.Black;
-            this.userControleEntre1.Location = new System.Drawing.Point(313, 4);
+            this.userControleEntre1.Location = new System.Drawing.Point(317, 10);
             this.userControleEntre1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControleEntre1.Name = "userControleEntre1";
-            this.userControleEntre1.Size = new System.Drawing.Size(1228, 842);
+            this.userControleEntre1.Size = new System.Drawing.Size(1211, 825);
             this.userControleEntre1.TabIndex = 16;
             // 
             // MainForm
