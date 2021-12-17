@@ -221,6 +221,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             comboBoxEntretien.Items.Clear();
             comboBoxIntervention.Items.Clear();
             comboBoxVehicule.Items.Clear();
+            comboBoxPiece.Items.Clear();
 
             List<C_VEHICLE> listV = new G_VEHICLE(connexionBD).Lire("ID");
 
@@ -238,6 +239,13 @@ namespace Alfa_Romeo_Garage.Interfaces
                 comboBoxIntervention.Items.Add(b.ID+" - "+b.DESCRIPTION);
             }
 
+            List<C_PART> ListPieces = new G_PART(connexionBD).Lire("ID");
+
+            foreach(C_PART p in ListPieces)
+            {
+                comboBoxPiece.Items.Add(p.ID + " - " + p.NAME);
+            }
+
             List<C_INVOICE> listC = new G_INVOICE(connexionBD).Lire("ID");
             int idVehicule;
             foreach (C_INVOICE v in listC)
@@ -246,6 +254,7 @@ namespace Alfa_Romeo_Garage.Interfaces
                 C_VEHICLE vehicule = new G_VEHICLE(connexionBD).Lire_ID(idVehicule);
                 DateTime dateEntretien = Convert.ToDateTime(v.DATE);
                 comboBoxEntretien.Items.Add(v.ID +" - " + vehicule.REGISTRATION +" ("+ dateEntretien.Day.ToString("D2") +"/"+dateEntretien.Month.ToString("D2") + "/"+dateEntretien.Year.ToString("D4") +")");
+                comboBoxEntretien2.Items.Add(v.ID + " - " + vehicule.REGISTRATION + " (" + dateEntretien.Day.ToString("D2") + "/" + dateEntretien.Month.ToString("D2") + "/" + dateEntretien.Year.ToString("D4") + ")");
             }
 
         }
