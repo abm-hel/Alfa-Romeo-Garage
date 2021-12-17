@@ -29,6 +29,7 @@ namespace Alfa_Romeo_Garage.Interfaces
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -97,6 +98,18 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.cTVA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPrix2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cQuantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.labelEntretien2 = new System.Windows.Forms.Label();
+            this.labelPiece = new System.Windows.Forms.Label();
+            this.comboBoxEntretien2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxPiece = new System.Windows.Forms.ComboBox();
+            this.labelQuantite = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBoxQuantite = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridviewV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).BeginInit();
@@ -872,11 +885,174 @@ namespace Alfa_Romeo_Garage.Interfaces
             this.cQuantite.ReadOnly = true;
             this.cQuantite.Width = 125;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1068, 649);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 39);
+            this.button1.TabIndex = 136;
+            this.button1.Text = "Confirmer";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(1068, 692);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 39);
+            this.button2.TabIndex = 135;
+            this.button2.Text = "Annuler";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Crimson;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(1068, 575);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 39);
+            this.button3.TabIndex = 134;
+            this.button3.Text = "Editer Intervention";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Crimson;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(1068, 532);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(123, 39);
+            this.button4.TabIndex = 133;
+            this.button4.Text = "Ajouter Intervention";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Crimson;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(1068, 618);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(123, 39);
+            this.button5.TabIndex = 132;
+            this.button5.Text = "Supprimer Intervention";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // labelEntretien2
+            // 
+            this.labelEntretien2.AutoSize = true;
+            this.labelEntretien2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEntretien2.ForeColor = System.Drawing.Color.Crimson;
+            this.labelEntretien2.Location = new System.Drawing.Point(753, 610);
+            this.labelEntretien2.Name = "labelEntretien2";
+            this.labelEntretien2.Size = new System.Drawing.Size(70, 19);
+            this.labelEntretien2.TabIndex = 140;
+            this.labelEntretien2.Text = "Entretien";
+            // 
+            // labelPiece
+            // 
+            this.labelPiece.AutoSize = true;
+            this.labelPiece.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPiece.ForeColor = System.Drawing.Color.Crimson;
+            this.labelPiece.Location = new System.Drawing.Point(753, 546);
+            this.labelPiece.Name = "labelPiece";
+            this.labelPiece.Size = new System.Drawing.Size(52, 19);
+            this.labelPiece.TabIndex = 139;
+            this.labelPiece.Text = "Pièces";
+            // 
+            // comboBoxEntretien2
+            // 
+            this.comboBoxEntretien2.BackColor = System.Drawing.Color.Black;
+            this.comboBoxEntretien2.ForeColor = System.Drawing.Color.White;
+            this.comboBoxEntretien2.FormattingEnabled = true;
+            this.comboBoxEntretien2.Location = new System.Drawing.Point(757, 633);
+            this.comboBoxEntretien2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxEntretien2.Name = "comboBoxEntretien2";
+            this.comboBoxEntretien2.Size = new System.Drawing.Size(290, 24);
+            this.comboBoxEntretien2.TabIndex = 138;
+            // 
+            // comboBoxPiece
+            // 
+            this.comboBoxPiece.BackColor = System.Drawing.Color.Black;
+            this.comboBoxPiece.ForeColor = System.Drawing.Color.White;
+            this.comboBoxPiece.FormattingEnabled = true;
+            this.comboBoxPiece.Location = new System.Drawing.Point(757, 569);
+            this.comboBoxPiece.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxPiece.Name = "comboBoxPiece";
+            this.comboBoxPiece.Size = new System.Drawing.Size(290, 24);
+            this.comboBoxPiece.TabIndex = 137;
+            // 
+            // labelQuantite
+            // 
+            this.labelQuantite.AutoSize = true;
+            this.labelQuantite.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuantite.ForeColor = System.Drawing.Color.Crimson;
+            this.labelQuantite.Location = new System.Drawing.Point(753, 675);
+            this.labelQuantite.Name = "labelQuantite";
+            this.labelQuantite.Size = new System.Drawing.Size(71, 19);
+            this.labelQuantite.TabIndex = 141;
+            this.labelQuantite.Text = "Quantité";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBoxQuantite
+            // 
+            this.textBoxQuantite.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxQuantite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxQuantite.ForeColor = System.Drawing.Color.White;
+            this.textBoxQuantite.Location = new System.Drawing.Point(757, 698);
+            this.textBoxQuantite.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxQuantite.Name = "textBoxQuantite";
+            this.textBoxQuantite.Size = new System.Drawing.Size(290, 22);
+            this.textBoxQuantite.TabIndex = 144;
+            // 
             // UserControleEntre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.textBoxQuantite);
+            this.Controls.Add(this.labelQuantite);
+            this.Controls.Add(this.labelEntretien2);
+            this.Controls.Add(this.labelPiece);
+            this.Controls.Add(this.comboBoxEntretien2);
+            this.Controls.Add(this.comboBoxPiece);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridViewP);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.dataGridViewC);
@@ -968,5 +1144,17 @@ namespace Alfa_Romeo_Garage.Interfaces
         private System.Windows.Forms.DataGridViewTextBoxColumn cTVA2;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPrix2;
         private System.Windows.Forms.DataGridViewTextBoxColumn cQuantite;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label labelEntretien2;
+        private System.Windows.Forms.Label labelPiece;
+        private System.Windows.Forms.ComboBox comboBoxEntretien2;
+        private System.Windows.Forms.ComboBox comboBoxPiece;
+        private System.Windows.Forms.Label labelQuantite;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBoxQuantite;
     }
 }
