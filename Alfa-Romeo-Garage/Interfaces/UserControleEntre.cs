@@ -35,20 +35,27 @@ namespace Alfa_Romeo_Garage.Interfaces
 
         private void ActiverBoutonsFormulairesEntretien(bool disponibilite)
         {
-            dataGridViewE.Enabled = dataGridviewV.Enabled = disponibilite;
+            dataGridViewC.Enabled = dataGridviewV.Enabled = disponibilite;
             buttonAjouter.Visible = buttonEditer.Visible = buttonSupprimer.Visible  = disponibilite;
-            //buttonAjouterIntervention.Visible = buttonSupprimerIntervention.Visible = buttonEditerIntervention.Visible = disponibilite;
-
+            buttonAjouterIntervention.Enabled = buttonSupprimerIntervention.Enabled = buttonEditerIntervention.Enabled = disponibilite;
             comboBoxVehicule.Visible = !disponibilite;
             dateTimePickerDateEntretien.Visible = !disponibilite;
             labelVehicule.Visible = !disponibilite;
             labelDate.Visible = !disponibilite;
-
-            //comboBoxEntretien.Enabled = !disponibilite;
-            //comboBoxIntervention.Enabled = !disponibilite;
-
             buttonConfirmer.Visible = buttonAnnuler.Visible = !disponibilite;
-            buttonConfirmerIntervention.Visible = buttonAnnulerIntervention.Visible = false;
+            
+        }
+
+        private void ActiverBoutonsFormulairesInterventions(bool disponibilite)
+        {
+            dataGridViewC.Enabled = dataGridViewE.Enabled = disponibilite;
+            buttonAjouterIntervention.Visible = buttonEditerIntervention.Visible = buttonSupprimerIntervention.Visible = disponibilite;
+            buttonAjouter.Enabled = buttonSupprimer.Enabled = buttonEditer.Enabled = disponibilite;
+            comboBoxIntervention.Visible = comboBoxEntretien.Visible= !disponibilite;
+            labelIntervention.Visible = !disponibilite;
+            labelEntretien.Visible = !disponibilite;
+            buttonConfirmerIntervention.Visible = buttonAnnulerIntervention.Visible = !disponibilite;
+
         }
 
         private void RemplirDataGridView()
@@ -192,15 +199,17 @@ namespace Alfa_Romeo_Garage.Interfaces
             connexionBD = ConfigurationManager.ConnectionStrings["Alfa_Romeo_Garage.Properties.Settings.connexionBD"].ConnectionString;
             RemplirDataGridView();
 
-            if (dataGridViewE.Rows.Count > 0)
-            {
-                ActiverBoutonsFormulairesEntretien(true);
-            }
+            /* if (dataGridViewE.Rows.Count > 0)
+             {
+                 ActiverBoutonsFormulairesEntretien(true);
+             }*/
 
-            else
-            {
-                ActiverBoutonsFormulairesEntretien(false);
-            } 
+            //else
+            //{
+            ActiverBoutonsFormulairesEntretien(true);
+            ActiverBoutonsFormulairesInterventions(true);
+            //}
+
         }
 
         private void buttonAjouter_Click(object sender, EventArgs e)
@@ -234,6 +243,10 @@ namespace Alfa_Romeo_Garage.Interfaces
                     new G_INVOICE(connexionBD).Supprimer(idClientSuppression);
                     bindingSourcesE.RemoveCurrent();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Aucun enregistrement sélectionné !");
             }
         }
 
@@ -290,7 +303,7 @@ namespace Alfa_Romeo_Garage.Interfaces
 
         private void buttonAjouterIntervention_Click(object sender, EventArgs e)
         {
-            ActiverBoutonsFormulairesEntretien(false);
+            ActiverBoutonsFormulairesInterventions(false);
         }
 
         private void buttonEditerIntervention_Click(object sender, EventArgs e)
@@ -298,7 +311,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             if (dataGridviewV.SelectedRows.Count > 0)
             {
                 id = dataGridviewV.SelectedRows[0].Cells["cID1"].Value.ToString();
-                ActiverBoutonsFormulairesEntretien(false);
+                ActiverBoutonsFormulairesInterventions(false);
             }
             else
             {
@@ -339,6 +352,7 @@ namespace Alfa_Romeo_Garage.Interfaces
                 dataTableV.Rows.Add
                   (
                       idAjouter.ToString(),
+                      INV.ID.ToString(),
                       IN.DESCRIPTION,
                       V.REGISTRATION,
                       c.FIRST_NAME + " " + c.LAST_NAME,
@@ -381,7 +395,7 @@ namespace Alfa_Romeo_Garage.Interfaces
                 bindingSourcesV.EndEdit();
                 id = null;
             }
-            ActiverBoutonsFormulairesEntretien(true);
+            //ActiverBoutonsFormulairesEntretien(true);
 
             /*{
                 int idVehiculeModification = new G_INVOICE(connexionBD).Modifier
@@ -399,16 +413,22 @@ namespace Alfa_Romeo_Garage.Interfaces
                 id = null;
             }
             ActiverBoutonsFormulaires(true);*/
+            ActiverBoutonsFormulairesInterventions(true);
         }
 
         private void buttonAnnulerIntervention_Click(object sender, EventArgs e)
         {
-            ActiverBoutonsFormulairesEntretien(true);
+            ActiverBoutonsFormulairesInterventions(true);
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
             RemplirDataGridView();
+        }
+
+        private void dataGridviewV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
