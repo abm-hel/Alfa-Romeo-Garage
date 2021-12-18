@@ -511,7 +511,7 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewClients.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -536,9 +536,9 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewClients.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -552,7 +552,7 @@ namespace Alfa_Romeo_Garage
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewClients.RowHeadersVisible = false;
@@ -562,7 +562,6 @@ namespace Alfa_Romeo_Garage
             this.dataGridViewClients.Size = new System.Drawing.Size(678, 706);
             this.dataGridViewClients.TabIndex = 40;
             this.dataGridViewClients.VirtualMode = true;
-            
             // 
             // cID
             // 

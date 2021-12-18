@@ -179,7 +179,7 @@ namespace Alfa_Romeo_Garage.Interfaces
                     c.FIRST_NAME + " " + c.LAST_NAME,
                     Convert.ToDateTime(en.DATE).Day.ToString("D2") + "/" + Convert.ToDateTime(en.DATE).Month.ToString("D2") + "/" + Convert.ToDateTime(en.DATE).Year.ToString("D4"),
 
-                    string.Format("{0:0.00}", pieceU.PRICE).ToString() + " €",
+                    string.Format("{0:0.00}", pieceU.PRICE*r.QUANTITY_USED).ToString() + " €",
                     string.Format("{0:0.0}", pieceU.TVA).ToString() + " %",
                     r.QUANTITY_USED
                 );
@@ -219,6 +219,7 @@ namespace Alfa_Romeo_Garage.Interfaces
             dataGridViewP.DataSource = bindingSourcesP;
 
             comboBoxEntretien.Items.Clear();
+            comboBoxEntretien2.Items.Clear();
             comboBoxIntervention.Items.Clear();
             comboBoxVehicule.Items.Clear();
             comboBoxPiece.Items.Clear();
@@ -472,16 +473,96 @@ namespace Alfa_Romeo_Garage.Interfaces
 
         private void buttonEditerPiece_Click(object sender, EventArgs e)
         {
-
+            if (dataGridviewV.SelectedRows.Count > 0)
+            {
+                id = dataGridViewP.SelectedRows[0].Cells["cID2"].Value.ToString();
+                ActiverBoutonsFormulairesPieces(false);
+            }
+            else
+            {
+                MessageBox.Show("Sélectionner l'enregistrement à éditer");
+            }
         }
 
         private void buttonSupprimerPiece_Click(object sender, EventArgs e)
         {
-
+            if (dataGridViewP.SelectedRows.Count > 0)
+            {
+                if (MessageBox.Show("Voullez-vous vraiment supprimer l'enregistrement?", "Confirmer", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int idSuppression = (int)dataGridViewP.SelectedRows[0].Cells["cID2"].Value;
+                    new G_PART_INVOICE(connexionBD).Supprimer(idSuppression);
+                    bindingSourcesP.RemoveCurrent();
+                }
+            }
         }
 
         private void buttonConfirmerPiece_Click(object sender, EventArgs e)
         {
+            string[] piece = comboBoxPiece.Text.Trim().Split('-');
+            string[] entretien = comboBoxEntretien2.Text.Trim().Split('-');
+            
+            int quantite = Convert.ToInt32(textBoxQuantite.Text);
+
+
+            C_PART pieceSelectionnee = new G_PART(connexionBD).Lire_ID(Convert.ToInt32(piece[0]));
+            C_INVOICE entretienSelectionnee = new G_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(entretien[0]));
+            C_VEHICLE vehiculeSelectionne = new G_VEHICLE(connexionBD).Lire_ID(Convert.ToInt32(entretienSelectionnee.ID_VEHICLE));
+            C_CUSTOMER client = new G_CUSTOMER(connexionBD).Lire_ID(Convert.ToInt32(vehiculeSelectionne.ID_CUSTOMER));
+
+            if (id == null)
+            {
+
+                int idAjouter = new G_PART_INVOICE(connexionBD).Ajouter(Convert.ToInt32(piece[0]), Convert.ToInt32(entretien[0]), quantite, pieceSelectionnee.PRICE, pieceSelectionnee.TVA);
+               
+
+                dataTableP.Rows.Add
+                  (
+                      idAjouter.ToString(),
+                      entretienSelectionnee.ID.ToString(),
+                      pieceSelectionnee.NAME.ToString(),
+                      vehiculeSelectionne.REGISTRATION,
+                      client.FIRST_NAME + " " + client.LAST_NAME,
+                      Convert.ToDateTime(entretienSelectionnee.DATE).Day.ToString("D2") + "/" + Convert.ToDateTime(entretienSelectionnee.DATE).Month.ToString("D2") + "/" + Convert.ToDateTime(entretienSelectionnee.DATE).Year.ToString("D4"),
+                      string.Format("{0:0.00}", pieceSelectionnee.PRICE*quantite).ToString() + " €",
+                      string.Format("{0:0.0}", pieceSelectionnee.TVA).ToString() + " %",
+                      quantite.ToString()
+                  ) ;
+            }
+
+            else
+            //Modification
+            {
+                pieceSelectionnee = new G_PART(connexionBD).Lire_ID(Convert.ToInt32(piece[0]));
+                entretienSelectionnee = new G_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(entretien[0]));
+                vehiculeSelectionne = new G_VEHICLE(connexionBD).Lire_ID(Convert.ToInt32(entretienSelectionnee.ID_VEHICLE));
+                client = new G_CUSTOMER(connexionBD).Lire_ID(Convert.ToInt32(vehiculeSelectionne.ID_CUSTOMER));
+
+               
+
+                int Modification = new G_PART_INVOICE(connexionBD).Modifier
+                   (
+                    int.Parse(id),
+                    Convert.ToInt32(piece[0]),
+                    Convert.ToInt32(entretien[0]),
+                    Convert.ToInt32(textBoxQuantite.Text),
+                    pieceSelectionnee.PRICE,
+                    pieceSelectionnee.TVA
+                   );
+
+                dataGridViewP.SelectedRows[0].Cells["cID2"].Value = int.Parse(id).ToString();
+                dataGridViewP.SelectedRows[0].Cells["cEntretien2"].Value = entretienSelectionnee.ID;
+                dataGridViewP.SelectedRows[0].Cells["cPiece2"].Value = pieceSelectionnee.NAME;
+                dataGridViewP.SelectedRows[0].Cells["cVehicule2"].Value = vehiculeSelectionne.REGISTRATION;
+                dataGridViewP.SelectedRows[0].Cells["cClient2"].Value = client.FIRST_NAME + " " + client.LAST_NAME;
+                dataGridViewP.SelectedRows[0].Cells["cDate2"].Value = Convert.ToDateTime(entretienSelectionnee.DATE).Day.ToString("D2") + "/" + Convert.ToDateTime(entretienSelectionnee.DATE).Month.ToString("D2") + "/" + Convert.ToDateTime(entretienSelectionnee.DATE).Year.ToString("D4");
+                dataGridViewP.SelectedRows[0].Cells["cPrix2"].Value = string.Format("{0:0.00}",(pieceSelectionnee.PRICE*Convert.ToInt32(textBoxQuantite.Text)).ToString()) + " €";
+                dataGridViewP.SelectedRows[0].Cells["cTVA2"].Value = string.Format("{0:0.0}", pieceSelectionnee.TVA).ToString() + " %";
+                dataGridViewP.SelectedRows[0].Cells["cQuantite"].Value = textBoxQuantite.Text;
+
+                bindingSourcesP.EndEdit();
+                id = null;
+            }
             ActiverBoutonsFormulairesPieces(true);
         }
 
