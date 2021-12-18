@@ -34,6 +34,7 @@ namespace Alfa_Romeo_Garage
 
             //afficher l'écran d'accueil
             userControlAccueil1.BringToFront();
+            panelButtonSelectionne.Visible = false;
         }
 
         private void panelPosition_MouseDown(object sender, MouseEventArgs e)
@@ -65,7 +66,8 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Top = buttonAccueil.Top;
 
             //afficher l'écran des clients
-            userControlAccueil1.BringToFront();
+            userControleEntre1.BringToFront();
+            panelButtonSelectionne.Visible = true;
         }
 
         private void buttonClients_Click(object sender, EventArgs e)
@@ -76,6 +78,7 @@ namespace Alfa_Romeo_Garage
             
             //afficher l'écran d'accueil
             userControlClients1.BringToFront();
+            panelButtonSelectionne.Visible = true;
         }
 
         private void buttonModeles_Click(object sender, EventArgs e)
@@ -86,6 +89,7 @@ namespace Alfa_Romeo_Garage
 
             //afficher l'écran des modèles
             userControlModeles1.BringToFront();
+            panelButtonSelectionne.Visible = true;
         }
 
         private void buttonVehicules_Click(object sender, EventArgs e)
@@ -96,6 +100,7 @@ namespace Alfa_Romeo_Garage
 
             //afficher l'écran des véhicules
             userControlVehiculescs1.BringToFront();
+            panelButtonSelectionne.Visible = true;
         }
 
         private void buttonPieces_Click(object sender, EventArgs e)
@@ -105,6 +110,7 @@ namespace Alfa_Romeo_Garage
 
             //afficher l'écran des pièces
             userControlPieces1.BringToFront();
+            panelButtonSelectionne.Visible = true;
         }
 
         private void buttonInterventions_Click(object sender, EventArgs e)
@@ -114,15 +120,7 @@ namespace Alfa_Romeo_Garage
 
             //afficher l'écran des interventions
             userControlIntervetions1.BringToFront();
-        }
-
-        private void buttonEntretiens_Click(object sender, EventArgs e)
-        {
-            panelButtonSelectionne.Height = buttonEntretiens.Height;
-            panelButtonSelectionne.Top = buttonEntretiens.Top;
-
-            //afficher l'écran des entretients
-            userControleEntre1.BringToFront();
+            panelButtonSelectionne.Visible = true;
         }
     }
 }

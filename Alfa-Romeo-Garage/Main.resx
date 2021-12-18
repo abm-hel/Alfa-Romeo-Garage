@@ -130,18 +130,6 @@
         ARDM3BCBML03AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="buttonEntretiens.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAXpJREFUSEvt
-        lU0rRFEch2+psTBspBhKUqx8ESXjQ8iCjbLBVnwTX0HZyksRpSxIUsYSEZqV6/mf85tm7rkznOluLDz1
-        pP/ruXfGvZP8adI03cRTfMV3PMEVLKmlGCyawgcMucBRtRWDRRN4Z1sDzrH7O2FoAycVOojH8BpDltUS
-        D0NneI/jSjmIhzHkWOXO0DSIu+hul7/2hRq3mPmcfTrDm0rtoWEIL11rmg4o9+JDxw2OuGbwqQzPKuWh
-        2LrcmFH+yIdRHLplIRTC5caaaks+jGKxsbAX53AL9/AJQ66wB0toD9RvWE/Jlk+j/VfEsKoLquBPh1it
-        0rj6fZeKo46zmrM76UTzASP49Llo6hq12bao7FGuKzRa6IB17EN7LeTQaKEDyqr1+zCLGwSFOVT2EB/4
-        dAa78jLa+z6HRuMOaIVaFb9cVxOL59WSgfyj68hSU7k9NCyg/WB8oL3TqyrloLaDIdsqF4dl9izYIXYn
-        NVtuOZX/iSFJvgHdQVmMMauhcAAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="buttonPieces.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAXFJREFUSEvl
