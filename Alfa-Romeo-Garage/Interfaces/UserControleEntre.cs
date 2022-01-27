@@ -267,6 +267,12 @@ namespace Alfa_Romeo_Garage.Interfaces
             ActiverBoutonsFormulairesEntretien(true);
             ActiverBoutonsFormulairesInterventions(true);
             ActiverBoutonsFormulairesPieces(true);
+
+            
+            comboBoxEntretien2.SelectedIndex = 0;
+            comboBoxEntretien.SelectedIndex = 0;
+            comboBoxPiece.SelectedIndex = 0;
+            comboBoxIntervention.SelectedIndex = 0;
         }
 
         private void buttonAjouter_Click(object sender, EventArgs e)
@@ -277,11 +283,22 @@ namespace Alfa_Romeo_Garage.Interfaces
 
         private void buttonEditer_Click(object sender, EventArgs e)
         {
+            
             if (dataGridViewE.SelectedRows.Count > 0)
             {
                 id = dataGridViewE.SelectedRows[0].Cells["cID"].Value.ToString();
-                C_INVOICE vehiculeModification = new G_INVOICE(connexionBD).Lire_ID(int.Parse(id));
+                C_INVOICE entretienModification = new G_INVOICE(connexionBD).Lire_ID(int.Parse(id));
+                C_VEHICLE vehicule = new G_VEHICLE(connexionBD).Lire_ID(Convert.ToInt32(entretienModification.ID_VEHICLE));
                 ActiverBoutonsFormulairesEntretien(false);
+
+                DateTime d = Convert.ToDateTime(entretienModification.DATE);
+                dateTimePickerDateEntretien.Value = Convert.ToDateTime(entretienModification.DATE);
+
+                for (int i = 0; i < comboBoxVehicule.Items.Count; i++)
+                {
+                    if (comboBoxVehicule.Items[i].ToString() == vehicule.ID.ToString() + " - " + vehicule.REGISTRATION)
+                        comboBoxVehicule.SelectedIndex = i;
+                } 
             }
             else
             {
@@ -368,7 +385,15 @@ namespace Alfa_Romeo_Garage.Interfaces
             if (dataGridviewV.SelectedRows.Count > 0)
             {
                 id = dataGridviewV.SelectedRows[0].Cells["cID1"].Value.ToString();
+                C_INTERVENTION_INVOICE s = new G_INTERVENTION_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(id));
+                C_INTERVENTION modif = new G_INTERVENTION(connexionBD).Lire_ID(Convert.ToInt32(s.ID_INTERVENTION));
                 ActiverBoutonsFormulairesInterventions(false);
+
+                for (int i = 0; i < comboBoxIntervention.Items.Count; i++)
+                {
+                    if (comboBoxIntervention.Items[i].ToString() == modif.ID.ToString() + " - " + modif.DESCRIPTION)
+                        comboBoxIntervention.SelectedIndex = i;
+                }
             }
             else
             {
@@ -477,6 +502,19 @@ namespace Alfa_Romeo_Garage.Interfaces
             {
                 id = dataGridViewP.SelectedRows[0].Cells["cID2"].Value.ToString();
                 ActiverBoutonsFormulairesPieces(false);
+                C_PART_INVOICE pieceModification = new G_PART_INVOICE(connexionBD).Lire_ID(Convert.ToInt32(id));
+                
+                C_PART modif = new G_PART(connexionBD).Lire_ID(Convert.ToInt32(pieceModification.ID_PART));
+               
+
+                for (int i = 0; i < comboBoxPiece.Items.Count; i++)
+                {
+                    if (comboBoxPiece.Items[i].ToString() == modif.ID.ToString() + " - " + modif.NAME)
+                        comboBoxPiece.SelectedIndex = i;
+                }
+
+                textBoxQuantite.Text = pieceModification.QUANTITY_USED.ToString();
+
             }
             else
             {

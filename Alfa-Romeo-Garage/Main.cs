@@ -128,9 +128,10 @@ namespace Alfa_Romeo_Garage
             panelButtonSelectionne.Height = buttonInterventions.Height;
             panelButtonSelectionne.Top = buttonInterventions.Top;
 
-            //afficher l'écran des interventions
-            userControlOptions1.BringToFront();
-            panelButtonSelectionne.Visible = true;
+            this.Hide();
+            Options f = new Options();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }
