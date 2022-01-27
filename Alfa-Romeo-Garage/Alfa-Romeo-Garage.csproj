@@ -65,6 +65,8 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiffreAffaires\C_ChiffreAffaires_Piece.cs" />
+    <Compile Include="ChiffreAffaires\C_ChiffreAffaires_Intervention.cs" />
     <Compile Include="CustomDatePicker.cs">
       <SubType>Component</SubType>
     </Compile>

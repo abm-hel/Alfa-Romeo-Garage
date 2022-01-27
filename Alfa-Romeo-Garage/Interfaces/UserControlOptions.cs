@@ -1,10 +1,12 @@
-﻿using Projet_HEL.Classes;
+﻿using Alfa_Romeo_Garage.ChiffreAffaires;
+using Projet_HEL.Classes;
 using Projet_HEL.Gestion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -108,6 +110,72 @@ namespace Alfa_Romeo_Garage.Interfaces
                 comboBoxEntretienFacture.Items.Add(entretien.ID);
                 comboBoxEntretienFacture.SelectedIndex = 0;
             }
+        }
+
+        private void buttonCalculerChiffreAffaires_Click(object sender, EventArgs e)
+        {
+            double chiffreAffaires = 0;
+
+            DateTime dateDebut = dateTimePickerDateChiffreAffaires.Value;
+            DateTime dateFin = dateTimePickerDateChiffreAffaires.Value.AddDays(7);
+
+            DateTime debut = new DateTime(dateDebut.Year, dateDebut.Month, dateDebut.Day);
+            DateTime fin = new DateTime(dateFin.Year, dateFin.Month, dateFin.Day);
+
+            List<C_ChiffreAffaires_Intervention> listeInterventions = new List<C_ChiffreAffaires_Intervention>();
+            
+            using (SqlConnection conn = new SqlConnection(connexionBaseDonnees))
+            {
+                conn.Open();
+                SqlCommand commande = new SqlCommand("ChiffreAffairesIntervention", conn);
+                commande.CommandType = CommandType.StoredProcedure;
+                commande.Parameters.AddWithValue("@dateDebut", SqlDbType.DateTime).Value = debut;
+                commande.Parameters.AddWithValue("@dateFin", SqlDbType.DateTime).Value = fin;
+                SqlDataReader dr = commande.ExecuteReader();
+                while (dr.Read())
+                {
+                    C_ChiffreAffaires_Intervention donnees = new C_ChiffreAffaires_Intervention();
+                    donnees.PRICE = (double)dr["PRICE"];
+                    listeInterventions.Add(donnees);
+                }
+                conn.Close();
+            }
+
+            foreach (C_ChiffreAffaires_Intervention intervention in listeInterventions)
+            {
+                chiffreAffaires = chiffreAffaires + Convert.ToDouble(intervention.PRICE);
+            }
+
+            List<C_ChiffreAffaires_Piece> listPiece = new List<C_ChiffreAffaires_Piece>();
+            using (SqlConnection conn = new SqlConnection(connexionBaseDonnees))
+            {
+                conn.Open();
+                SqlCommand commande = new SqlCommand("ChiffreAffairesPieces", conn);
+                commande.CommandType = CommandType.StoredProcedure;
+
+                commande.Parameters.AddWithValue("@dateDebut", SqlDbType.DateTime).Value = debut;
+                commande.Parameters.AddWithValue("@dateFin", SqlDbType.DateTime).Value = fin;
+                MessageBox.Show(dateTimePickerDateChiffreAffaires.Value.ToString());
+                MessageBox.Show(dateTimePickerDateChiffreAffaires.Value.AddDays(7).ToString());
+                SqlDataReader dr = commande.ExecuteReader();
+                while (dr.Read())
+                {
+                    C_ChiffreAffaires_Piece entity = new C_ChiffreAffaires_Piece();
+                    entity.PRICE = (double)dr["PRICE"];
+                    entity.QUANTITY_USED = (int)dr["QUANTITY_USED"];
+                    listPiece.Add(entity);
+                }
+                conn.Close();
+            }
+
+            foreach (C_ChiffreAffaires_Piece piece in listPiece)
+            {
+                chiffreAffaires = chiffreAffaires + Convert.ToDouble(piece.PRICE) * Convert.ToInt32(piece.QUANTITY_USED);
+            }
+
+
+
+            labelChiffreAffaires.Text = string.Format("{0:0.00}", chiffreAffaires) + " €";
         }
     }
 }
