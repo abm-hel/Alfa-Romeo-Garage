@@ -47,6 +47,8 @@ namespace Alfa_Romeo_Garage
             this.userControlClients1 = new Alfa_Romeo_Garage.UserControlClients();
             this.userControlAccueil1 = new Alfa_Romeo_Garage.UserControlAccueil();
             this.userControleEntre1 = new Alfa_Romeo_Garage.Interfaces.UserControleEntre();
+            this.userControlOptions1 = new Alfa_Romeo_Garage.Interfaces.UserControlOptions();
+            this.buttonOptions = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoAccueil)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +57,7 @@ namespace Alfa_Romeo_Garage
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.buttonOptions);
             this.panelMenu.Controls.Add(this.panelButtonSelectionne);
             this.panelMenu.Controls.Add(this.buttonInterventions);
             this.panelMenu.Controls.Add(this.buttonPieces);
@@ -68,7 +71,7 @@ namespace Alfa_Romeo_Garage
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(311, 846);
+            this.panelMenu.Size = new System.Drawing.Size(311, 869);
             this.panelMenu.TabIndex = 0;
             // 
             // panelButtonSelectionne
@@ -269,12 +272,38 @@ namespace Alfa_Romeo_Garage
             this.userControleEntre1.Size = new System.Drawing.Size(1211, 825);
             this.userControleEntre1.TabIndex = 16;
             // 
+            // userControlOptions1
+            // 
+            this.userControlOptions1.BackColor = System.Drawing.Color.Black;
+            this.userControlOptions1.Location = new System.Drawing.Point(317, 10);
+            this.userControlOptions1.Name = "userControlOptions1";
+            this.userControlOptions1.Size = new System.Drawing.Size(1220, 847);
+            this.userControlOptions1.TabIndex = 17;
+            // 
+            // buttonOptions
+            // 
+            this.buttonOptions.FlatAppearance.BorderSize = 0;
+            this.buttonOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOptions.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOptions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonOptions.Image = ((System.Drawing.Image)(resources.GetObject("buttonOptions.Image")));
+            this.buttonOptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonOptions.Location = new System.Drawing.Point(31, 772);
+            this.buttonOptions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonOptions.Name = "buttonOptions";
+            this.buttonOptions.Size = new System.Drawing.Size(253, 62);
+            this.buttonOptions.TabIndex = 11;
+            this.buttonOptions.Text = "Options";
+            this.buttonOptions.UseVisualStyleBackColor = true;
+            this.buttonOptions.Click += new System.EventHandler(this.buttonOptions_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1540, 846);
+            this.ClientSize = new System.Drawing.Size(1540, 869);
+            this.Controls.Add(this.userControlOptions1);
             this.Controls.Add(this.userControleEntre1);
             this.Controls.Add(this.userControlIntervetions1);
             this.Controls.Add(this.userControlPieces1);
@@ -317,6 +346,8 @@ namespace Alfa_Romeo_Garage
         private UserControlPieces userControlPieces1;
         private UserControlIntervetions userControlIntervetions1;
         private Interfaces.UserControleEntre userControleEntre1;
+        private Interfaces.UserControlOptions userControlOptions1;
+        private System.Windows.Forms.Button buttonOptions;
     }
 }
 
