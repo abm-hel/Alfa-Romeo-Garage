@@ -21,5 +21,11 @@ C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\P
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Acces.pdb
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Classes.pdb
 C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\bin\Debug\Projet_HEL.Gestion.pdb
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.csprojAssemblyReference.cache
-C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.FormMainOeuvre.resources
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.csproj.AssemblyReference.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.Interfaces.UserControlOptions.resources
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage_MarkupCompile.cache
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage_MarkupCompile.lref
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\rtbUserControl.g.cs
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\rtbUserControl.baml
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa-Romeo-Garage.g.resources
+C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\Alfa-Romeo-Garage\obj\Debug\Alfa_Romeo_Garage.Options.resources

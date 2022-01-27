@@ -122,5 +122,16 @@ namespace Alfa_Romeo_Garage
             userControlIntervetions1.BringToFront();
             panelButtonSelectionne.Visible = true;
         }
+
+        private void buttonOptions_Click(object sender, EventArgs e)
+        {
+            panelButtonSelectionne.Height = buttonInterventions.Height;
+            panelButtonSelectionne.Top = buttonInterventions.Top;
+
+            this.Hide();
+            Options f = new Options();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }
