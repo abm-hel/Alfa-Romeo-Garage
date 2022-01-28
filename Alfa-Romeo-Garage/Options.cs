@@ -1,4 +1,5 @@
 ﻿using Alfa_Romeo_Garage.ChiffreAffaires;
+using Alfa_Romeo_Garage.FichierTxt;
 using Projet_HEL.Classes;
 using Projet_HEL.Gestion;
 using System;
@@ -22,6 +23,7 @@ namespace Alfa_Romeo_Garage
         private RichTextBox richTextBoxFacture = new RichTextBox();
         private DataTable dataTableEntretiens;
         private BindingSource bindingSourceEntretiens;
+        List<PieceUsed> piecesUsed = new List<PieceUsed>();
 
         public Options()
         {
@@ -32,6 +34,7 @@ namespace Alfa_Romeo_Garage
         {
             comboBoxEntretienFacture.Items.Clear();
             List<C_INVOICE> listEntretiens = new G_INVOICE(connexionBaseDonnees).Lire("ID");
+            
 
             foreach (C_INVOICE entretien in listEntretiens)
             {
@@ -313,8 +316,83 @@ namespace Alfa_Romeo_Garage
                 webBrowserReleve.Navigate(@"C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\releveSemaine.html");
             }
 
-        } 
+        }
 
-        
+
+
+        private void buttonGenererFichier_Click(object sender, EventArgs e)
+        {
+            string affichage ="";
+            piecesUsed.Clear();
+
+            
+            using (SqlConnection connexion = new SqlConnection(connexionBaseDonnees))
+            {
+                connexion.Open();
+                SqlCommand commande = new SqlCommand("creerFichierTxt", connexion);
+                
+                commande.CommandType = CommandType.StoredProcedure;
+
+                SqlDataReader reader = commande.ExecuteReader();
+                while (reader.Read())
+                {
+                    PieceUsed entity = new PieceUsed();
+                    entity.ID = (int)reader["ID"];
+                    entity.NAME = (string)reader["NAME"];
+                    entity.ID_INVOICE = (int)reader["ID_INVOICE"];
+                    
+                    
+                    piecesUsed.Add(entity);
+                }
+
+                    
+                    
+                    //MessageBox.Show(entity.DATE.ToString());
+             
+            
+                connexion.Close();
+            }
+            foreach (PieceUsed p in piecesUsed )
+            {
+                if(affichage.Contains(p.NAME)==false)
+                {
+                    affichage += p.NAME + "\n";
+                    C_INVOICE inv = new G_INVOICE(connexionBaseDonnees).Lire_ID(Convert.ToInt32(p.ID_INVOICE));
+                    //foreach (Piece)
+                    //{
+                    //    C_VEHICLE vehic = new G_VEHICLE(connexionBaseDonnees).Lire_ID(Convert.ToInt32(inv.ID_VEHICLE));
+                    //    affichage +=vehic.REGISTRATION + "\n";
+                    //}
+                    foreach (C_VEHICLE veh in lesVehicules(Convert.ToInt32(p.ID)))
+                    {
+                        affichage += veh.REGISTRATION + "\n";
+                    }
+                }
+            }
+
+
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\adilb\Desktop\ProjectBD\Alfa-Romeo-Garage\myFile.txt")) 
+            {
+                sw.WriteLine(affichage);
+            }
+
+            MessageBox.Show("Fichier txt créé !");
+
+        }
+
+        private List<C_VEHICLE> lesVehicules(int l)
+        {
+            List<C_VEHICLE> vehicls = new List<C_VEHICLE>();
+            foreach (PieceUsed s in piecesUsed)
+            {
+                if(l == s.ID)
+                {
+                    C_INVOICE inv = new G_INVOICE(connexionBaseDonnees).Lire_ID(Convert.ToInt32(s.ID_INVOICE));
+                    C_VEHICLE v = new G_VEHICLE(connexionBaseDonnees).Lire_ID(Convert.ToInt32(inv.ID_VEHICLE));
+                    vehicls.Add(v);
+                }                
+            }
+            return vehicls;
+        }
     }
 }

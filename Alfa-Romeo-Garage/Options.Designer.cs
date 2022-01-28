@@ -42,6 +42,7 @@ namespace Alfa_Romeo_Garage
             this.buttonGenererHTML = new System.Windows.Forms.Button();
             this.webBrowserReleve = new System.Windows.Forms.WebBrowser();
             this.buttonGenererFacture = new System.Windows.Forms.Button();
+            this.buttonGenererFichier = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonStock
@@ -92,7 +93,7 @@ namespace Alfa_Romeo_Garage
             this.labelChiffreAffaires.AutoSize = true;
             this.labelChiffreAffaires.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChiffreAffaires.ForeColor = System.Drawing.Color.White;
-            this.labelChiffreAffaires.Location = new System.Drawing.Point(12, 491);
+            this.labelChiffreAffaires.Location = new System.Drawing.Point(23, 470);
             this.labelChiffreAffaires.Name = "labelChiffreAffaires";
             this.labelChiffreAffaires.Size = new System.Drawing.Size(0, 37);
             this.labelChiffreAffaires.TabIndex = 91;
@@ -211,12 +212,30 @@ namespace Alfa_Romeo_Garage
             this.buttonGenererFacture.UseVisualStyleBackColor = false;
             this.buttonGenererFacture.Click += new System.EventHandler(this.buttonGenererFacture_Click);
             // 
+            // buttonGenererFichier
+            // 
+            this.buttonGenererFichier.BackColor = System.Drawing.Color.Crimson;
+            this.buttonGenererFichier.FlatAppearance.BorderSize = 0;
+            this.buttonGenererFichier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGenererFichier.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGenererFichier.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGenererFichier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonGenererFichier.Location = new System.Drawing.Point(17, 550);
+            this.buttonGenererFichier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonGenererFichier.Name = "buttonGenererFichier";
+            this.buttonGenererFichier.Size = new System.Drawing.Size(303, 33);
+            this.buttonGenererFichier.TabIndex = 99;
+            this.buttonGenererFichier.Text = "Génerer fichier";
+            this.buttonGenererFichier.UseVisualStyleBackColor = false;
+            this.buttonGenererFichier.Click += new System.EventHandler(this.buttonGenererFichier_Click);
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1252, 707);
+            this.Controls.Add(this.buttonGenererFichier);
             this.Controls.Add(this.buttonGenererFacture);
             this.Controls.Add(this.webBrowserReleve);
             this.Controls.Add(this.buttonGenererHTML);
@@ -252,5 +271,6 @@ namespace Alfa_Romeo_Garage
         private System.Windows.Forms.Button buttonGenererHTML;
         private System.Windows.Forms.WebBrowser webBrowserReleve;
         private System.Windows.Forms.Button buttonGenererFacture;
+        private System.Windows.Forms.Button buttonGenererFichier;
     }
 }
